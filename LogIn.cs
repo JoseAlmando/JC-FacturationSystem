@@ -19,10 +19,20 @@ namespace JCFracturationSystem
 
         private void LogIn_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void RightPanel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmailTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
