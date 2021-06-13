@@ -1,7 +1,7 @@
 ﻿
 namespace JCFracturationSystem
 {
-    partial class Form1
+    partial class LogIn
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,10 +29,18 @@ namespace JCFracturationSystem
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // LogIn
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(861, 485);
+            this.Name = "LogIn";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.LogIn_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
