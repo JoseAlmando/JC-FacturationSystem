@@ -1,17 +1,17 @@
 ﻿
 namespace JCFracturationSystem
 {
-    partial class LogIn
+    partial class SignUp
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,27 +21,28 @@ namespace JCFracturationSystem
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.FormBorder = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.LeftPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.RightPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.ShowPasswordLabel = new System.Windows.Forms.Label();
             this.ShowPasswordCheckBox = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.SignUpButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -50,7 +51,6 @@ namespace JCFracturationSystem
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.RightPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.DragLeft = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.DragRight = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.RightPanel.SuspendLayout();
@@ -74,8 +74,32 @@ namespace JCFracturationSystem
             this.LeftPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LeftPanel.Name = "LeftPanel";
             this.LeftPanel.ShowBorders = true;
-            this.LeftPanel.Size = new System.Drawing.Size(500, 583);
-            this.LeftPanel.TabIndex = 2;
+            this.LeftPanel.Size = new System.Drawing.Size(500, 630);
+            this.LeftPanel.TabIndex = 0;
+            // 
+            // RightPanel
+            // 
+            this.RightPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.RightPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RightPanel.BackgroundImage")));
+            this.RightPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.RightPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.RightPanel.BorderRadius = 0;
+            this.RightPanel.BorderThickness = 0;
+            this.RightPanel.Controls.Add(this.ShowPasswordLabel);
+            this.RightPanel.Controls.Add(this.ShowPasswordCheckBox);
+            this.RightPanel.Controls.Add(this.SignUpButton);
+            this.RightPanel.Controls.Add(this.PasswordTextBox);
+            this.RightPanel.Controls.Add(this.EmailTextBox);
+            this.RightPanel.Controls.Add(this.label3);
+            this.RightPanel.Controls.Add(this.label2);
+            this.RightPanel.Controls.Add(this.label1);
+            this.RightPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.RightPanel.Location = new System.Drawing.Point(500, 0);
+            this.RightPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RightPanel.Name = "RightPanel";
+            this.RightPanel.ShowBorders = true;
+            this.RightPanel.Size = new System.Drawing.Size(500, 630);
+            this.RightPanel.TabIndex = 1;
             // 
             // ShowPasswordLabel
             // 
@@ -141,6 +165,7 @@ namespace JCFracturationSystem
             this.ShowPasswordCheckBox.TabIndex = 5;
             this.ShowPasswordCheckBox.ThreeState = false;
             this.ShowPasswordCheckBox.ToolTipText = null;
+            this.ShowPasswordCheckBox.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs>(this.bunifuCheckBox1_CheckedChanged);
             // 
             // SignUpButton
             // 
@@ -161,11 +186,11 @@ namespace JCFracturationSystem
             this.SignUpButton.ColorContrastOnClick = 45;
             this.SignUpButton.ColorContrastOnHover = 45;
             this.SignUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.SignUpButton.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.SignUpButton.CustomizableEdges = borderEdges2;
             this.SignUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.SignUpButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.SignUpButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -265,26 +290,26 @@ namespace JCFracturationSystem
             this.PasswordTextBox.Modified = false;
             this.PasswordTextBox.Multiline = false;
             this.PasswordTextBox.Name = "PasswordTextBox";
-            stateProperties25.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            stateProperties25.FillColor = System.Drawing.Color.Empty;
-            stateProperties25.ForeColor = System.Drawing.Color.Empty;
-            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.PasswordTextBox.OnActiveState = stateProperties25;
-            stateProperties26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.PasswordTextBox.OnDisabledState = stateProperties26;
-            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            stateProperties27.FillColor = System.Drawing.Color.Empty;
-            stateProperties27.ForeColor = System.Drawing.Color.Empty;
-            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.PasswordTextBox.OnHoverState = stateProperties27;
-            stateProperties28.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            stateProperties28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
-            stateProperties28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.PasswordTextBox.OnIdleState = stateProperties28;
+            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.PasswordTextBox.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.PasswordTextBox.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.PasswordTextBox.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            stateProperties12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.PasswordTextBox.OnIdleState = stateProperties12;
             this.PasswordTextBox.Padding = new System.Windows.Forms.Padding(5);
             this.PasswordTextBox.PasswordChar = '●';
             this.PasswordTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
@@ -340,26 +365,26 @@ namespace JCFracturationSystem
             this.EmailTextBox.Modified = false;
             this.EmailTextBox.Multiline = false;
             this.EmailTextBox.Name = "EmailTextBox";
-            stateProperties29.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
-            stateProperties29.FillColor = System.Drawing.Color.Empty;
-            stateProperties29.ForeColor = System.Drawing.Color.Empty;
-            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.EmailTextBox.OnActiveState = stateProperties29;
-            stateProperties30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties30.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.EmailTextBox.OnDisabledState = stateProperties30;
-            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
-            stateProperties31.FillColor = System.Drawing.Color.Empty;
-            stateProperties31.ForeColor = System.Drawing.Color.Empty;
-            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.EmailTextBox.OnHoverState = stateProperties31;
-            stateProperties32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            stateProperties32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
-            stateProperties32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.EmailTextBox.OnIdleState = stateProperties32;
+            stateProperties13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.EmailTextBox.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.EmailTextBox.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.EmailTextBox.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            stateProperties16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            stateProperties16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.EmailTextBox.OnIdleState = stateProperties16;
             this.EmailTextBox.Padding = new System.Windows.Forms.Padding(5);
             this.EmailTextBox.PasswordChar = '\0';
             this.EmailTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
@@ -413,34 +438,10 @@ namespace JCFracturationSystem
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.label1.Location = new System.Drawing.Point(50, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 101);
+            this.label1.Size = new System.Drawing.Size(293, 101);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Sign In";
+            this.label1.Text = "Sign Up";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // RightPanel
-            // 
-            this.RightPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
-            this.RightPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RightPanel.BackgroundImage")));
-            this.RightPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.RightPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
-            this.RightPanel.BorderRadius = 0;
-            this.RightPanel.BorderThickness = 0;
-            this.RightPanel.Controls.Add(this.ShowPasswordLabel);
-            this.RightPanel.Controls.Add(this.ShowPasswordCheckBox);
-            this.RightPanel.Controls.Add(this.SignUpButton);
-            this.RightPanel.Controls.Add(this.PasswordTextBox);
-            this.RightPanel.Controls.Add(this.EmailTextBox);
-            this.RightPanel.Controls.Add(this.label3);
-            this.RightPanel.Controls.Add(this.label2);
-            this.RightPanel.Controls.Add(this.label1);
-            this.RightPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.RightPanel.Location = new System.Drawing.Point(482, 0);
-            this.RightPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.RightPanel.Name = "RightPanel";
-            this.RightPanel.ShowBorders = true;
-            this.RightPanel.Size = new System.Drawing.Size(500, 583);
-            this.RightPanel.TabIndex = 3;
             // 
             // DragLeft
             // 
@@ -456,17 +457,17 @@ namespace JCFracturationSystem
             this.DragRight.TargetControl = this.RightPanel;
             this.DragRight.Vertical = true;
             // 
-            // LogIn
+            // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 583);
-            this.Controls.Add(this.LeftPanel);
+            this.ClientSize = new System.Drawing.Size(1000, 630);
             this.Controls.Add(this.RightPanel);
+            this.Controls.Add(this.LeftPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "LogIn";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.LogIn_Load);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "SignUp";
+            this.Text = "SignUp";
             this.RightPanel.ResumeLayout(false);
             this.RightPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -478,16 +479,15 @@ namespace JCFracturationSystem
         private Bunifu.Framework.UI.BunifuElipse FormBorder;
         private Bunifu.UI.WinForms.BunifuPanel LeftPanel;
         private Bunifu.UI.WinForms.BunifuPanel RightPanel;
-        private System.Windows.Forms.Label ShowPasswordLabel;
-        private Bunifu.UI.WinForms.BunifuCheckBox ShowPasswordCheckBox;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton SignUpButton;
-        private Bunifu.UI.WinForms.BunifuTextBox PasswordTextBox;
-        private Bunifu.UI.WinForms.BunifuTextBox EmailTextBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuDragControl DragLeft;
         private Bunifu.Framework.UI.BunifuDragControl DragRight;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private Bunifu.UI.WinForms.BunifuTextBox EmailTextBox;
+        private System.Windows.Forms.Label label3;
+        private Bunifu.UI.WinForms.BunifuTextBox PasswordTextBox;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton SignUpButton;
+        private Bunifu.UI.WinForms.BunifuCheckBox ShowPasswordCheckBox;
+        private System.Windows.Forms.Label ShowPasswordLabel;
     }
 }
-
