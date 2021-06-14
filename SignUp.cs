@@ -25,30 +25,48 @@ namespace JCFracturationSystem
 
         }
 
-        private void bunifuCheckBox1_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        private void SignUpButton_Click(object sender, EventArgs e)
+        {
+            BLUser userObject = new BLUser();
+            userObject.Email = EmailTextBox.Text;
+            userObject.Password = PasswordTextBox.Text;
+            userObject.signUp();
+            MessageBox.Show("Usuario guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
+        }
+
+        private void PasswordTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShowPasswordCheckBox_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
         {
             if (ShowPasswordCheckBox.Checked)
             {
                 PasswordTextBox.UseSystemPasswordChar = false;
                 PasswordTextBox.PasswordChar = '\0';
                 PasswordTextBox.Focus();
-                ShowPasswordLabel.Text = "Hide password";
             }
             else
             {
                 PasswordTextBox.UseSystemPasswordChar = true;
                 PasswordTextBox.PasswordChar = '●';
                 PasswordTextBox.Focus();
-                ShowPasswordLabel.Text = "Show password";
 
             }
         }
 
-        private void SignUpButton_Click(object sender, EventArgs e)
+        private void label1_Click_1(object sender, EventArgs e)
         {
-            loginObjet.Email = EmailTextBox.Text;
-            loginObjet.Password = PasswordTextBox.Text;
-            loginObjet.signUp();
+
+        }
+
+        private void SignUpButton_Click_1(object sender, EventArgs e)
+        {
+            BLUser userObject = new BLUser();
+            userObject.Email = EmailTextBox.Text;
+            userObject.Password = PasswordTextBox.Text;
+            userObject.signUp();
             MessageBox.Show("Usuario guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
         }
     }

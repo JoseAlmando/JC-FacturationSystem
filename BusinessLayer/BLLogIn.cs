@@ -11,7 +11,7 @@ namespace BusinessLayer
 
     public class BLLogIn
     {
-        DLUsers userObject = new DLUsers();
+        DLLogin userObject = new DLLogin();
 
         private String email;
         private String password;
@@ -26,9 +26,6 @@ namespace BusinessLayer
 
             return user;
         }
-        public void signUp()
-        {
-            userObject.signUp(email, password) ;
-        }
+       
     }
 }
