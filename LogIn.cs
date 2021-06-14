@@ -20,12 +20,12 @@ namespace JCFracturationSystem
 
         private void LogIn_Load(object sender, EventArgs e)
         {
-          
+
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-        
+
         }
 
         private void RightPanel_Click(object sender, EventArgs e)
@@ -43,16 +43,8 @@ namespace JCFracturationSystem
             BLLogIn user_object = new BLLogIn();
             user_object.Email = EmailTextBox.Text;
             user_object.Password = PasswordTextBox.Text;
-
             var validation = user_object.sigIn();
-
-            if (Convert.ToBoolean(validation))
-            {
-                MessageBox.Show($"Bienvenido {EmailTextBox.Text}");
-            } else
-            {
-                MessageBox.Show("Datos Erroneos");
-            }
+            MessageBox.Show($"Bienvenido {validation}");
 
         }
     }

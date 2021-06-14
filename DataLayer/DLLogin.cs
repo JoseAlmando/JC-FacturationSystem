@@ -25,9 +25,9 @@ namespace DataLayer
             sql.Parameters.AddWithValue("@email", email);
             sql.Parameters.AddWithValue("@password", hash);
             sql.ExecuteNonQuery();
-            connection.closeConnection();
 
             data = sql.ExecuteReader();
+            connection.closeConnection();
             return data;
         }
     }
