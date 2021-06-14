@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLayer;
 
 namespace JCFracturationSystem
 {
     public partial class SignUp : Form
     {
+        BLLogIn loginObjet = new BLLogIn();
+
         public SignUp()
         {
             InitializeComponent();
@@ -41,5 +44,12 @@ namespace JCFracturationSystem
             }
         }
 
+        private void SignUpButton_Click(object sender, EventArgs e)
+        {
+            loginObjet.Email = EmailTextBox.Text;
+            loginObjet.Password = PasswordTextBox.Text;
+            loginObjet.signUp();
+            MessageBox.Show("Usuario guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
+        }
     }
 }
