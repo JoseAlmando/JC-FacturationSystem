@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLayer;
 
 namespace JCFracturationSystem
 {
@@ -34,6 +35,24 @@ namespace JCFracturationSystem
 
         private void EmailTextBox_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void SignUpButton_Click(object sender, EventArgs e)
+        {
+            BLLogIn user_object = new BLLogIn();
+            user_object.Email = EmailTextBox.Text;
+            user_object.Password = PasswordTextBox.Text;
+
+            var validation = user_object.sigIn();
+
+            if (Convert.ToBoolean(validation))
+            {
+                MessageBox.Show($"Bienvenido {EmailTextBox.Text}");
+            } else
+            {
+                MessageBox.Show("Datos Erroneos");
+            }
 
         }
     }

@@ -30,7 +30,6 @@ namespace JCFracturationSystem
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -40,10 +39,10 @@ namespace JCFracturationSystem
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.FormBorder = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.DragLeft = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.DragRight = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.LeftPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.RightPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.SignUpButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.PasswordTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -51,6 +50,7 @@ namespace JCFracturationSystem
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.LeftPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.RightPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,22 +72,6 @@ namespace JCFracturationSystem
             this.DragRight.Horizontal = true;
             this.DragRight.TargetControl = this.RightPanel;
             this.DragRight.Vertical = true;
-            // 
-            // LeftPanel
-            // 
-            this.LeftPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.LeftPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LeftPanel.BackgroundImage")));
-            this.LeftPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LeftPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.LeftPanel.BorderRadius = 0;
-            this.LeftPanel.BorderThickness = 0;
-            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
-            this.LeftPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.LeftPanel.Name = "LeftPanel";
-            this.LeftPanel.ShowBorders = true;
-            this.LeftPanel.Size = new System.Drawing.Size(500, 630);
-            this.LeftPanel.TabIndex = 2;
             // 
             // RightPanel
             // 
@@ -201,6 +185,7 @@ namespace JCFracturationSystem
             this.SignUpButton.TextMarginLeft = 0;
             this.SignUpButton.TextPadding = new System.Windows.Forms.Padding(0);
             this.SignUpButton.UseDefaultRadiusAndThickness = true;
+            this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
             // PasswordTextBox
             // 
@@ -395,6 +380,22 @@ namespace JCFracturationSystem
             this.label1.Text = "Sign In";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // LeftPanel
+            // 
+            this.LeftPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.LeftPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LeftPanel.BackgroundImage")));
+            this.LeftPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LeftPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.LeftPanel.BorderRadius = 0;
+            this.LeftPanel.BorderThickness = 0;
+            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
+            this.LeftPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.LeftPanel.Name = "LeftPanel";
+            this.LeftPanel.ShowBorders = true;
+            this.LeftPanel.Size = new System.Drawing.Size(500, 630);
+            this.LeftPanel.TabIndex = 2;
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -403,7 +404,7 @@ namespace JCFracturationSystem
             this.Controls.Add(this.LeftPanel);
             this.Controls.Add(this.RightPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LogIn";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.LogIn_Load);
@@ -416,7 +417,6 @@ namespace JCFracturationSystem
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse FormBorder;
-        private Bunifu.UI.WinForms.BunifuPanel LeftPanel;
         private Bunifu.UI.WinForms.BunifuPanel RightPanel;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton SignUpButton;
         private Bunifu.UI.WinForms.BunifuTextBox PasswordTextBox;
@@ -426,6 +426,7 @@ namespace JCFracturationSystem
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuDragControl DragLeft;
         private Bunifu.Framework.UI.BunifuDragControl DragRight;
+        private Bunifu.UI.WinForms.BunifuPanel LeftPanel;
     }
 }
 
