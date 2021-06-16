@@ -52,6 +52,7 @@ namespace JCFracturationSystem
             this.label1 = new System.Windows.Forms.Label();
             this.DragLeft = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.DragRight = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.ShowPasswordLabel = new System.Windows.Forms.Label();
             this.RightPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +85,7 @@ namespace JCFracturationSystem
             this.RightPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
             this.RightPanel.BorderRadius = 0;
             this.RightPanel.BorderThickness = 0;
+            this.RightPanel.Controls.Add(this.ShowPasswordLabel);
             this.RightPanel.Controls.Add(this.ShowPasswordCheckBox);
             this.RightPanel.Controls.Add(this.SignUpButton);
             this.RightPanel.Controls.Add(this.PasswordTextBox);
@@ -115,15 +117,15 @@ namespace JCFracturationSystem
             this.ShowPasswordCheckBox.BorderRadius = 12;
             this.ShowPasswordCheckBox.Checked = false;
             this.ShowPasswordCheckBox.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
-            this.ShowPasswordCheckBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ShowPasswordCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ShowPasswordCheckBox.CustomCheckmarkImage = null;
-            this.ShowPasswordCheckBox.Location = new System.Drawing.Point(78, 426);
+            this.ShowPasswordCheckBox.Location = new System.Drawing.Point(66, 419);
             this.ShowPasswordCheckBox.MinimumSize = new System.Drawing.Size(17, 17);
             this.ShowPasswordCheckBox.Name = "ShowPasswordCheckBox";
-            this.ShowPasswordCheckBox.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ShowPasswordCheckBox.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
             this.ShowPasswordCheckBox.OnCheck.BorderRadius = 12;
             this.ShowPasswordCheckBox.OnCheck.BorderThickness = 2;
-            this.ShowPasswordCheckBox.OnCheck.CheckBoxColor = System.Drawing.Color.DodgerBlue;
+            this.ShowPasswordCheckBox.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
             this.ShowPasswordCheckBox.OnCheck.CheckmarkColor = System.Drawing.Color.White;
             this.ShowPasswordCheckBox.OnCheck.CheckmarkThickness = 2;
             this.ShowPasswordCheckBox.OnDisable.BorderColor = System.Drawing.Color.LightGray;
@@ -146,8 +148,8 @@ namespace JCFracturationSystem
             this.ShowPasswordCheckBox.OnUncheck.BorderRadius = 12;
             this.ShowPasswordCheckBox.OnUncheck.BorderThickness = 1;
             this.ShowPasswordCheckBox.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.ShowPasswordCheckBox.Size = new System.Drawing.Size(21, 21);
-            this.ShowPasswordCheckBox.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
+            this.ShowPasswordCheckBox.Size = new System.Drawing.Size(25, 25);
+            this.ShowPasswordCheckBox.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Round;
             this.ShowPasswordCheckBox.TabIndex = 11;
             this.ShowPasswordCheckBox.ThreeState = false;
             this.ShowPasswordCheckBox.ToolTipText = null;
@@ -269,7 +271,7 @@ namespace JCFracturationSystem
             this.PasswordTextBox.IconLeft = global::JCFracturationSystem.Properties.Resources.padlock;
             this.PasswordTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.PasswordTextBox.IconPadding = 10;
-            this.PasswordTextBox.IconRight = global::JCFracturationSystem.Properties.Resources.visibility;
+            this.PasswordTextBox.IconRight = null;
             this.PasswordTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.PasswordTextBox.Lines = new string[0];
             this.PasswordTextBox.Location = new System.Drawing.Point(55, 362);
@@ -279,7 +281,7 @@ namespace JCFracturationSystem
             this.PasswordTextBox.Modified = false;
             this.PasswordTextBox.Multiline = false;
             this.PasswordTextBox.Name = "PasswordTextBox";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
             stateProperties1.FillColor = System.Drawing.Color.Empty;
             stateProperties1.ForeColor = System.Drawing.Color.Empty;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -320,6 +322,7 @@ namespace JCFracturationSystem
             this.PasswordTextBox.UseSystemPasswordChar = false;
             this.PasswordTextBox.WordWrap = true;
             this.PasswordTextBox.TextChanged += new System.EventHandler(this.PasswordTextBox_TextChanged);
+            this.PasswordTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PasswordTextBox_KeyPress);
             // 
             // EmailTextBox
             // 
@@ -356,7 +359,7 @@ namespace JCFracturationSystem
             this.EmailTextBox.Modified = false;
             this.EmailTextBox.Multiline = false;
             this.EmailTextBox.Name = "EmailTextBox";
-            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
             stateProperties5.FillColor = System.Drawing.Color.Empty;
             stateProperties5.ForeColor = System.Drawing.Color.Empty;
             stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -396,6 +399,7 @@ namespace JCFracturationSystem
             this.EmailTextBox.TextPlaceholder = "Email";
             this.EmailTextBox.UseSystemPasswordChar = false;
             this.EmailTextBox.WordWrap = true;
+            this.EmailTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EmailTextBox_KeyPress);
             // 
             // label3
             // 
@@ -451,6 +455,19 @@ namespace JCFracturationSystem
             this.DragRight.TargetControl = this.RightPanel;
             this.DragRight.Vertical = true;
             // 
+            // ShowPasswordLabel
+            // 
+            this.ShowPasswordLabel.AutoSize = true;
+            this.ShowPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ShowPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.ShowPasswordLabel.Location = new System.Drawing.Point(98, 420);
+            this.ShowPasswordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ShowPasswordLabel.Name = "ShowPasswordLabel";
+            this.ShowPasswordLabel.Size = new System.Drawing.Size(157, 24);
+            this.ShowPasswordLabel.TabIndex = 12;
+            this.ShowPasswordLabel.Text = "Show password";
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,5 +499,6 @@ namespace JCFracturationSystem
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Bunifu.UI.WinForms.BunifuCheckBox ShowPasswordCheckBox;
+        private System.Windows.Forms.Label ShowPasswordLabel;
     }
 }

@@ -23,7 +23,6 @@ namespace BusinessLayer
         {
             SqlDataReader user;
             user = userObject.signIn(email, password);
-
             return user;
         }
        

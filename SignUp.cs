@@ -13,8 +13,7 @@ namespace JCFracturationSystem
 {
     public partial class SignUp : Form
     {
-        BLLogIn loginObjet = new BLLogIn();
-
+        
         public SignUp()
         {
             InitializeComponent();
@@ -46,12 +45,14 @@ namespace JCFracturationSystem
                 PasswordTextBox.UseSystemPasswordChar = false;
                 PasswordTextBox.PasswordChar = '\0';
                 PasswordTextBox.Focus();
+                ShowPasswordLabel.Text = "Hide password";
             }
             else
             {
                 PasswordTextBox.UseSystemPasswordChar = true;
                 PasswordTextBox.PasswordChar = '●';
                 PasswordTextBox.Focus();
+                ShowPasswordLabel.Text = "Show password";
 
             }
         }
@@ -63,11 +64,37 @@ namespace JCFracturationSystem
 
         private void SignUpButton_Click_1(object sender, EventArgs e)
         {
+            signUp();
+        }
+
+        private void EmailTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) PasswordTextBox.Focus();
+        }
+
+ 
+        private void PasswordTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) signUp();
+        }
+
+
+        void signUp()
+        {
+
             BLUser userObject = new BLUser();
             userObject.Email = EmailTextBox.Text;
             userObject.Password = PasswordTextBox.Text;
             userObject.signUp();
+            clearTextBox();
             MessageBox.Show("Usuario guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
         }
+
+        void clearTextBox()
+        {
+            EmailTextBox.Clear();
+            PasswordTextBox.Clear();
+        }
+
     }
 }

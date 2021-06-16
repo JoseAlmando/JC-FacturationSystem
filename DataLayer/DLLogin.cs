@@ -27,7 +27,6 @@ namespace DataLayer
             sql.ExecuteNonQuery();
 
             data = sql.ExecuteReader();
-            connection.closeConnection();
             return data;
         }
     }

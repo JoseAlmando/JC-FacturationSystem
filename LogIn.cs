@@ -44,7 +44,10 @@ namespace JCFracturationSystem
             user_object.Email = EmailTextBox.Text;
             user_object.Password = PasswordTextBox.Text;
             var validation = user_object.sigIn();
-            MessageBox.Show($"Bienvenido {validation}");
+            if (validation.HasRows)
+                MessageBox.Show($"Bienvenido {validation.HasRows}");
+            else
+                MessageBox.Show("no pp");
 
         }
     }
