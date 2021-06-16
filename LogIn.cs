@@ -48,7 +48,7 @@ namespace JCFracturationSystem
                 MessageBox.Show($"Bienvenido {validation.HasRows}");
             else
                 MessageBox.Show("no pp");
-
+            
         }
     }
 }
