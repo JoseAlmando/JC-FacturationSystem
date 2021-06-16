@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
+using System.Net.Mail;
+using System.Text.RegularExpressions;
 
 namespace JCFracturationSystem
 {
     public partial class SignUp : Form
     {
-        
+
         public SignUp()
         {
             InitializeComponent();
@@ -26,11 +28,32 @@ namespace JCFracturationSystem
 
         private void SignUpButton_Click(object sender, EventArgs e)
         {
+            string userEmail = EmailTextBox.Text;
+            string userPassword = PasswordTextBox.Text;
+
+            if (userEmail == "" && userPassword == "")
+            {
+                MessageBox.Show("El email y contraseña son requeridos.");
+                return;
+            }
+
+            if (userEmail == "")
+            {
+                MessageBox.Show("El email es requerido.");
+                return;
+            }
+
+            if (userPassword == "")
+            {
+                MessageBox.Show("La Contraseña es requerida.");
+                return;
+            }
+
             BLUser userObject = new BLUser();
             userObject.Email = EmailTextBox.Text;
             userObject.Password = PasswordTextBox.Text;
             userObject.signUp();
-            MessageBox.Show("Usuario guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
+            MessageBox.Show($"Usuario {userEmail} guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
         }
 
         private void PasswordTextBox_TextChanged(object sender, EventArgs e)
@@ -72,7 +95,7 @@ namespace JCFracturationSystem
             if (e.KeyChar == (char)Keys.Enter) PasswordTextBox.Focus();
         }
 
- 
+
         private void PasswordTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter) signUp();
@@ -82,12 +105,29 @@ namespace JCFracturationSystem
         void signUp()
         {
 
+            string userEmail = EmailTextBox.Text.Trim().ToLower();
+            string userPassword = PasswordTextBox.Text;
+
+
+            if (!isEmail(userEmail))
+            {
+                MessageBox.Show("El email es incorrecto");
+                return;
+            }
+
+            if (!isPassword(userPassword))
+            {
+                MessageBox.Show("La contraseña no tiene el formato correcto.");
+                return;
+            }
+
             BLUser userObject = new BLUser();
-            userObject.Email = EmailTextBox.Text;
-            userObject.Password = PasswordTextBox.Text;
+            userObject.Email = userEmail;
+            userObject.Password = userPassword;
             userObject.signUp();
-            clearTextBox();
             MessageBox.Show("Usuario guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
+            clearTextBox();
+
         }
 
         void clearTextBox()
@@ -96,5 +136,32 @@ namespace JCFracturationSystem
             PasswordTextBox.Clear();
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LogIn login = new LogIn();
+            login.Show();
+            Hide();
+        }
+
+        private bool isEmail(string email)
+        {
+            try
+            {
+                var addr = new MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private bool isPassword(string password)
+        {
+
+            var passwordRegex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}$");
+            return passwordRegex.IsMatch(password);
+
+        }
     }
 }

@@ -173,17 +173,18 @@
         CDB0ABhv7Qe1yQ2BhDwYBAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="passwordToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>369, 17</value>
+  </metadata>
   <data name="ShowPasswordCheckBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHSURBVEhLzVUtc4NAEEVWVlZWVlZWIiMrkZGRlZF1lchK
-        FHOAOYlEIisjkfkZ6XvLkhIInWtY0Tezc/f27vbrvqJ/g6qqnsuyTCHNWIqi+ES70Wm3AUZeYaRD+wV5
-        c87FY8HYDvoacuS4LguD9/5eo/Uw9qjqRSDTB8xNGUzIfCmNTo5VFYxhLVtVzaERtUHRLECr0OZ5/qSq
-        S7BEt2QwBYOkIwatqh5IM8GAU7oaPAiwlyrtAeVx5nkFsiy7g5PubJMlYqmEGIKZMCMh6PBS7YQYAjY3
-        sF0PxGTDp9AD0AlhhwohxoDtk3SsN32MsxN0Wjh6EWIIBs4EhMCJA0mEGIKBMwEh2I8tSCbEELD5ThHC
-        94Zp8QKJwgiweflYwuPPxTEAbPEv8kp76DNwsDjKaosP5PzJ141q1paNGTATpXNgMIHU3CdVBUMzQDHc
-        VlXLwKQYjvivBx9rrmGJ/rJmeHcchPu0v1Zf/n4wyn+jhTRX9yAENAQDH8wM7WkiBwhP5S+vRRR9A5Tq
-        TL8cpb4hAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEZSURBVDhP7ZQrc8MwEIQNAwsLAwsLCwMDA/MTCgsLywwD
+        A408sk0ECwMDCwMNAw0L3W+vysNj5zHylHVndqw96daS7Lvkz5Fl2aQoireyLB2sYTtAxb1z7t17/xBS
+        +2DBDLMvFq94LtHTMNWB4swvWJfCHZyHqRMUlFme508hdBeqqnokd6MNhNDvMfWmSzu6BR1b+TK3gO6C
+        QGoiEuS/ssv1QXjdiYlIsLtnXZkJBs3Vr3Un2FjbHYzEv+F4nBt+6+c2MQLnhhvVsYlIqMrwqU0wSFUt
+        JiKhWsbHmQjuuzHHJn+L6UuQ9gbrgTGm5K1gvxcQ/FA9wsWxc1xA6DBzuB00O0D9kAVqFnueQ93ayHwD
+        P+HpmEmS/AAG8vr+HCa4AQAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="SignUpButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

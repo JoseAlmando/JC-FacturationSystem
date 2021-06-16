@@ -41,8 +41,13 @@ namespace JCFracturationSystem
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.FormBorder = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.DragLeft = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.LeftPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.DragRight = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.RightPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.ShowPasswordLabel = new System.Windows.Forms.Label();
             this.ShowPasswordCheckBox = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.SignUpButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.PasswordTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -50,9 +55,9 @@ namespace JCFracturationSystem
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.DragLeft = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.DragRight = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.ShowPasswordLabel = new System.Windows.Forms.Label();
+            this.passwordToolTip = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
+            this.LeftPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.RightPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +65,13 @@ namespace JCFracturationSystem
             // 
             this.FormBorder.ElipseRadius = 20;
             this.FormBorder.TargetControl = this;
+            // 
+            // DragLeft
+            // 
+            this.DragLeft.Fixed = true;
+            this.DragLeft.Horizontal = true;
+            this.DragLeft.TargetControl = this.LeftPanel;
+            this.DragLeft.Vertical = true;
             // 
             // LeftPanel
             // 
@@ -69,6 +81,7 @@ namespace JCFracturationSystem
             this.LeftPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
             this.LeftPanel.BorderRadius = 0;
             this.LeftPanel.BorderThickness = 0;
+            this.LeftPanel.Controls.Add(this.pictureBox1);
             this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.LeftPanel.Location = new System.Drawing.Point(0, 0);
             this.LeftPanel.Margin = new System.Windows.Forms.Padding(2);
@@ -76,6 +89,30 @@ namespace JCFracturationSystem
             this.LeftPanel.ShowBorders = true;
             this.LeftPanel.Size = new System.Drawing.Size(500, 630);
             this.LeftPanel.TabIndex = 0;
+            this.passwordToolTip.SetToolTip(this.LeftPanel, "");
+            this.passwordToolTip.SetToolTipIcon(this.LeftPanel, null);
+            this.passwordToolTip.SetToolTipTitle(this.LeftPanel, "");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.pictureBox1.Image = global::JCFracturationSystem.Properties.Resources.Login_amico;
+            this.pictureBox1.Location = new System.Drawing.Point(79, 149);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(343, 332);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.passwordToolTip.SetToolTip(this.pictureBox1, "");
+            this.passwordToolTip.SetToolTipIcon(this.pictureBox1, null);
+            this.passwordToolTip.SetToolTipTitle(this.pictureBox1, "");
+            // 
+            // DragRight
+            // 
+            this.DragRight.Fixed = true;
+            this.DragRight.Horizontal = true;
+            this.DragRight.TargetControl = this.RightPanel;
+            this.DragRight.Vertical = true;
             // 
             // RightPanel
             // 
@@ -85,6 +122,7 @@ namespace JCFracturationSystem
             this.RightPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
             this.RightPanel.BorderRadius = 0;
             this.RightPanel.BorderThickness = 0;
+            this.RightPanel.Controls.Add(this.linkLabel1);
             this.RightPanel.Controls.Add(this.ShowPasswordLabel);
             this.RightPanel.Controls.Add(this.ShowPasswordCheckBox);
             this.RightPanel.Controls.Add(this.SignUpButton);
@@ -100,6 +138,43 @@ namespace JCFracturationSystem
             this.RightPanel.ShowBorders = true;
             this.RightPanel.Size = new System.Drawing.Size(500, 630);
             this.RightPanel.TabIndex = 1;
+            this.passwordToolTip.SetToolTip(this.RightPanel, "");
+            this.passwordToolTip.SetToolTipIcon(this.RightPanel, null);
+            this.passwordToolTip.SetToolTipTitle(this.RightPanel, "");
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(58, 515);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(52, 20);
+            this.linkLabel1.TabIndex = 15;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Log in";
+            this.passwordToolTip.SetToolTip(this.linkLabel1, "");
+            this.passwordToolTip.SetToolTipIcon(this.linkLabel1, null);
+            this.passwordToolTip.SetToolTipTitle(this.linkLabel1, "");
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // ShowPasswordLabel
+            // 
+            this.ShowPasswordLabel.AutoSize = true;
+            this.ShowPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ShowPasswordLabel.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.ShowPasswordLabel.Location = new System.Drawing.Point(87, 421);
+            this.ShowPasswordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ShowPasswordLabel.Name = "ShowPasswordLabel";
+            this.ShowPasswordLabel.Size = new System.Drawing.Size(124, 21);
+            this.ShowPasswordLabel.TabIndex = 14;
+            this.ShowPasswordLabel.Text = "Show password";
+            this.passwordToolTip.SetToolTip(this.ShowPasswordLabel, "");
+            this.passwordToolTip.SetToolTipIcon(this.ShowPasswordLabel, null);
+            this.passwordToolTip.SetToolTipTitle(this.ShowPasswordLabel, "");
             // 
             // ShowPasswordCheckBox
             // 
@@ -119,7 +194,7 @@ namespace JCFracturationSystem
             this.ShowPasswordCheckBox.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.ShowPasswordCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ShowPasswordCheckBox.CustomCheckmarkImage = null;
-            this.ShowPasswordCheckBox.Location = new System.Drawing.Point(66, 419);
+            this.ShowPasswordCheckBox.Location = new System.Drawing.Point(59, 422);
             this.ShowPasswordCheckBox.MinimumSize = new System.Drawing.Size(17, 17);
             this.ShowPasswordCheckBox.Name = "ShowPasswordCheckBox";
             this.ShowPasswordCheckBox.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
@@ -148,11 +223,14 @@ namespace JCFracturationSystem
             this.ShowPasswordCheckBox.OnUncheck.BorderRadius = 12;
             this.ShowPasswordCheckBox.OnUncheck.BorderThickness = 1;
             this.ShowPasswordCheckBox.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.ShowPasswordCheckBox.Size = new System.Drawing.Size(25, 25);
-            this.ShowPasswordCheckBox.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Round;
+            this.ShowPasswordCheckBox.Size = new System.Drawing.Size(20, 20);
+            this.ShowPasswordCheckBox.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Flat;
             this.ShowPasswordCheckBox.TabIndex = 11;
             this.ShowPasswordCheckBox.ThreeState = false;
+            this.passwordToolTip.SetToolTip(this.ShowPasswordCheckBox, "");
+            this.passwordToolTip.SetToolTipIcon(this.ShowPasswordCheckBox, null);
             this.ShowPasswordCheckBox.ToolTipText = null;
+            this.passwordToolTip.SetToolTipTitle(this.ShowPasswordCheckBox, "");
             this.ShowPasswordCheckBox.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs>(this.ShowPasswordCheckBox_CheckedChanged);
             // 
             // SignUpButton
@@ -243,6 +321,9 @@ namespace JCFracturationSystem
             this.SignUpButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.SignUpButton.TextMarginLeft = 0;
             this.SignUpButton.TextPadding = new System.Windows.Forms.Padding(0);
+            this.passwordToolTip.SetToolTip(this.SignUpButton, "");
+            this.passwordToolTip.SetToolTipIcon(this.SignUpButton, null);
+            this.passwordToolTip.SetToolTipTitle(this.SignUpButton, "");
             this.SignUpButton.UseDefaultRadiusAndThickness = true;
             this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click_1);
             // 
@@ -319,6 +400,10 @@ namespace JCFracturationSystem
             this.PasswordTextBox.TextMarginLeft = 10;
             this.PasswordTextBox.TextMarginTop = 0;
             this.PasswordTextBox.TextPlaceholder = "Password";
+            this.passwordToolTip.SetToolTip(this.PasswordTextBox, "La contraseña debe contener como minimo: \r\n8 caracteres que deben incluir:\r\n1 num" +
+        "ero\r\n1 letra mayúscula\r\n1 minúscula\r\n1 carácter especial\r\n");
+            this.passwordToolTip.SetToolTipIcon(this.PasswordTextBox, null);
+            this.passwordToolTip.SetToolTipTitle(this.PasswordTextBox, "");
             this.PasswordTextBox.UseSystemPasswordChar = false;
             this.PasswordTextBox.WordWrap = true;
             this.PasswordTextBox.TextChanged += new System.EventHandler(this.PasswordTextBox_TextChanged);
@@ -397,6 +482,9 @@ namespace JCFracturationSystem
             this.EmailTextBox.TextMarginLeft = 10;
             this.EmailTextBox.TextMarginTop = 0;
             this.EmailTextBox.TextPlaceholder = "Email";
+            this.passwordToolTip.SetToolTip(this.EmailTextBox, "");
+            this.passwordToolTip.SetToolTipIcon(this.EmailTextBox, null);
+            this.passwordToolTip.SetToolTipTitle(this.EmailTextBox, "");
             this.EmailTextBox.UseSystemPasswordChar = false;
             this.EmailTextBox.WordWrap = true;
             this.EmailTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EmailTextBox_KeyPress);
@@ -413,6 +501,9 @@ namespace JCFracturationSystem
             this.label3.Size = new System.Drawing.Size(100, 24);
             this.label3.TabIndex = 8;
             this.label3.Text = "Password";
+            this.passwordToolTip.SetToolTip(this.label3, "");
+            this.passwordToolTip.SetToolTipIcon(this.label3, null);
+            this.passwordToolTip.SetToolTipTitle(this.label3, "");
             // 
             // label2
             // 
@@ -426,6 +517,9 @@ namespace JCFracturationSystem
             this.label2.Size = new System.Drawing.Size(142, 24);
             this.label2.TabIndex = 7;
             this.label2.Text = "Email address";
+            this.passwordToolTip.SetToolTip(this.label2, "");
+            this.passwordToolTip.SetToolTipIcon(this.label2, null);
+            this.passwordToolTip.SetToolTipTitle(this.label2, "");
             // 
             // label1
             // 
@@ -439,34 +533,45 @@ namespace JCFracturationSystem
             this.label1.Size = new System.Drawing.Size(232, 63);
             this.label1.TabIndex = 6;
             this.label1.Text = "Sign Up";
+            this.passwordToolTip.SetToolTip(this.label1, "");
+            this.passwordToolTip.SetToolTipIcon(this.label1, null);
+            this.passwordToolTip.SetToolTipTitle(this.label1, "");
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // DragLeft
+            // passwordToolTip
             // 
-            this.DragLeft.Fixed = true;
-            this.DragLeft.Horizontal = true;
-            this.DragLeft.TargetControl = this.LeftPanel;
-            this.DragLeft.Vertical = true;
-            // 
-            // DragRight
-            // 
-            this.DragRight.Fixed = true;
-            this.DragRight.Horizontal = true;
-            this.DragRight.TargetControl = this.RightPanel;
-            this.DragRight.Vertical = true;
-            // 
-            // ShowPasswordLabel
-            // 
-            this.ShowPasswordLabel.AutoSize = true;
-            this.ShowPasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.ShowPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ShowPasswordLabel.Location = new System.Drawing.Point(98, 420);
-            this.ShowPasswordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ShowPasswordLabel.Name = "ShowPasswordLabel";
-            this.ShowPasswordLabel.Size = new System.Drawing.Size(157, 24);
-            this.ShowPasswordLabel.TabIndex = 12;
-            this.ShowPasswordLabel.Text = "Show password";
+            this.passwordToolTip.Active = true;
+            this.passwordToolTip.AlignTextWithTitle = false;
+            this.passwordToolTip.AllowAutoClose = false;
+            this.passwordToolTip.AllowFading = true;
+            this.passwordToolTip.AutoCloseDuration = 5000;
+            this.passwordToolTip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.passwordToolTip.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.passwordToolTip.ClickToShowDisplayControl = false;
+            this.passwordToolTip.ConvertNewlinesToBreakTags = true;
+            this.passwordToolTip.DisplayControl = null;
+            this.passwordToolTip.EntryAnimationSpeed = 350;
+            this.passwordToolTip.ExitAnimationSpeed = 200;
+            this.passwordToolTip.GenerateAutoCloseDuration = false;
+            this.passwordToolTip.IconMargin = 6;
+            this.passwordToolTip.InitialDelay = 0;
+            this.passwordToolTip.Name = "passwordToolTip";
+            this.passwordToolTip.Opacity = 1D;
+            this.passwordToolTip.OverrideToolTipTitles = false;
+            this.passwordToolTip.Padding = new System.Windows.Forms.Padding(10);
+            this.passwordToolTip.ReshowDelay = 100;
+            this.passwordToolTip.ShowAlways = true;
+            this.passwordToolTip.ShowBorders = false;
+            this.passwordToolTip.ShowIcons = true;
+            this.passwordToolTip.ShowShadows = true;
+            this.passwordToolTip.Tag = null;
+            this.passwordToolTip.TextFont = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordToolTip.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.passwordToolTip.TextMargin = 2;
+            this.passwordToolTip.TitleFont = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordToolTip.TitleForeColor = System.Drawing.Color.White;
+            this.passwordToolTip.ToolTipPosition = new System.Drawing.Point(0, 0);
+            this.passwordToolTip.ToolTipTitle = "Password";
             // 
             // SignUp
             // 
@@ -479,6 +584,8 @@ namespace JCFracturationSystem
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SignUp";
             this.Text = "SignUp";
+            this.LeftPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.RightPanel.ResumeLayout(false);
             this.RightPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -500,5 +607,8 @@ namespace JCFracturationSystem
         private System.Windows.Forms.Label label1;
         private Bunifu.UI.WinForms.BunifuCheckBox ShowPasswordCheckBox;
         private System.Windows.Forms.Label ShowPasswordLabel;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.UI.WinForms.BunifuToolTip passwordToolTip;
     }
 }
