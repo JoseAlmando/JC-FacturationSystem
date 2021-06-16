@@ -508,6 +508,7 @@ namespace JCFracturationSystem
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LogIn";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.LogIn_Load);
             this.LeftPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.RightPanel.ResumeLayout(false);

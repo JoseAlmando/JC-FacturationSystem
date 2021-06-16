@@ -118,5 +118,35 @@ namespace JCFracturationSystem
                 PasswordTextBox.Clear();
             }
         }
+
+        private void LogIn_Load(object sender, EventArgs e)
+        {
+            centraX(LeftPanel, pictureBox1);
+            centraY(LeftPanel, pictureBox1);
+        }
+
+
+        public static void centraX(Control padre, Control hijo)
+        {
+            int x = 0;
+
+            //un poco de matematicas, restando los anchos y dividiendo entre 2
+            x = (padre.Width / 2) - (hijo.Width / 2);
+
+            //asignamos la nueva ubicación
+            hijo.Location = new System.Drawing.Point(x, hijo.Location.Y);
+        }
+        public static void centraY(Control padre, Control hijo)
+        {
+            int y = 0;
+
+            //un poco de matematicas, restando los anchos y dividiendo entre 2
+            y = (padre.Height / 2) - (hijo.Height / 2);
+
+            //asignamos la nueva ubicación
+            hijo.Location = new System.Drawing.Point(hijo.Location.X, y);
+        }
+
     }
+
 }
