@@ -41,8 +41,11 @@ namespace JCFracturationSystem
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.FormBorder = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.LeftPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.DragLeft = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.DragRight = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.RightPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.ShowPasswordLabel = new System.Windows.Forms.Label();
             this.ShowPasswordCheckBox = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.SignUpButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.PasswordTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -50,10 +53,11 @@ namespace JCFracturationSystem
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.DragLeft = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.DragRight = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.ShowPasswordLabel = new System.Windows.Forms.Label();
+            this.LeftPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RightPanel.SuspendLayout();
+            this.LeftPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // FormBorder
@@ -61,21 +65,19 @@ namespace JCFracturationSystem
             this.FormBorder.ElipseRadius = 20;
             this.FormBorder.TargetControl = this;
             // 
-            // LeftPanel
+            // DragLeft
             // 
-            this.LeftPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.LeftPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LeftPanel.BackgroundImage")));
-            this.LeftPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LeftPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.LeftPanel.BorderRadius = 0;
-            this.LeftPanel.BorderThickness = 0;
-            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
-            this.LeftPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.LeftPanel.Name = "LeftPanel";
-            this.LeftPanel.ShowBorders = true;
-            this.LeftPanel.Size = new System.Drawing.Size(500, 630);
-            this.LeftPanel.TabIndex = 0;
+            this.DragLeft.Fixed = true;
+            this.DragLeft.Horizontal = true;
+            this.DragLeft.TargetControl = this.LeftPanel;
+            this.DragLeft.Vertical = true;
+            // 
+            // DragRight
+            // 
+            this.DragRight.Fixed = true;
+            this.DragRight.Horizontal = true;
+            this.DragRight.TargetControl = this.RightPanel;
+            this.DragRight.Vertical = true;
             // 
             // RightPanel
             // 
@@ -85,6 +87,7 @@ namespace JCFracturationSystem
             this.RightPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
             this.RightPanel.BorderRadius = 0;
             this.RightPanel.BorderThickness = 0;
+            this.RightPanel.Controls.Add(this.linkLabel1);
             this.RightPanel.Controls.Add(this.ShowPasswordLabel);
             this.RightPanel.Controls.Add(this.ShowPasswordCheckBox);
             this.RightPanel.Controls.Add(this.SignUpButton);
@@ -100,6 +103,34 @@ namespace JCFracturationSystem
             this.RightPanel.ShowBorders = true;
             this.RightPanel.Size = new System.Drawing.Size(500, 630);
             this.RightPanel.TabIndex = 1;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(58, 515);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(52, 20);
+            this.linkLabel1.TabIndex = 15;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Log in";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // ShowPasswordLabel
+            // 
+            this.ShowPasswordLabel.AutoSize = true;
+            this.ShowPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ShowPasswordLabel.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.ShowPasswordLabel.Location = new System.Drawing.Point(87, 421);
+            this.ShowPasswordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ShowPasswordLabel.Name = "ShowPasswordLabel";
+            this.ShowPasswordLabel.Size = new System.Drawing.Size(124, 21);
+            this.ShowPasswordLabel.TabIndex = 14;
+            this.ShowPasswordLabel.Text = "Show password";
             // 
             // ShowPasswordCheckBox
             // 
@@ -119,7 +150,7 @@ namespace JCFracturationSystem
             this.ShowPasswordCheckBox.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.ShowPasswordCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ShowPasswordCheckBox.CustomCheckmarkImage = null;
-            this.ShowPasswordCheckBox.Location = new System.Drawing.Point(66, 419);
+            this.ShowPasswordCheckBox.Location = new System.Drawing.Point(59, 422);
             this.ShowPasswordCheckBox.MinimumSize = new System.Drawing.Size(17, 17);
             this.ShowPasswordCheckBox.Name = "ShowPasswordCheckBox";
             this.ShowPasswordCheckBox.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
@@ -148,8 +179,8 @@ namespace JCFracturationSystem
             this.ShowPasswordCheckBox.OnUncheck.BorderRadius = 12;
             this.ShowPasswordCheckBox.OnUncheck.BorderThickness = 1;
             this.ShowPasswordCheckBox.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.ShowPasswordCheckBox.Size = new System.Drawing.Size(25, 25);
-            this.ShowPasswordCheckBox.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Round;
+            this.ShowPasswordCheckBox.Size = new System.Drawing.Size(20, 20);
+            this.ShowPasswordCheckBox.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Flat;
             this.ShowPasswordCheckBox.TabIndex = 11;
             this.ShowPasswordCheckBox.ThreeState = false;
             this.ShowPasswordCheckBox.ToolTipText = null;
@@ -441,32 +472,33 @@ namespace JCFracturationSystem
             this.label1.Text = "Sign Up";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // DragLeft
+            // LeftPanel
             // 
-            this.DragLeft.Fixed = true;
-            this.DragLeft.Horizontal = true;
-            this.DragLeft.TargetControl = this.LeftPanel;
-            this.DragLeft.Vertical = true;
+            this.LeftPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.LeftPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LeftPanel.BackgroundImage")));
+            this.LeftPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LeftPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.LeftPanel.BorderRadius = 0;
+            this.LeftPanel.BorderThickness = 0;
+            this.LeftPanel.Controls.Add(this.pictureBox1);
+            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
+            this.LeftPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.LeftPanel.Name = "LeftPanel";
+            this.LeftPanel.ShowBorders = true;
+            this.LeftPanel.Size = new System.Drawing.Size(500, 630);
+            this.LeftPanel.TabIndex = 0;
             // 
-            // DragRight
+            // pictureBox1
             // 
-            this.DragRight.Fixed = true;
-            this.DragRight.Horizontal = true;
-            this.DragRight.TargetControl = this.RightPanel;
-            this.DragRight.Vertical = true;
-            // 
-            // ShowPasswordLabel
-            // 
-            this.ShowPasswordLabel.AutoSize = true;
-            this.ShowPasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.ShowPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ShowPasswordLabel.Location = new System.Drawing.Point(98, 420);
-            this.ShowPasswordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ShowPasswordLabel.Name = "ShowPasswordLabel";
-            this.ShowPasswordLabel.Size = new System.Drawing.Size(157, 24);
-            this.ShowPasswordLabel.TabIndex = 12;
-            this.ShowPasswordLabel.Text = "Show password";
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.pictureBox1.Image = global::JCFracturationSystem.Properties.Resources.Login_amico;
+            this.pictureBox1.Location = new System.Drawing.Point(79, 149);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(343, 332);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // SignUp
             // 
@@ -481,6 +513,8 @@ namespace JCFracturationSystem
             this.Text = "SignUp";
             this.RightPanel.ResumeLayout(false);
             this.RightPanel.PerformLayout();
+            this.LeftPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -500,5 +534,7 @@ namespace JCFracturationSystem
         private System.Windows.Forms.Label label1;
         private Bunifu.UI.WinForms.BunifuCheckBox ShowPasswordCheckBox;
         private System.Windows.Forms.Label ShowPasswordLabel;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

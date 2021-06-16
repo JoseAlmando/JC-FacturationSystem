@@ -221,6 +221,17 @@
         CDB0ABhv7Qe1yQ2BhDwYBAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="ShowPasswordCheckBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEZSURBVDhP7ZQrc8MwEIQNAwsLAwsLCwMDA/MTCgsLywwD
+        A408sk0ECwMDCwMNAw0L3W+vysNj5zHylHVndqw96daS7Lvkz5Fl2aQoireyLB2sYTtAxb1z7t17/xBS
+        +2DBDLMvFq94LtHTMNWB4swvWJfCHZyHqRMUlFme508hdBeqqnokd6MNhNDvMfWmSzu6BR1b+TK3gO6C
+        QGoiEuS/ssv1QXjdiYlIsLtnXZkJBs3Vr3Un2FjbHYzEv+F4nBt+6+c2MQLnhhvVsYlIqMrwqU0wSFUt
+        JiKhWsbHmQjuuzHHJn+L6UuQ9gbrgTGm5K1gvxcQ/FA9wsWxc1xA6DBzuB00O0D9kAVqFnueQ93ayHwD
+        P+HpmEmS/AAG8vr+HCa4AQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="SignUpButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZUAAAAxCAYAAAASoTR3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

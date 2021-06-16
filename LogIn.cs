@@ -40,15 +40,72 @@ namespace JCFracturationSystem
 
         private void SignUpButton_Click(object sender, EventArgs e)
         {
+            string userEmail = EmailTextBox.Text;
+            string userPassword = PasswordTextBox.Text;
+
+            if(userEmail == "" && userPassword == "")
+            {
+                MessageBox.Show("El email y contraseña son requeridos.");
+                return;
+            }
+
+            if (userEmail == "")
+            {
+                MessageBox.Show("El email es requerido.");
+                return;
+            }
+
+            if (userPassword == "")
+            {
+                MessageBox.Show("La Contraseña es requerida.");
+                return;
+            }
+
             BLLogIn user_object = new BLLogIn();
             user_object.Email = EmailTextBox.Text;
             user_object.Password = PasswordTextBox.Text;
             var validation = user_object.sigIn();
-            if (validation.HasRows)
-                MessageBox.Show($"Bienvenido {validation.HasRows}");
-            else
-                MessageBox.Show("no pp");
 
+            if (validation.HasRows)
+            {
+                MessageBox.Show($"Bienvenido {userEmail}.");
+                Menu menu = new Menu();
+                menu.Show();
+                Hide();
+            }
+            else
+            {
+                MessageBox.Show("Credenciales Incorrectas, Intente de nuevo.");
+                EmailTextBox.Clear();
+                PasswordTextBox.Clear();
+            }
+
+        }
+
+        private void ShowPasswordCheckBox_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (ShowPasswordCheckBox.Checked)
+            {
+                PasswordTextBox.UseSystemPasswordChar = false;
+                PasswordTextBox.PasswordChar = '\0';
+                PasswordTextBox.Focus();
+                ShowPasswordLabel.Text = "Hide password";
+            }
+            else
+            {
+                PasswordTextBox.UseSystemPasswordChar = true;
+                PasswordTextBox.PasswordChar = '●';
+                PasswordTextBox.Focus();
+                ShowPasswordLabel.Text = "Show password";
+
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SignUp register = new SignUp();
+            register.Show();
+            Hide();
         }
     }
 }

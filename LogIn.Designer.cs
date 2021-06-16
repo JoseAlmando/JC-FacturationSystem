@@ -30,6 +30,7 @@ namespace JCFracturationSystem
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -39,18 +40,23 @@ namespace JCFracturationSystem
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.FormBorder = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.DragLeft = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.DragRight = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.LeftPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RightPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.ShowPasswordLabel = new System.Windows.Forms.Label();
+            this.ShowPasswordCheckBox = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.SignUpButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.PasswordTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
             this.EmailTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.LeftPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.LeftPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.RightPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +79,34 @@ namespace JCFracturationSystem
             this.DragRight.TargetControl = this.RightPanel;
             this.DragRight.Vertical = true;
             // 
+            // LeftPanel
+            // 
+            this.LeftPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.LeftPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LeftPanel.BackgroundImage")));
+            this.LeftPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LeftPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.LeftPanel.BorderRadius = 0;
+            this.LeftPanel.BorderThickness = 0;
+            this.LeftPanel.Controls.Add(this.pictureBox1);
+            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
+            this.LeftPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.LeftPanel.Name = "LeftPanel";
+            this.LeftPanel.ShowBorders = true;
+            this.LeftPanel.Size = new System.Drawing.Size(500, 630);
+            this.LeftPanel.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.pictureBox1.Image = global::JCFracturationSystem.Properties.Resources.Login_amico;
+            this.pictureBox1.Location = new System.Drawing.Point(79, 162);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(343, 332);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // RightPanel
             // 
             this.RightPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
@@ -81,6 +115,9 @@ namespace JCFracturationSystem
             this.RightPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
             this.RightPanel.BorderRadius = 0;
             this.RightPanel.BorderThickness = 0;
+            this.RightPanel.Controls.Add(this.linkLabel1);
+            this.RightPanel.Controls.Add(this.ShowPasswordLabel);
+            this.RightPanel.Controls.Add(this.ShowPasswordCheckBox);
             this.RightPanel.Controls.Add(this.SignUpButton);
             this.RightPanel.Controls.Add(this.PasswordTextBox);
             this.RightPanel.Controls.Add(this.EmailTextBox);
@@ -95,6 +132,88 @@ namespace JCFracturationSystem
             this.RightPanel.Size = new System.Drawing.Size(500, 630);
             this.RightPanel.TabIndex = 3;
             this.RightPanel.Click += new System.EventHandler(this.RightPanel_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(52, 523);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(120, 20);
+            this.linkLabel1.TabIndex = 14;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Create Account";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // ShowPasswordLabel
+            // 
+            this.ShowPasswordLabel.AutoSize = true;
+            this.ShowPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ShowPasswordLabel.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.ShowPasswordLabel.Location = new System.Drawing.Point(82, 425);
+            this.ShowPasswordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ShowPasswordLabel.Name = "ShowPasswordLabel";
+            this.ShowPasswordLabel.Size = new System.Drawing.Size(124, 21);
+            this.ShowPasswordLabel.TabIndex = 13;
+            this.ShowPasswordLabel.Text = "Show password";
+            // 
+            // ShowPasswordCheckBox
+            // 
+            this.ShowPasswordCheckBox.AllowBindingControlAnimation = true;
+            this.ShowPasswordCheckBox.AllowBindingControlColorChanges = false;
+            this.ShowPasswordCheckBox.AllowBindingControlLocation = true;
+            this.ShowPasswordCheckBox.AllowCheckBoxAnimation = false;
+            this.ShowPasswordCheckBox.AllowCheckmarkAnimation = true;
+            this.ShowPasswordCheckBox.AllowOnHoverStates = true;
+            this.ShowPasswordCheckBox.AutoCheck = true;
+            this.ShowPasswordCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.ShowPasswordCheckBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ShowPasswordCheckBox.BackgroundImage")));
+            this.ShowPasswordCheckBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ShowPasswordCheckBox.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.ShowPasswordCheckBox.BorderRadius = 12;
+            this.ShowPasswordCheckBox.Checked = false;
+            this.ShowPasswordCheckBox.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
+            this.ShowPasswordCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ShowPasswordCheckBox.CustomCheckmarkImage = null;
+            this.ShowPasswordCheckBox.Location = new System.Drawing.Point(55, 426);
+            this.ShowPasswordCheckBox.MinimumSize = new System.Drawing.Size(17, 17);
+            this.ShowPasswordCheckBox.Name = "ShowPasswordCheckBox";
+            this.ShowPasswordCheckBox.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.ShowPasswordCheckBox.OnCheck.BorderRadius = 12;
+            this.ShowPasswordCheckBox.OnCheck.BorderThickness = 2;
+            this.ShowPasswordCheckBox.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.ShowPasswordCheckBox.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.ShowPasswordCheckBox.OnCheck.CheckmarkThickness = 2;
+            this.ShowPasswordCheckBox.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.ShowPasswordCheckBox.OnDisable.BorderRadius = 12;
+            this.ShowPasswordCheckBox.OnDisable.BorderThickness = 2;
+            this.ShowPasswordCheckBox.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.ShowPasswordCheckBox.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.ShowPasswordCheckBox.OnDisable.CheckmarkThickness = 2;
+            this.ShowPasswordCheckBox.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.ShowPasswordCheckBox.OnHoverChecked.BorderRadius = 12;
+            this.ShowPasswordCheckBox.OnHoverChecked.BorderThickness = 2;
+            this.ShowPasswordCheckBox.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.ShowPasswordCheckBox.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.ShowPasswordCheckBox.OnHoverChecked.CheckmarkThickness = 2;
+            this.ShowPasswordCheckBox.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.ShowPasswordCheckBox.OnHoverUnchecked.BorderRadius = 12;
+            this.ShowPasswordCheckBox.OnHoverUnchecked.BorderThickness = 1;
+            this.ShowPasswordCheckBox.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.ShowPasswordCheckBox.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
+            this.ShowPasswordCheckBox.OnUncheck.BorderRadius = 12;
+            this.ShowPasswordCheckBox.OnUncheck.BorderThickness = 1;
+            this.ShowPasswordCheckBox.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.ShowPasswordCheckBox.Size = new System.Drawing.Size(20, 20);
+            this.ShowPasswordCheckBox.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Flat;
+            this.ShowPasswordCheckBox.TabIndex = 12;
+            this.ShowPasswordCheckBox.ThreeState = false;
+            this.ShowPasswordCheckBox.ToolTipText = null;
+            this.ShowPasswordCheckBox.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs>(this.ShowPasswordCheckBox_CheckedChanged);
             // 
             // SignUpButton
             // 
@@ -212,7 +331,7 @@ namespace JCFracturationSystem
             this.PasswordTextBox.IconLeft = global::JCFracturationSystem.Properties.Resources.padlock;
             this.PasswordTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.PasswordTextBox.IconPadding = 10;
-            this.PasswordTextBox.IconRight = global::JCFracturationSystem.Properties.Resources.visibility;
+            this.PasswordTextBox.IconRight = null;
             this.PasswordTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.PasswordTextBox.Lines = new string[0];
             this.PasswordTextBox.Location = new System.Drawing.Point(51, 370);
@@ -380,22 +499,6 @@ namespace JCFracturationSystem
             this.label1.Text = "Sign In";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // LeftPanel
-            // 
-            this.LeftPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.LeftPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LeftPanel.BackgroundImage")));
-            this.LeftPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LeftPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.LeftPanel.BorderRadius = 0;
-            this.LeftPanel.BorderThickness = 0;
-            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
-            this.LeftPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.LeftPanel.Name = "LeftPanel";
-            this.LeftPanel.ShowBorders = true;
-            this.LeftPanel.Size = new System.Drawing.Size(500, 630);
-            this.LeftPanel.TabIndex = 2;
-            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,6 +511,8 @@ namespace JCFracturationSystem
             this.Name = "LogIn";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.LogIn_Load);
+            this.LeftPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.RightPanel.ResumeLayout(false);
             this.RightPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -427,6 +532,10 @@ namespace JCFracturationSystem
         private Bunifu.Framework.UI.BunifuDragControl DragLeft;
         private Bunifu.Framework.UI.BunifuDragControl DragRight;
         private Bunifu.UI.WinForms.BunifuPanel LeftPanel;
+        private Bunifu.UI.WinForms.BunifuCheckBox ShowPasswordCheckBox;
+        private System.Windows.Forms.Label ShowPasswordLabel;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

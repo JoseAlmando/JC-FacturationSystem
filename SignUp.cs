@@ -26,11 +26,32 @@ namespace JCFracturationSystem
 
         private void SignUpButton_Click(object sender, EventArgs e)
         {
+            string userEmail = EmailTextBox.Text;
+            string userPassword = PasswordTextBox.Text;
+
+            if (userEmail == "" && userPassword == "")
+            {
+                MessageBox.Show("El email y contraseña son requeridos.");
+                return;
+            }
+
+            if (userEmail == "")
+            {
+                MessageBox.Show("El email es requerido.");
+                return;
+            }
+
+            if (userPassword == "")
+            {
+                MessageBox.Show("La Contraseña es requerida.");
+                return;
+            }
+
             BLUser userObject = new BLUser();
             userObject.Email = EmailTextBox.Text;
             userObject.Password = PasswordTextBox.Text;
             userObject.signUp();
-            MessageBox.Show("Usuario guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
+            MessageBox.Show($"Usuario {userEmail} guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
         }
 
         private void PasswordTextBox_TextChanged(object sender, EventArgs e)
@@ -88,6 +109,8 @@ namespace JCFracturationSystem
             userObject.signUp();
             clearTextBox();
             MessageBox.Show("Usuario guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
+            EmailTextBox.Clear();
+            PasswordTextBox.Clear();
         }
 
         void clearTextBox()
@@ -96,5 +119,11 @@ namespace JCFracturationSystem
             PasswordTextBox.Clear();
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LogIn login = new LogIn();
+            login.Show();
+            Hide();
+        }
     }
 }
