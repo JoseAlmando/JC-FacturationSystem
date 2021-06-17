@@ -107,11 +107,18 @@ namespace JCFracturationSystem
 
             string userEmail = EmailTextBox.Text.Trim().ToLower();
             string userPassword = PasswordTextBox.Text;
+            string userName = UsernameTextBox.Text.Trim();
 
+
+            if (userName == "")
+            {
+                MessageBox.Show("El usermail es requerido.");
+                return;
+            }
 
             if (!isEmail(userEmail))
             {
-                MessageBox.Show("El email es incorrecto");
+                MessageBox.Show("El formato del email es incorrecto.");
                 return;
             }
 
@@ -124,6 +131,7 @@ namespace JCFracturationSystem
             BLUser userObject = new BLUser();
             userObject.Email = userEmail;
             userObject.Password = userPassword;
+            userObject.Username = userName;
             userObject.signUp();
             MessageBox.Show("Usuario guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
             clearTextBox();
@@ -132,6 +140,7 @@ namespace JCFracturationSystem
 
         void clearTextBox()
         {
+            UsernameTextBox.Clear();
             EmailTextBox.Clear();
             PasswordTextBox.Clear();
         }

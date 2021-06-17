@@ -13,13 +13,15 @@ namespace BusinessLayer
 
         private String email;
         private String password;
+        private String username;
 
+        public string Username { get => username; set => username = value; }
         public string Email { get => email; set => email = value; }
         public string Password { get => password; set => password = value; }
 
         public void signUp()
         {
-            userObject.signUp(email, password);
+            userObject.signUp(username, email, password);
         }
     }
 }

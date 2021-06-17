@@ -19,9 +19,9 @@ namespace BusinessLayer
         public string Email { get => email; set => email= value; }
         public string Password { get => password; set => password = value; }
 
-        public SqlDataReader sigIn()
+        public DataTable sigIn()
         {
-            SqlDataReader user;
+            DataTable user;
             user = userObject.signIn(email, password);
             return user;
         }

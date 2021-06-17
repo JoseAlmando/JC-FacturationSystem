@@ -16,7 +16,7 @@ namespace DataLayer
         DLHash dlHash = new DLHash();
         private DLConexion connection = new DLConexion();
 
-        public void signUp(string email, string password)
+        public void signUp(string username, string email, string password)
         {
             
             SHA256 sha256Hash = SHA256.Create();
@@ -24,6 +24,7 @@ namespace DataLayer
 
             SqlCommand sql = new SqlCommand("sp_signup", connection.openConnection());
             sql.CommandType = CommandType.StoredProcedure;
+            sql.Parameters.AddWithValue("@username", username);
             sql.Parameters.AddWithValue("@email", email);
             sql.Parameters.AddWithValue("@password", hash);
             sql.ExecuteNonQuery();

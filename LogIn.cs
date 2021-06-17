@@ -104,10 +104,21 @@ namespace JCFracturationSystem
             user_object.Password = PasswordTextBox.Text;
             var validation = user_object.sigIn();
 
-            if (validation.HasRows)
+            if (validation.Rows.Count > 0)
             {
-                MessageBox.Show($"Bienvenido {userEmail}.");
-                Menu menu = new Menu(userEmail);
+                var userName = validation.Rows[0]["username"].ToString();
+                var userLevel = Convert.ToUInt16(validation.Rows[0]["id_level"].ToString());
+                Menu menu = new Menu(userName);
+                MessageBox.Show($"Bienvenido {userName}.");
+                if (userLevel == 2)
+                {
+                    menu.msgLabel.ForeColor = Color.Gray;
+                }
+                if (userLevel == 1)
+                {
+                    menu.msgLabel.ForeColor = Color.Red;
+
+                }
                 menu.Show();
                 Hide();
             }

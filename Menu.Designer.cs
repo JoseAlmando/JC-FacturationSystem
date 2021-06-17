@@ -32,7 +32,7 @@ namespace JCFracturationSystem
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.welcomeLabel = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.msgLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,21 +56,21 @@ namespace JCFracturationSystem
             this.welcomeLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.welcomeLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel2
+            // msgLabel
             // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.bunifuLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel2.Location = new System.Drawing.Point(321, 190);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(388, 45);
-            this.bunifuLabel2.TabIndex = 1;
-            this.bunifuLabel2.Text = "we are building the system";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.msgLabel.AllowParentOverrides = false;
+            this.msgLabel.AutoEllipsis = false;
+            this.msgLabel.CursorType = null;
+            this.msgLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.msgLabel.ForeColor = System.Drawing.Color.White;
+            this.msgLabel.Location = new System.Drawing.Point(321, 190);
+            this.msgLabel.Name = "msgLabel";
+            this.msgLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.msgLabel.Size = new System.Drawing.Size(388, 45);
+            this.msgLabel.TabIndex = 1;
+            this.msgLabel.Text = "we are building the system";
+            this.msgLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.msgLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // pictureBox1
             // 
@@ -98,7 +98,7 @@ namespace JCFracturationSystem
             this.ClientSize = new System.Drawing.Size(1067, 700);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.bunifuLabel2);
+            this.Controls.Add(this.msgLabel);
             this.Controls.Add(this.welcomeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu";
@@ -113,8 +113,8 @@ namespace JCFracturationSystem
         #endregion
 
         private Bunifu.UI.WinForms.BunifuLabel welcomeLabel;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        public Bunifu.UI.WinForms.BunifuLabel msgLabel;
     }
 }

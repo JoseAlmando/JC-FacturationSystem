@@ -23,7 +23,7 @@ namespace JCFracturationSystem
         {
             welcomeLabel.Text += " " + this.person.Trim();
             centraX(this, welcomeLabel);
-            centraX(this, bunifuLabel2);
+            centraX(this, msgLabel);
             centraX(this, pictureBox1);
 
         }
