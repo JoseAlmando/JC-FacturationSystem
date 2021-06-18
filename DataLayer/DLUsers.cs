@@ -13,20 +13,16 @@ namespace DataLayer
 {
     public class DLUsers
     {
-        DLHash dlHash = new DLHash();
+     
         private DLConexion connection = new DLConexion();
 
         public void signUp(string username, string email, string password)
         {
-            
-            SHA256 sha256Hash = SHA256.Create();
-            string hash = dlHash.GetHash(sha256Hash, password);
-
             SqlCommand sql = new SqlCommand("sp_signup", connection.openConnection());
             sql.CommandType = CommandType.StoredProcedure;
             sql.Parameters.AddWithValue("@username", username);
             sql.Parameters.AddWithValue("@email", email);
-            sql.Parameters.AddWithValue("@password", hash);
+            sql.Parameters.AddWithValue("@password", password);
             sql.ExecuteNonQuery();
             connection.closeConnection();
         }

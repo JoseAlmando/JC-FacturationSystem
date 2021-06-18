@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BLLogIn.cs" />
     <Compile Include="BLUser.cs" />
+    <Compile Include="DLHash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

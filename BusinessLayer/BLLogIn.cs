@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using DataLayer;
+using System.Security.Cryptography;
+
 namespace BusinessLayer
 {
 
     public class BLLogIn
     {
         DLLogin userObject = new DLLogin();
+        DLHash dlHash = new DLHash();
 
         private String email;
         private String password;
@@ -21,8 +24,11 @@ namespace BusinessLayer
 
         public DataTable sigIn()
         {
+            SHA256 sha256Hash = SHA256.Create();
+            string hash = dlHash.GetHash(sha256Hash, password);
+
             DataTable user;
-            user = userObject.signIn(email, password);
+            user = userObject.signIn(email, hash);
             return user;
         }
        

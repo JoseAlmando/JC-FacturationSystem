@@ -21,46 +21,6 @@ namespace JCFracturationSystem
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SignUpButton_Click(object sender, EventArgs e)
-        {
-            string userEmail = EmailTextBox.Text;
-            string userPassword = PasswordTextBox.Text;
-
-            if (userEmail == "" && userPassword == "")
-            {
-                MessageBox.Show("El email y contraseña son requeridos.");
-                return;
-            }
-
-            if (userEmail == "")
-            {
-                MessageBox.Show("El email es requerido.");
-                return;
-            }
-
-            if (userPassword == "")
-            {
-                MessageBox.Show("La Contraseña es requerida.");
-                return;
-            }
-
-            BLUser userObject = new BLUser();
-            userObject.Email = EmailTextBox.Text;
-            userObject.Password = PasswordTextBox.Text;
-            userObject.signUp();
-            MessageBox.Show($"Usuario {userEmail} guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
-        }
-
-        private void PasswordTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void ShowPasswordCheckBox_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
         {
             if (ShowPasswordCheckBox.Checked)
@@ -80,12 +40,7 @@ namespace JCFracturationSystem
             }
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SignUpButton_Click_1(object sender, EventArgs e)
+        private void SignUpButton_Click(object sender, EventArgs e)
         {
             signUp();
         }
@@ -95,24 +50,26 @@ namespace JCFracturationSystem
             if (e.KeyChar == (char)Keys.Enter) PasswordTextBox.Focus();
         }
 
-
         private void PasswordTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter) signUp();
         }
 
-
         void signUp()
         {
-
             string userEmail = EmailTextBox.Text.Trim().ToLower();
             string userPassword = PasswordTextBox.Text;
             string userName = UsernameTextBox.Text.Trim();
 
-
             if (userName == "")
             {
-                MessageBox.Show("El usermail es requerido.");
+                MessageBox.Show("El username es requerido.");
+                return;
+            }
+
+            if (!isCorrectUsername(userName))
+            {
+                MessageBox.Show("El formato del username es incorrecto. No se permiten espacios en blanco.");
                 return;
             }
 
@@ -135,7 +92,6 @@ namespace JCFracturationSystem
             userObject.signUp();
             MessageBox.Show("Usuario guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
             clearTextBox();
-
         }
 
         void clearTextBox()
@@ -167,31 +123,32 @@ namespace JCFracturationSystem
 
         private bool isPassword(string password)
         {
-
             var passwordRegex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}$");
             return passwordRegex.IsMatch(password);
+        }
 
+        private bool isCorrectUsername(string username)
+        {
+            var usernameRegex = new Regex(@"^[a-zA-Z0-9_]*$");
+            return usernameRegex.IsMatch(username);
         }
 
         public static void centraX(Control padre, Control hijo)
         {
             int x = 0;
 
-            //un poco de matematicas, restando los anchos y dividiendo entre 2
             x = (padre.Width / 2) - (hijo.Width / 2);
 
-            //asignamos la nueva ubicación
             hijo.Location = new System.Drawing.Point(x, hijo.Location.Y);
         }
+
         public static void centraY(Control padre, Control hijo)
         {
             int y = 0;
 
-            //un poco de matematicas, restando los anchos y dividiendo entre 2
             y = (padre.Height / 2) - (hijo.Height / 2);
 
-            //asignamos la nueva ubicación
-            hijo.Location = new System.Drawing.Point(hijo.Location.X, y);
+            hijo.Location = new Point(hijo.Location.X, y);
         }
 
         private void SignUp_Load(object sender, EventArgs e)
@@ -199,5 +156,6 @@ namespace JCFracturationSystem
             centraX(LeftPanel, pictureBox1);
             centraY(LeftPanel, pictureBox1);
         }
+
     }
 }

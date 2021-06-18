@@ -12,16 +12,15 @@ namespace JCFracturationSystem
 {
     public partial class Menu : Form
     {
-        string person;
-        public Menu(string person)
+        
+        public Menu()
         {
             InitializeComponent();
-            this.person = person;
         }
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            welcomeLabel.Text += " " + this.person.Trim();
+            timerHours.Start();
             centraX(this, welcomeLabel);
             centraX(this, msgLabel);
             centraX(this, pictureBox1);
@@ -37,6 +36,22 @@ namespace JCFracturationSystem
 
             //asignamos la nueva ubicación
             hijo.Location = new System.Drawing.Point(x, hijo.Location.Y);
+        }
+
+        private void welcomeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timerHours_Tick(object sender, EventArgs e)
+        {
+            DateTime hour = DateTime.Now;
+            timerLabel.Text = hour.ToString("hh:mm:ss");
+        }
+
+        private void timerLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

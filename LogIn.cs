@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
 using System.Net.Mail;
+using System.Text.RegularExpressions;
 
 namespace JCFracturationSystem
 {
@@ -21,7 +22,6 @@ namespace JCFracturationSystem
 
         private void SignUpButton_Click(object sender, EventArgs e)
         {
-
             sigIn();
         }
 
@@ -80,13 +80,6 @@ namespace JCFracturationSystem
                 return;
             }
 
-
-            if (!isEmail(userEmail))
-            {
-                MessageBox.Show("El email no tiene el formato correcto");
-                return;
-            }
-
             if (userEmail == "")
             {
                 MessageBox.Show("El email es requerido.");
@@ -107,14 +100,17 @@ namespace JCFracturationSystem
             if (validation.Rows.Count > 0)
             {
                 var userName = validation.Rows[0]["username"].ToString();
-                var userLevel = Convert.ToUInt16(validation.Rows[0]["id_level"].ToString());
-                Menu menu = new Menu(userName);
-                MessageBox.Show($"Bienvenido {userName}.");
-                if (userLevel == 2)
+                var userLevel = validation.Rows[0]["leveln"].ToString();
+                var userLastName = validation.Rows[0]["user_last_name"].ToString();
+                Menu menu = new Menu();
+                MessageBox.Show($"Bienvenido {userLastName}.");
+                menu.welcomeLabel.Text += " " + userLastName + " - " + userLevel;
+                if (userLevel == "normal")
                 {
+                   
                     menu.msgLabel.ForeColor = Color.Gray;
                 }
-                if (userLevel == 1)
+                if (userLevel == "admin")
                 {
                     menu.msgLabel.ForeColor = Color.Red;
 
@@ -135,29 +131,23 @@ namespace JCFracturationSystem
             centraX(LeftPanel, pictureBox1);
             centraY(LeftPanel, pictureBox1);
         }
-
-
+        
         public static void centraX(Control padre, Control hijo)
         {
             int x = 0;
 
-            //un poco de matematicas, restando los anchos y dividiendo entre 2
             x = (padre.Width / 2) - (hijo.Width / 2);
 
-            //asignamos la nueva ubicación
-            hijo.Location = new System.Drawing.Point(x, hijo.Location.Y);
+            hijo.Location = new Point(x, hijo.Location.Y);
         }
+
         public static void centraY(Control padre, Control hijo)
         {
             int y = 0;
 
-            //un poco de matematicas, restando los anchos y dividiendo entre 2
             y = (padre.Height / 2) - (hijo.Height / 2);
 
-            //asignamos la nueva ubicación
-            hijo.Location = new System.Drawing.Point(hijo.Location.X, y);
+            hijo.Location = new Point(hijo.Location.X, y);
         }
-
     }
-
 }

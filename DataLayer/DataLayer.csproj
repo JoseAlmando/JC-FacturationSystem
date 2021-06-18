@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DLConexion.cs" />
-    <Compile Include="DLHash.cs" />
     <Compile Include="DLLogin.cs" />
     <Compile Include="DLUsers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

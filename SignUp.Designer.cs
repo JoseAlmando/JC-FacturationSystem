@@ -333,7 +333,7 @@ namespace JCFracturationSystem
             this.passwordToolTip.SetToolTipIcon(this.SignUpButton, null);
             this.passwordToolTip.SetToolTipTitle(this.SignUpButton, "");
             this.SignUpButton.UseDefaultRadiusAndThickness = true;
-            this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click_1);
+            this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
             // PasswordTextBox
             // 
@@ -414,7 +414,6 @@ namespace JCFracturationSystem
             this.passwordToolTip.SetToolTipTitle(this.PasswordTextBox, "");
             this.PasswordTextBox.UseSystemPasswordChar = false;
             this.PasswordTextBox.WordWrap = true;
-            this.PasswordTextBox.TextChanged += new System.EventHandler(this.PasswordTextBox_TextChanged);
             this.PasswordTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PasswordTextBox_KeyPress);
             // 
             // UsernameTextBox
@@ -640,7 +639,6 @@ namespace JCFracturationSystem
             this.passwordToolTip.SetToolTip(this.label1, "");
             this.passwordToolTip.SetToolTipIcon(this.label1, null);
             this.passwordToolTip.SetToolTipTitle(this.label1, "");
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // passwordToolTip
             // 

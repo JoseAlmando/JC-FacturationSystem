@@ -35,6 +35,8 @@ namespace JCFracturationSystem
             this.msgLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.timerLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.timerHours = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +57,7 @@ namespace JCFracturationSystem
             this.welcomeLabel.Text = "Welcome:";
             this.welcomeLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.welcomeLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.welcomeLabel.Click += new System.EventHandler(this.welcomeLabel_Click);
             // 
             // msgLabel
             // 
@@ -90,6 +93,29 @@ namespace JCFracturationSystem
             this.bunifuDragControl1.TargetControl = this;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // timerLabel
+            // 
+            this.timerLabel.AllowParentOverrides = false;
+            this.timerLabel.AutoEllipsis = false;
+            this.timerLabel.CursorType = null;
+            this.timerLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.timerLabel.ForeColor = System.Drawing.Color.White;
+            this.timerLabel.Location = new System.Drawing.Point(933, 643);
+            this.timerLabel.Name = "timerLabel";
+            this.timerLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.timerLabel.Size = new System.Drawing.Size(122, 45);
+            this.timerLabel.TabIndex = 3;
+            this.timerLabel.Text = "00:00:00";
+            this.timerLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.timerLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.timerLabel.Click += new System.EventHandler(this.timerLabel_Click);
+            // 
+            // timerHours
+            // 
+            this.timerHours.Enabled = true;
+            this.timerHours.Interval = 1000;
+            this.timerHours.Tick += new System.EventHandler(this.timerHours_Tick);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -97,6 +123,7 @@ namespace JCFracturationSystem
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(1067, 700);
             this.ControlBox = false;
+            this.Controls.Add(this.timerLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.msgLabel);
             this.Controls.Add(this.welcomeLabel);
@@ -111,10 +138,11 @@ namespace JCFracturationSystem
         }
 
         #endregion
-
-        private Bunifu.UI.WinForms.BunifuLabel welcomeLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         public Bunifu.UI.WinForms.BunifuLabel msgLabel;
+        public Bunifu.UI.WinForms.BunifuLabel welcomeLabel;
+        public Bunifu.UI.WinForms.BunifuLabel timerLabel;
+        private System.Windows.Forms.Timer timerHours;
     }
 }

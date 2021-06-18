@@ -31,7 +31,7 @@ FOREIGN KEY (id_level) REFERENCES levels(id_level)
 );
 go
 
-insert into Tuser values ('Administrador', 'sys@sys.sys', '4f6af08f0ab26f8e1cf06b930c38ff186d76dbc1d6cf673578e11985a0c44d4b', 2);
+insert into Tuser values ('Administrador', 'admin@sys.com', '4f6af08f0ab26f8e1cf06b930c38ff186d76dbc1d6cf673578e11985a0c44d4b', 1);
 go
 
 
@@ -40,7 +40,7 @@ create procedure  sp_signin
 @password varchar(max)
 as
 begin
-select username, email, id_level from Tuser where email = @email and upassword= @password;
+select username, email, L.level_name as leveln from Tuser as U inner join levels as L on U.id_level = L.id_level where (email = @email or username = @email) and upassword= @password;
 end
 go
 
@@ -55,3 +55,6 @@ end
 go
 
 select * from Tuser;
+
+
+-- exec sp_signin 'Administrador', '4f6af08f0ab26f8e1cf06b930c38ff186d76dbc1d6cf673578e11985a0c44d4b';
