@@ -129,6 +129,7 @@ namespace JCFracturationSystem
             this.Controls.Add(this.welcomeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
