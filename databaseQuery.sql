@@ -22,16 +22,28 @@ go
 insert into levels (level_name) values ('admin'), ('normal');
 go
 
+CREATE TABLE [employees](
+	[cedula] [varchar](11) primary key NOT NULL,
+	[first_name] [varchar](25) NOT NULL,
+	[last_name] [varchar](25) NOT NULL
+	)
+	go
+
+	insert into employees values ('Admin first', 'Admin last', '00000000000')
+	go
+
 create table Tuser(
 username varchar(20),
 email varchar(max),
 upassword varchar(max),
 id_level int, 
-FOREIGN KEY (id_level) REFERENCES levels(id_level)
+cedula  varchar(11),
+FOREIGN KEY (id_level) REFERENCES levels(id_level),
+FOREIGN KEY (cedula) REFERENCES employees(cedula)
 );
 go
 
-insert into Tuser values ('Administrador', 'admin@sys.com', '4f6af08f0ab26f8e1cf06b930c38ff186d76dbc1d6cf673578e11985a0c44d4b', 1);
+insert into Tuser values ('Administrador', 'admin@sys.com', '4f6af08f0ab26f8e1cf06b930c38ff186d76dbc1d6cf673578e11985a0c44d4b', 1, '00000000000');
 go
 
 
@@ -40,17 +52,22 @@ create procedure  sp_signin
 @password varchar(max)
 as
 begin
-select username, email, L.level_name as leveln from Tuser as U inner join levels as L on U.id_level = L.id_level where (email = @email or username = @email) and upassword= @password;
+select username, email, L.level_name as leveln, E.last_name as user_last_name
+from Tuser as U 
+inner join levels as L on U.id_level = L.id_level 
+inner join employees as E on  U.cedula = E.cedula
+where (email = @email or username = @email) and upassword= @password;
 end
 go
 
 create procedure sp_signup
 @username varchar(25),
 @email varchar(max),
-@password varchar(max)
+@password varchar(max),
+@cedula varchar(max)
 as
 begin
-insert into Tuser values (@username, @email, @password, 2);
+insert into Tuser values (@username, @email, @password, 2, @cedula);
 end
 go
 
