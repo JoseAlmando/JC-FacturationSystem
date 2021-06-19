@@ -49,7 +49,7 @@ namespace JCFracturationSystem
             this.welcomeLabel.CursorType = System.Windows.Forms.Cursors.Default;
             this.welcomeLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcomeLabel.ForeColor = System.Drawing.Color.White;
-            this.welcomeLabel.Location = new System.Drawing.Point(70, 51);
+            this.welcomeLabel.Location = new System.Drawing.Point(237, 51);
             this.welcomeLabel.Name = "welcomeLabel";
             this.welcomeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.welcomeLabel.Size = new System.Drawing.Size(142, 45);
@@ -121,7 +121,7 @@ namespace JCFracturationSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(1067, 700);
+            this.ClientSize = new System.Drawing.Size(1400, 890);
             this.ControlBox = false;
             this.Controls.Add(this.timerLabel);
             this.Controls.Add(this.pictureBox1);
