@@ -49,10 +49,10 @@ namespace JCFracturationSystem
             this.welcomeLabel.CursorType = System.Windows.Forms.Cursors.Default;
             this.welcomeLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcomeLabel.ForeColor = System.Drawing.Color.White;
-            this.welcomeLabel.Location = new System.Drawing.Point(237, 51);
+            this.welcomeLabel.Location = new System.Drawing.Point(220, 51);
             this.welcomeLabel.Name = "welcomeLabel";
             this.welcomeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.welcomeLabel.Size = new System.Drawing.Size(142, 45);
+            this.welcomeLabel.Size = new System.Drawing.Size(66, 20);
             this.welcomeLabel.TabIndex = 0;
             this.welcomeLabel.Text = "Welcome:";
             this.welcomeLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -69,7 +69,7 @@ namespace JCFracturationSystem
             this.msgLabel.Location = new System.Drawing.Point(321, 190);
             this.msgLabel.Name = "msgLabel";
             this.msgLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.msgLabel.Size = new System.Drawing.Size(388, 45);
+            this.msgLabel.Size = new System.Drawing.Size(225, 25);
             this.msgLabel.TabIndex = 1;
             this.msgLabel.Text = "we are building the system";
             this.msgLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -103,7 +103,7 @@ namespace JCFracturationSystem
             this.timerLabel.Location = new System.Drawing.Point(933, 643);
             this.timerLabel.Name = "timerLabel";
             this.timerLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.timerLabel.Size = new System.Drawing.Size(122, 45);
+            this.timerLabel.Size = new System.Drawing.Size(68, 25);
             this.timerLabel.TabIndex = 3;
             this.timerLabel.Text = "00:00:00";
             this.timerLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -121,7 +121,7 @@ namespace JCFracturationSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(1400, 890);
+            this.ClientSize = new System.Drawing.Size(1366, 720);
             this.ControlBox = false;
             this.Controls.Add(this.timerLabel);
             this.Controls.Add(this.pictureBox1);
