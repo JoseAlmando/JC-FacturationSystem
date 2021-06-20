@@ -102,17 +102,17 @@ namespace JCFracturationSystem
                 var userName = validation.Rows[0]["username"].ToString();
                 var userLevel = validation.Rows[0]["leveln"].ToString();
                 var userLastName = validation.Rows[0]["user_last_name"].ToString();
-                Menu menu = new Menu();
+                DashBoard menu = new DashBoard();
                 MessageBox.Show($"Bienvenido {userLastName}.");
-                menu.welcomeLabel.Text += " " + userLastName + " - " + userLevel;
+                menu.userLabel.Text += " " + userLastName + " - " + userLevel;
                 if (userLevel == "normal")
                 {
-                   
-                    menu.msgLabel.ForeColor = Color.Gray;
+
+                    menu.userLabel.ForeColor = Color.Red;
                 }
                 if (userLevel == "admin")
                 {
-                    menu.msgLabel.ForeColor = Color.Red;
+                    menu.userLabel.ForeColor = Color.White;
 
                 }
                 menu.Show();
@@ -148,6 +148,11 @@ namespace JCFracturationSystem
             y = (padre.Height / 2) - (hijo.Height / 2);
 
             hijo.Location = new Point(hijo.Location.X, y);
+        }
+
+        private void RightPanel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

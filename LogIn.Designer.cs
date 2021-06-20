@@ -131,6 +131,7 @@ namespace JCFracturationSystem
             this.RightPanel.ShowBorders = true;
             this.RightPanel.Size = new System.Drawing.Size(500, 630);
             this.RightPanel.TabIndex = 3;
+            this.RightPanel.Click += new System.EventHandler(this.RightPanel_Click);
             // 
             // linkLabel1
             // 

@@ -438,7 +438,7 @@ namespace JCFracturationSystem
             this.UsernameTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
             this.UsernameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.UsernameTextBox.HideSelection = true;
-            this.UsernameTextBox.IconLeft = global::JCFracturationSystem.Properties.Resources.mail;
+            this.UsernameTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("UsernameTextBox.IconLeft")));
             this.UsernameTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.UsernameTextBox.IconPadding = 10;
             this.UsernameTextBox.IconRight = null;
@@ -667,10 +667,10 @@ namespace JCFracturationSystem
             this.passwordToolTip.ShowIcons = true;
             this.passwordToolTip.ShowShadows = true;
             this.passwordToolTip.Tag = null;
-            this.passwordToolTip.TextFont = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordToolTip.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordToolTip.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.passwordToolTip.TextMargin = 2;
-            this.passwordToolTip.TitleFont = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordToolTip.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordToolTip.TitleForeColor = System.Drawing.Color.White;
             this.passwordToolTip.ToolTipPosition = new System.Drawing.Point(0, 0);
             this.passwordToolTip.ToolTipTitle = "Password";

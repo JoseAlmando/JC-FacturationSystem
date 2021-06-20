@@ -29,7 +29,7 @@ CREATE TABLE [employees](
 	)
 	go
 
-	insert into employees values ('Admin first', 'Admin last', '00000000000')
+	insert into employees values ( '00000000000', 'Admin first', 'Admin last')
 	go
 
 create table Tuser(
