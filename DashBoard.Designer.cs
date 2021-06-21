@@ -31,16 +31,17 @@ namespace JCFracturationSystem
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.btnPerfil = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnProveedores = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -92,9 +93,9 @@ namespace JCFracturationSystem
             this.bunifuLabel19 = new Bunifu.UI.WinForms.BunifuLabel();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.bunifuLabel20 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPages1.SuspendLayout();
@@ -134,6 +135,24 @@ namespace JCFracturationSystem
             this.bunifuPanel1.Size = new System.Drawing.Size(324, 686);
             this.bunifuPanel1.TabIndex = 0;
             // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.Transparent;
+            this.bunifuLabel1.Location = new System.Drawing.Point(121, 183);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(89, 28);
+            this.bunifuLabel1.TabIndex = 86;
+            this.bunifuLabel1.Text = "Jhon Doe";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
+            // 
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
@@ -168,11 +187,11 @@ namespace JCFracturationSystem
             this.btnPerfil.ColorContrastOnClick = 45;
             this.btnPerfil.ColorContrastOnHover = 45;
             this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.btnPerfil.CustomizableEdges = borderEdges9;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnPerfil.CustomizableEdges = borderEdges1;
             this.btnPerfil.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnPerfil.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPerfil.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -258,11 +277,11 @@ namespace JCFracturationSystem
             this.btnProveedores.ColorContrastOnClick = 45;
             this.btnProveedores.ColorContrastOnHover = 45;
             this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.btnProveedores.CustomizableEdges = borderEdges10;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnProveedores.CustomizableEdges = borderEdges2;
             this.btnProveedores.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnProveedores.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnProveedores.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -348,11 +367,11 @@ namespace JCFracturationSystem
             this.btnClientes.ColorContrastOnClick = 45;
             this.btnClientes.ColorContrastOnHover = 45;
             this.btnClientes.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.btnClientes.CustomizableEdges = borderEdges11;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnClientes.CustomizableEdges = borderEdges3;
             this.btnClientes.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnClientes.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnClientes.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -438,11 +457,11 @@ namespace JCFracturationSystem
             this.btnTrabajadores.ColorContrastOnClick = 45;
             this.btnTrabajadores.ColorContrastOnHover = 45;
             this.btnTrabajadores.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.btnTrabajadores.CustomizableEdges = borderEdges12;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnTrabajadores.CustomizableEdges = borderEdges4;
             this.btnTrabajadores.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnTrabajadores.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnTrabajadores.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -528,11 +547,11 @@ namespace JCFracturationSystem
             this.btnCompras.ColorContrastOnClick = 45;
             this.btnCompras.ColorContrastOnHover = 45;
             this.btnCompras.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges13.BottomLeft = true;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = true;
-            borderEdges13.TopRight = true;
-            this.btnCompras.CustomizableEdges = borderEdges13;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnCompras.CustomizableEdges = borderEdges5;
             this.btnCompras.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCompras.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCompras.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -618,11 +637,11 @@ namespace JCFracturationSystem
             this.btnVentas.ColorContrastOnClick = 45;
             this.btnVentas.ColorContrastOnHover = 45;
             this.btnVentas.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges14.BottomLeft = true;
-            borderEdges14.BottomRight = true;
-            borderEdges14.TopLeft = true;
-            borderEdges14.TopRight = true;
-            this.btnVentas.CustomizableEdges = borderEdges14;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnVentas.CustomizableEdges = borderEdges6;
             this.btnVentas.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnVentas.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnVentas.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -708,11 +727,11 @@ namespace JCFracturationSystem
             this.bunifuButton2.ColorContrastOnClick = 45;
             this.bunifuButton2.ColorContrastOnHover = 45;
             this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges15.BottomLeft = true;
-            borderEdges15.BottomRight = true;
-            borderEdges15.TopLeft = true;
-            borderEdges15.TopRight = true;
-            this.bunifuButton2.CustomizableEdges = borderEdges15;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.bunifuButton2.CustomizableEdges = borderEdges7;
             this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -814,11 +833,11 @@ namespace JCFracturationSystem
             this.btnDashboard.ColorContrastOnClick = 45;
             this.btnDashboard.ColorContrastOnHover = 45;
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges16.BottomLeft = true;
-            borderEdges16.BottomRight = true;
-            borderEdges16.TopLeft = true;
-            borderEdges16.TopRight = true;
-            this.btnDashboard.CustomizableEdges = borderEdges16;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnDashboard.CustomizableEdges = borderEdges8;
             this.btnDashboard.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDashboard.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDashboard.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -915,27 +934,28 @@ namespace JCFracturationSystem
             this.bunifuPages1.SelectedIndex = 0;
             this.bunifuPages1.Size = new System.Drawing.Size(1028, 683);
             this.bunifuPages1.TabIndex = 31;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(50);
-            animation2.RotateCoeff = 1F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 1F;
-            this.bunifuPages1.Transition = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(50);
+            animation1.RotateCoeff = 1F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.bunifuPages1.Transition = animation1;
             this.bunifuPages1.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.tabPage1.Controls.Add(this.bunifuLabel12);
             this.tabPage1.Controls.Add(this.userLabel);
             this.tabPage1.Controls.Add(this.bunifuLabel13);
             this.tabPage1.Controls.Add(this.bunifuLabel10);
@@ -1296,7 +1316,7 @@ namespace JCFracturationSystem
             this.bunifuLabel11.Location = new System.Drawing.Point(837, 134);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(57, 45);
+            this.bunifuLabel11.Size = new System.Drawing.Size(60, 47);
             this.bunifuLabel11.TabIndex = 68;
             this.bunifuLabel11.Text = "541";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1314,7 +1334,7 @@ namespace JCFracturationSystem
             this.bunifuLabel9.Location = new System.Drawing.Point(588, 134);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel9.Size = new System.Drawing.Size(65, 45);
+            this.bunifuLabel9.Size = new System.Drawing.Size(69, 47);
             this.bunifuLabel9.TabIndex = 66;
             this.bunifuLabel9.Text = "2.1k";
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1332,7 +1352,7 @@ namespace JCFracturationSystem
             this.bunifuLabel7.Location = new System.Drawing.Point(341, 134);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(65, 45);
+            this.bunifuLabel7.Size = new System.Drawing.Size(69, 47);
             this.bunifuLabel7.TabIndex = 64;
             this.bunifuLabel7.Text = "4.3k";
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1350,7 +1370,7 @@ namespace JCFracturationSystem
             this.bunifuLabel3.Location = new System.Drawing.Point(77, 134);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(103, 45);
+            this.bunifuLabel3.Size = new System.Drawing.Size(109, 47);
             this.bunifuLabel3.TabIndex = 62;
             this.bunifuLabel3.Text = "162.9k";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1475,7 +1495,7 @@ namespace JCFracturationSystem
             this.bunifuLabel15.Location = new System.Drawing.Point(475, 312);
             this.bunifuLabel15.Name = "bunifuLabel15";
             this.bunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel15.Size = new System.Drawing.Size(157, 45);
+            this.bunifuLabel15.Size = new System.Drawing.Size(131, 37);
             this.bunifuLabel15.TabIndex = 33;
             this.bunifuLabel15.Text = "Productos";
             this.bunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1506,7 +1526,7 @@ namespace JCFracturationSystem
             this.bunifuLabel14.Location = new System.Drawing.Point(498, 310);
             this.bunifuLabel14.Name = "bunifuLabel14";
             this.bunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel14.Size = new System.Drawing.Size(106, 45);
+            this.bunifuLabel14.Size = new System.Drawing.Size(87, 37);
             this.bunifuLabel14.TabIndex = 35;
             this.bunifuLabel14.Text = "Ventas";
             this.bunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1535,7 +1555,7 @@ namespace JCFracturationSystem
             this.bunifuLabel16.Location = new System.Drawing.Point(459, 310);
             this.bunifuLabel16.Name = "bunifuLabel16";
             this.bunifuLabel16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel16.Size = new System.Drawing.Size(137, 45);
+            this.bunifuLabel16.Size = new System.Drawing.Size(114, 37);
             this.bunifuLabel16.TabIndex = 35;
             this.bunifuLabel16.Text = "Compras";
             this.bunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1565,7 +1585,7 @@ namespace JCFracturationSystem
             this.bunifuLabel17.Location = new System.Drawing.Point(445, 310);
             this.bunifuLabel17.Name = "bunifuLabel17";
             this.bunifuLabel17.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel17.Size = new System.Drawing.Size(201, 45);
+            this.bunifuLabel17.Size = new System.Drawing.Size(169, 37);
             this.bunifuLabel17.TabIndex = 35;
             this.bunifuLabel17.Text = "Trabajadores";
             this.bunifuLabel17.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1594,7 +1614,7 @@ namespace JCFracturationSystem
             this.bunifuLabel18.Location = new System.Drawing.Point(460, 310);
             this.bunifuLabel18.Name = "bunifuLabel18";
             this.bunifuLabel18.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel18.Size = new System.Drawing.Size(123, 45);
+            this.bunifuLabel18.Size = new System.Drawing.Size(102, 37);
             this.bunifuLabel18.TabIndex = 35;
             this.bunifuLabel18.Text = "Clientes";
             this.bunifuLabel18.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1623,7 +1643,7 @@ namespace JCFracturationSystem
             this.bunifuLabel19.Location = new System.Drawing.Point(445, 310);
             this.bunifuLabel19.Name = "bunifuLabel19";
             this.bunifuLabel19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel19.Size = new System.Drawing.Size(193, 45);
+            this.bunifuLabel19.Size = new System.Drawing.Size(162, 37);
             this.bunifuLabel19.TabIndex = 35;
             this.bunifuLabel19.Text = "Proveedores";
             this.bunifuLabel19.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1653,29 +1673,11 @@ namespace JCFracturationSystem
             this.bunifuLabel20.Location = new System.Drawing.Point(475, 310);
             this.bunifuLabel20.Name = "bunifuLabel20";
             this.bunifuLabel20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel20.Size = new System.Drawing.Size(82, 45);
+            this.bunifuLabel20.Size = new System.Drawing.Size(69, 37);
             this.bunifuLabel20.TabIndex = 34;
             this.bunifuLabel20.Text = "Perfil";
             this.bunifuLabel20.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel20.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuLabel1.Location = new System.Drawing.Point(121, 183);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(89, 28);
-            this.bunifuLabel1.TabIndex = 86;
-            this.bunifuLabel1.Text = "Jhon Doe";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
             // bunifuDragControl1
             // 
@@ -1690,6 +1692,24 @@ namespace JCFracturationSystem
             this.bunifuDragControl2.Horizontal = true;
             this.bunifuDragControl2.TargetControl = this.bunifuPanel1;
             this.bunifuDragControl2.Vertical = true;
+            // 
+            // bunifuLabel12
+            // 
+            this.bunifuLabel12.AllowParentOverrides = false;
+            this.bunifuLabel12.AutoEllipsis = false;
+            this.bunifuLabel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.bunifuLabel12.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel12.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel12.ForeColor = System.Drawing.Color.Transparent;
+            this.bunifuLabel12.Location = new System.Drawing.Point(389, 434);
+            this.bunifuLabel12.Name = "bunifuLabel12";
+            this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel12.Size = new System.Drawing.Size(15, 17);
+            this.bunifuLabel12.TabIndex = 86;
+            this.bunifuLabel12.Text = "klk ";
+            this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel12.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // DashBoard
             // 
@@ -1787,5 +1807,6 @@ namespace JCFracturationSystem
         public Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel12;
     }
 }
