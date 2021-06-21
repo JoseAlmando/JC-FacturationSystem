@@ -27,6 +27,11 @@ namespace JCFracturationSystem
 
         private void ShowPasswordCheckBox_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
         {
+            showPassword();
+        }
+
+        private void showPassword()
+        {
             if (ShowPasswordCheckBox.Checked)
             {
                 PasswordTextBox.UseSystemPasswordChar = false;
@@ -43,7 +48,6 @@ namespace JCFracturationSystem
 
             }
         }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             SignUp register = new SignUp();
@@ -153,6 +157,11 @@ namespace JCFracturationSystem
         private void RightPanel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ShowPasswordLabel_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

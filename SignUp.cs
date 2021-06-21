@@ -156,6 +156,5 @@ namespace JCFracturationSystem
             centraX(LeftPanel, pictureBox1);
             centraY(LeftPanel, pictureBox1);
         }
-
     }
 }

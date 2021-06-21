@@ -26,7 +26,7 @@ namespace JCFracturationSystem
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timerLabel.Text = DateTime.Now.ToString("hh:mm:ss");
+            timerLabel.Text = DateTime.Now.ToString("yy:MM:dd hh:mm:ss");
 
         }
 
@@ -119,6 +119,17 @@ namespace JCFracturationSystem
         private void bunifuLabel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            var button = MessageBox.Show("¿Estas seguro que deseas salir?", "Salir", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+            if (button == DialogResult.OK)
+            {
+                Application.ExitThread();
+                Application.Exit();
+            }
         }
     }
 }

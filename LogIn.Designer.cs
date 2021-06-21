@@ -152,6 +152,7 @@ namespace JCFracturationSystem
             // 
             this.ShowPasswordLabel.AutoSize = true;
             this.ShowPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ShowPasswordLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ShowPasswordLabel.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.ShowPasswordLabel.Location = new System.Drawing.Point(82, 425);
@@ -160,6 +161,7 @@ namespace JCFracturationSystem
             this.ShowPasswordLabel.Size = new System.Drawing.Size(124, 21);
             this.ShowPasswordLabel.TabIndex = 0;
             this.ShowPasswordLabel.Text = "Show password";
+            this.ShowPasswordLabel.Click += new System.EventHandler(this.ShowPasswordLabel_Click);
             // 
             // ShowPasswordCheckBox
             // 
