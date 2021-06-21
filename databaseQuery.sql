@@ -71,7 +71,7 @@ insert into Tuser values (@username, @email, @password, 2, @cedula);
 end
 go
 
-select * from Tuser;
+select *, 'Admin1234#' as 'Password Text' from Tuser;
 
 
 -- exec sp_signin 'Administrador', '4f6af08f0ab26f8e1cf06b930c38ff186d76dbc1d6cf673578e11985a0c44d4b';

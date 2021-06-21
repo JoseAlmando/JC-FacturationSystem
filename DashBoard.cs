@@ -26,7 +26,7 @@ namespace JCFracturationSystem
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timerLabel.Text = DateTime.Now.ToString("hh:mm:ss");
+            //timerLabel.Text = DateTime.Now.ToString("hh:mm:ss");
 
         }
 
