@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLayer;
 
 namespace JCFracturationSystem
 {
     public partial class DashBoard : Form
     {
+        BLClient objectClient = new BLClient();
+
+        private string idClient = null;
+        private bool canEdit = false;
+     
         public DashBoard()
         {
             InitializeComponent();
@@ -21,7 +27,24 @@ namespace JCFracturationSystem
         {
             timer1.Start();
             timer2.Start();
+            showClients();
 
+        }
+
+        private void showClients()
+        {
+            BLClient objectClient = new BLClient();
+            dtgTable.DataSource = objectClient.showClients();
+        }
+
+        private void cleanForm()
+        {
+            txtName.Clear();
+            txtLastName.Clear();
+            txtAge.Clear();
+            txtPhone.Clear();
+            txtAddress.Clear();
+            dwGender.Text = "";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -130,6 +153,88 @@ namespace JCFracturationSystem
                 Application.ExitThread();
                 Application.Exit();
             }
+        }
+
+        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (canEdit == false)
+            {
+                try
+                {
+                    objectClient.addClient(txtName.Text, txtLastName.Text, dwGender.Text, txtAge.Text, txtPhone.Text, txtAddress.Text);
+                    MessageBox.Show($"El Cliente {txtName.Text} {txtLastName.Text} ha sido guardado exitosamente.");
+                    showClients();
+                    cleanForm();
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show($"Error {ex}");
+                }
+            }
+            if(canEdit == true)
+            {
+                try
+                {
+                    objectClient.editClient(idClient, txtName.Text, txtLastName.Text, dwGender.Text, txtAge.Text, txtPhone.Text, txtAddress.Text);
+                    MessageBox.Show($"El Cliente {txtName.Text} {txtLastName.Text} ha sido editado exitosamente.");
+                    showClients();
+                    cleanForm();
+                    canEdit = false;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error {ex}");
+                }
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (dtgTable.SelectedRows.Count > 0)
+            {
+                canEdit = true;
+                txtName.Text = dtgTable.CurrentRow.Cells["NAME"].Value.ToString();
+                txtLastName.Text = dtgTable.CurrentRow.Cells["LAST_NAME"].Value.ToString();
+                dwGender.Text = dtgTable.CurrentRow.Cells["GENDER"].Value.ToString();
+                txtAge.Text = dtgTable.CurrentRow.Cells["AGE"].Value.ToString();
+                txtPhone.Text = dtgTable.CurrentRow.Cells["PHONE"].Value.ToString();
+                txtAddress.Text = dtgTable.CurrentRow.Cells["ADDRESS"].Value.ToString();
+                idClient = dtgTable.CurrentRow.Cells["ID"].Value.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione el cliente a editar.");
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dtgTable.SelectedRows.Count > 0)
+            {
+                idClient = dtgTable.CurrentRow.Cells["ID"].Value.ToString();
+                objectClient.deleteClient(idClient);
+                MessageBox.Show($"El Cliente ha sido eliminado exitosamente.");
+                showClients();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione el cliente a eliminar.");
+            }
+        }
+
+        private void txtPhone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAddress_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
