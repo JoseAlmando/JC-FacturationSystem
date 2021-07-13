@@ -236,5 +236,10 @@ namespace JCFracturationSystem
         {
 
         }
+
+        private void bunifuLabel21_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
