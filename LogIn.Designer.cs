@@ -131,7 +131,6 @@ namespace JCFracturationSystem
             this.RightPanel.ShowBorders = true;
             this.RightPanel.Size = new System.Drawing.Size(500, 630);
             this.RightPanel.TabIndex = 3;
-            this.RightPanel.Click += new System.EventHandler(this.RightPanel_Click);
             // 
             // linkLabel1
             // 
@@ -142,10 +141,10 @@ namespace JCFracturationSystem
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
             this.linkLabel1.Location = new System.Drawing.Point(52, 523);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(120, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(139, 20);
             this.linkLabel1.TabIndex = 14;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Create Account";
+            this.linkLabel1.Text = "Forward password";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // ShowPasswordLabel
@@ -161,7 +160,6 @@ namespace JCFracturationSystem
             this.ShowPasswordLabel.Size = new System.Drawing.Size(124, 21);
             this.ShowPasswordLabel.TabIndex = 0;
             this.ShowPasswordLabel.Text = "Show password";
-            this.ShowPasswordLabel.Click += new System.EventHandler(this.ShowPasswordLabel_Click);
             // 
             // ShowPasswordCheckBox
             // 

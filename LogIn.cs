@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using BusinessLayer;
 using System.Net.Mail;
 using System.Text.RegularExpressions;
+using System.Net;
+using System.IO;
 
 namespace JCFracturationSystem
 {
@@ -27,10 +29,10 @@ namespace JCFracturationSystem
 
         private void ShowPasswordCheckBox_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
         {
-            showPassword();
+            ShowPassword();
         }
 
-        private void showPassword()
+        private void ShowPassword()
         {
             if (ShowPasswordCheckBox.Checked)
             {
@@ -48,24 +50,54 @@ namespace JCFracturationSystem
 
             }
         }
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            SignUp register = new SignUp();
-            register.Show();
-            Hide();
+            //SignUp register = new SignUp();
+            //register.Show();
+            //Hide();
+
+            SendEmail("20211093@itla.edu.do");
         }
 
-        private bool isEmail(string email)
+        private void SendEmail(string email)
         {
-            try
+            var smtpClient = new SmtpClient("smtp.gmail.com")
             {
-                var addr = new MailAddress(email);
-                return addr.Address == email;
-            }
-            catch
+                Port = 587,
+                Credentials = new NetworkCredential("josea.dominique01@gmail.com", "8095203242"),
+                EnableSsl = true,
+            };
+
+            var messageBody = templateSendEmail();
+            messageBody = messageBody.Replace("#code#", "159-753");
+            var mailMessage = new MailMessage
             {
-                return false;
-            }
+                From = new MailAddress("josea.dominique01@gmail.com"),
+                Subject = "Restablecer contraseña",
+                Body = messageBody,
+                IsBodyHtml = true,
+            };
+            mailMessage.To.Add(email);
+
+            smtpClient.Send(mailMessage);
+
+            MessageBox.Show("Succes");
+        }
+
+        private string templateSendEmail()
+        {
+            string startupPath = Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory()));
+
+            string result = "";
+
+            StreamReader reader = new StreamReader($"{startupPath}\\HTMLtemplate\\emailTemplate.html");
+
+            result = reader.ReadToEnd();
+
+            reader.Close();
+
+            return result;
         }
 
         private void PasswordTextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -135,7 +167,7 @@ namespace JCFracturationSystem
             centraX(LeftPanel, pictureBox1);
             centraY(LeftPanel, pictureBox1);
         }
-        
+
         public static void centraX(Control padre, Control hijo)
         {
             int x = 0;
@@ -154,14 +186,30 @@ namespace JCFracturationSystem
             hijo.Location = new Point(hijo.Location.X, y);
         }
 
-        private void RightPanel_Click(object sender, EventArgs e)
+        static string generateCode()
         {
+            Random random = new Random();
+            string resultado = "";
 
+            Dictionary<string, string> Configuration = new Dictionary<string, string>()
+            {
+                { "minusculas", "abcdefghijklmnopqrstuvwxyz" },
+                { "numeros", "0123456789" }
+            };
+            string[] keys = { "minusculas", "numeros" };
+
+
+            for (int i = 0; i < 8; i++)
+            {
+                string key = keys[random.Next(keys.Length)];
+                string cadena = Configuration[key];
+                char character = cadena[random.Next(cadena.Length)];
+
+                resultado += character.ToString();
+            }
+
+            return resultado;
         }
 
-        private void ShowPasswordLabel_Click(object sender, EventArgs e)
-        {
-           
-        }
     }
 }
