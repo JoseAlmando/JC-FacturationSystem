@@ -25,7 +25,7 @@ namespace DataLayer
             return table;
         }
 
-        public void addClient(string name, string lastName, string gender, int age, string phone, string address)
+        public void addClient(string name, string lastName, string gender, int age, string phone, string address, string identificationCard)
         {
             SqlCommand sql = new SqlCommand("SP_INSERT_CLIENT", connection.openConnection());
             sql.CommandType = CommandType.StoredProcedure;
@@ -34,6 +34,7 @@ namespace DataLayer
             sql.Parameters.AddWithValue("@GENDER", gender);
             sql.Parameters.AddWithValue("@AGE", age);
             sql.Parameters.AddWithValue("@PHONE", phone);
+            sql.Parameters.AddWithValue("@IDENTIFICATION_CARD", identificationCard);
             sql.Parameters.AddWithValue("@ADDRESS", address);
             sql.Parameters.AddWithValue("@CREATION_DATE", "");
             sql.ExecuteNonQuery();
@@ -42,7 +43,7 @@ namespace DataLayer
             connection.closeConnection();
         }
 
-        public void editClient(int id, string name, string lastName, string gender, int age, string phone, string address)
+        public void editClient(int id, string name, string lastName, string gender, int age, string phone, string address, string identificationCard)
         {
             SqlCommand sql = new SqlCommand("SP_UPDATE_CLIENT", connection.openConnection());
             sql.CommandType = CommandType.StoredProcedure;
@@ -52,6 +53,7 @@ namespace DataLayer
             sql.Parameters.AddWithValue("@GENDER", gender);
             sql.Parameters.AddWithValue("@AGE", age);
             sql.Parameters.AddWithValue("@PHONE", phone);
+            sql.Parameters.AddWithValue("@IDENTIFICATION_CARD", identificationCard);
             sql.Parameters.AddWithValue("@ADDRESS", address);
             sql.ExecuteNonQuery();
 

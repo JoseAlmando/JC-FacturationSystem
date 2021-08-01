@@ -20,14 +20,14 @@ namespace BusinessLayer
             return tabla;
         }
 
-        public void addClient(string name, string lastName, string gender, string age, string phone, string address)
+        public void addClient(string name, string lastName, string gender, string age, string phone, string address, string identificationCard)
         {
-            objectClient.addClient(name, lastName, gender, Convert.ToInt32(age), phone, address);
+            objectClient.addClient(name, lastName, gender, Convert.ToInt32(age), phone, address, identificationCard);
         }
 
-        public void editClient(string id, string name, string lastName, string gender, string age, string phone, string address)
+        public void editClient(string id, string name, string lastName, string gender, string age, string phone, string address, string identificationCard)
         {
-            objectClient.editClient(Convert.ToInt32(id), name, lastName, gender, Convert.ToInt32(age), phone, address);
+            objectClient.editClient(Convert.ToInt32(id), name, lastName, gender, Convert.ToInt32(age), phone, address, identificationCard);
         }
 
         public void deleteClient(string id)

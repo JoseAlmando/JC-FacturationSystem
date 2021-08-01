@@ -43,7 +43,8 @@ namespace JCFracturationSystem
             txtLastName.Clear();
             txtAge.Clear();
             txtPhone.Clear();
-            txtAddress.Clear();
+            txtAdress.Clear();
+            txtIdentificationCard.Clear();
             dwGender.Text = "";
         }
 
@@ -166,7 +167,7 @@ namespace JCFracturationSystem
             {
                 try
                 {
-                    objectClient.addClient(txtName.Text, txtLastName.Text, dwGender.Text, txtAge.Text, txtPhone.Text, txtAddress.Text);
+                    objectClient.addClient(txtName.Text, txtLastName.Text, dwGender.Text, txtAge.Text, txtPhone.Text, txtAdress.Text, txtIdentificationCard.Text);
                     MessageBox.Show($"El Cliente {txtName.Text} {txtLastName.Text} ha sido guardado exitosamente.");
                     showClients();
                     cleanForm();
@@ -180,7 +181,7 @@ namespace JCFracturationSystem
             {
                 try
                 {
-                    objectClient.editClient(idClient, txtName.Text, txtLastName.Text, dwGender.Text, txtAge.Text, txtPhone.Text, txtAddress.Text);
+                    objectClient.editClient(idClient, txtName.Text, txtLastName.Text, dwGender.Text, txtAge.Text, txtPhone.Text, txtAdress.Text, txtIdentificationCard.Text);
                     MessageBox.Show($"El Cliente {txtName.Text} {txtLastName.Text} ha sido editado exitosamente.");
                     showClients();
                     cleanForm();
@@ -203,7 +204,8 @@ namespace JCFracturationSystem
                 dwGender.Text = dtgTable.CurrentRow.Cells["GENDER"].Value.ToString();
                 txtAge.Text = dtgTable.CurrentRow.Cells["AGE"].Value.ToString();
                 txtPhone.Text = dtgTable.CurrentRow.Cells["PHONE"].Value.ToString();
-                txtAddress.Text = dtgTable.CurrentRow.Cells["ADDRESS"].Value.ToString();
+                txtAdress.Text = dtgTable.CurrentRow.Cells["ADDRESS"].Value.ToString();
+                txtIdentificationCard.Text = dtgTable.CurrentRow.Cells["IDENTIFICATION_CARD"].Value.ToString();
                 idClient = dtgTable.CurrentRow.Cells["ID"].Value.ToString();
             }
             else
@@ -238,6 +240,16 @@ namespace JCFracturationSystem
         }
 
         private void bunifuLabel21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage6_Click(object sender, EventArgs e)
         {
 
         }
