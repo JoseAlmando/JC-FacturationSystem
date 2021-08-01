@@ -56,24 +56,48 @@ namespace JCFracturationSystem
             //SignUp register = new SignUp();
             //register.Show();
             //Hide();
+            string userEmail = EmailTextBox.Text.Trim().ToLower();
 
-            SendEmail("20211093@itla.edu.do");
+
+            if (!isEmail(userEmail))
+            {
+                MessageBox.Show("Email necesario.", "Email");
+                return;
+            }
+            string code = generateCode();
+            SendEmail(userEmail, code);
+
+
         }
 
-        private void SendEmail(string email)
+        private bool isEmail(string email)
+        {
+            try
+            {
+                var addr = new MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
+        private void SendEmail(string email, string code)
         {
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential("josea.dominique01@gmail.com", ""),
+                Credentials = new NetworkCredential("jcfacturationsytem@gmail.com", "7aeDlMYBaJ7P"),
                 EnableSsl = true,
             };
 
             var messageBody = templateSendEmail();
-            messageBody = messageBody.Replace("#code#", "159-753");
+            messageBody = messageBody.Replace("#code#", code);
             var mailMessage = new MailMessage
             {
-                From = new MailAddress("josea.dominique01@gmail.com"),
+                From = new MailAddress("jcfacturationsytem@gmail.com"),
                 Subject = "Restablecer contraseña",
                 Body = messageBody,
                 IsBodyHtml = true,
