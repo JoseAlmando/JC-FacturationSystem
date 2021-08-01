@@ -65,7 +65,7 @@ namespace JCFracturationSystem
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential("josea.dominique01@gmail.com", "8095203242"),
+                Credentials = new NetworkCredential("josea.dominique01@gmail.com", ""),
                 EnableSsl = true,
             };
 
