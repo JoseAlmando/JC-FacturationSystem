@@ -25,6 +25,18 @@ namespace DataLayer
             return table;
         }
 
+        public DataTable showClientOrClients(string param)
+        {
+
+            SqlCommand sql = new SqlCommand("SP_FILTER_FULL", connection.openConnection());
+            sql.CommandType = CommandType.StoredProcedure;
+            sql.Parameters.AddWithValue("@PARAM", param);
+            read = sql.ExecuteReader();
+            table.Load(read);
+            connection.closeConnection();
+            return table;
+        }
+
         public void addClient(string name, string lastName, string gender, int age, string phone, string address, string identificationCard)
         {
             SqlCommand sql = new SqlCommand("SP_INSERT_CLIENT", connection.openConnection());
@@ -47,7 +59,6 @@ namespace DataLayer
         {
             SqlCommand sql = new SqlCommand("SP_UPDATE_CLIENT", connection.openConnection());
             sql.CommandType = CommandType.StoredProcedure;
-            sql.Parameters.AddWithValue("@ID_CLIENT", id);
             sql.Parameters.AddWithValue("@NAME", name);
             sql.Parameters.AddWithValue("@LAST_NAME", lastName);
             sql.Parameters.AddWithValue("@GENDER", gender);

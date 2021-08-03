@@ -20,6 +20,13 @@ namespace BusinessLayer
             return tabla;
         }
 
+        public DataTable showClientOrClients(string param)
+        {
+            DataTable tabla = new DataTable();
+            tabla = objectClient.showClientOrClients(param);
+            return tabla;
+
+        }
         public void addClient(string name, string lastName, string gender, string age, string phone, string address, string identificationCard)
         {
             objectClient.addClient(name, lastName, gender, Convert.ToInt32(age), phone, address, identificationCard);

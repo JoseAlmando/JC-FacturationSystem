@@ -60,6 +60,7 @@ namespace JCFracturationSystem
             string userEmail = EmailTextBox.Text.Trim().ToLower();
             string userPassword = PasswordTextBox.Text;
             string userName = UsernameTextBox.Text.Trim();
+            string userCedula = "00000000000";
 
             if (userName == "")
             {
@@ -89,6 +90,7 @@ namespace JCFracturationSystem
             userObject.Email = userEmail;
             userObject.Password = userPassword;
             userObject.Username = userName;
+            userObject.Cedula = userCedula;
             userObject.signUp();
             MessageBox.Show("Usuario guardado exitosamente.", "Sign Up", MessageBoxButtons.OK);
             clearTextBox();

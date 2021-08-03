@@ -17,7 +17,7 @@ namespace JCFracturationSystem
 
         private string idClient = null;
         private bool canEdit = false;
-     
+
         public DashBoard()
         {
             InitializeComponent();
@@ -172,12 +172,12 @@ namespace JCFracturationSystem
                     showClients();
                     cleanForm();
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show($"Error {ex}");
                 }
             }
-            if(canEdit == true)
+            if (canEdit == true)
             {
                 try
                 {
@@ -199,13 +199,13 @@ namespace JCFracturationSystem
             if (dtgTable.SelectedRows.Count > 0)
             {
                 canEdit = true;
-                txtName.Text = dtgTable.CurrentRow.Cells["NAME"].Value.ToString();
-                txtLastName.Text = dtgTable.CurrentRow.Cells["LAST_NAME"].Value.ToString();
-                dwGender.Text = dtgTable.CurrentRow.Cells["GENDER"].Value.ToString();
-                txtAge.Text = dtgTable.CurrentRow.Cells["AGE"].Value.ToString();
-                txtPhone.Text = dtgTable.CurrentRow.Cells["PHONE"].Value.ToString();
-                txtAdress.Text = dtgTable.CurrentRow.Cells["ADDRESS"].Value.ToString();
-                txtIdentificationCard.Text = dtgTable.CurrentRow.Cells["IDENTIFICATION_CARD"].Value.ToString();
+                txtName.Text = dtgTable.CurrentRow.Cells["Nombre"].Value.ToString();
+                txtLastName.Text = dtgTable.CurrentRow.Cells["Apellido"].Value.ToString();
+                dwGender.Text = dtgTable.CurrentRow.Cells["Sexo"].Value.ToString();
+                txtAge.Text = dtgTable.CurrentRow.Cells["Edad"].Value.ToString();
+                txtPhone.Text = dtgTable.CurrentRow.Cells["Telefono"].Value.ToString();
+                txtAdress.Text = dtgTable.CurrentRow.Cells["Direccion"].Value.ToString();
+                txtIdentificationCard.Text = dtgTable.CurrentRow.Cells["Cedula"].Value.ToString();
                 idClient = dtgTable.CurrentRow.Cells["ID"].Value.ToString();
             }
             else
@@ -229,29 +229,21 @@ namespace JCFracturationSystem
             }
         }
 
-        private void txtPhone_TextChanged(object sender, EventArgs e)
+        private void BuscarButton_Click(object sender, EventArgs e)
         {
+            showClientOrClients();
+        }
+
+        void showClientOrClients()
+        {
+            BLClient objectClient = new BLClient();
+            dtgTable.DataSource = objectClient.showClientOrClients(BuscarTextBox.Text.Trim());
 
         }
 
-        private void txtAddress_TextChanged(object sender, EventArgs e)
+        private void BuscarTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-        }
-
-        private void bunifuLabel21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuLabel27_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage6_Click(object sender, EventArgs e)
-        {
-
+            if (e.KeyChar == (char)Keys.Enter) showClientOrClients();
         }
     }
 }
