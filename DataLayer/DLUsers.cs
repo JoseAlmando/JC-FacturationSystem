@@ -43,5 +43,16 @@ namespace DataLayer
             return dataTable;
         }
 
+        public void UpdatePassword(string email, string password)
+        {
+            SqlCommand sqlCommand = new SqlCommand("SP_UPDATE_PASSWORD", connection.openConnection());
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+            sqlCommand.Parameters.AddWithValue("@email", email);
+            sqlCommand.Parameters.AddWithValue("@password", password);
+            sqlCommand.ExecuteNonQuery();
+            connection.closeConnection();
+
+        }
+
     }
 }

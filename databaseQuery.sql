@@ -180,4 +180,12 @@ AS
 SELECT * FROM Tuser WHERE email = @EMAIL
 GO
 
-exec SP_FIND_EMAIL 'admin@sys.com'
+exec SP_FIND_EMAIL 'josea.dominique01@gmail.com'
+
+
+CREATE PROC SP_UPDATE_PASSWORD
+@email varchar(max),
+@password varchar(max)
+AS
+update Tuser set upassword = @password where email = @email
+GO

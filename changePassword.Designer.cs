@@ -53,40 +53,47 @@ namespace JCFracturationSystem
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.StepOneLabel = new System.Windows.Forms.Label();
             this.StepTwoLabel = new System.Windows.Forms.Label();
             this.StepThreeLabel = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.checks = new Bunifu.UI.WinForms.BunifuGroupBox();
+            this.PagesContainer = new Bunifu.UI.WinForms.BunifuPages();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.EmailTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.PrevButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.NextButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.CodeTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.bunifuButton4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.RepeatNewPasswordTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.newPasswordTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.stepOne = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.stepTwo = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.bunifuSeparator2 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.stepThree = new Bunifu.UI.WinForms.BunifuCheckBox();
-            this.PagesContainer = new Bunifu.UI.WinForms.BunifuPages();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.EmailTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.PrevButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.NextButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.CodeTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.bunifuButton4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.checks.SuspendLayout();
             this.PagesContainer.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -158,197 +165,6 @@ namespace JCFracturationSystem
             this.checks.TabIndex = 90;
             this.checks.TabStop = false;
             // 
-            // stepOne
-            // 
-            this.stepOne.AllowBindingControlAnimation = true;
-            this.stepOne.AllowBindingControlColorChanges = false;
-            this.stepOne.AllowBindingControlLocation = true;
-            this.stepOne.AllowCheckBoxAnimation = true;
-            this.stepOne.AllowCheckmarkAnimation = true;
-            this.stepOne.AllowOnHoverStates = true;
-            this.stepOne.AutoCheck = false;
-            this.stepOne.BackColor = System.Drawing.Color.Transparent;
-            this.stepOne.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stepOne.BackgroundImage")));
-            this.stepOne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.stepOne.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
-            this.stepOne.BorderRadius = 12;
-            this.stepOne.Checked = true;
-            this.stepOne.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Checked;
-            this.stepOne.Cursor = System.Windows.Forms.Cursors.Default;
-            this.stepOne.CustomCheckmarkImage = null;
-            this.stepOne.Location = new System.Drawing.Point(34, 26);
-            this.stepOne.MinimumSize = new System.Drawing.Size(17, 17);
-            this.stepOne.Name = "stepOne";
-            this.stepOne.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.stepOne.OnCheck.BorderRadius = 12;
-            this.stepOne.OnCheck.BorderThickness = 2;
-            this.stepOne.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.stepOne.OnCheck.CheckmarkColor = System.Drawing.Color.White;
-            this.stepOne.OnCheck.CheckmarkThickness = 2;
-            this.stepOne.OnDisable.BorderColor = System.Drawing.Color.LightGray;
-            this.stepOne.OnDisable.BorderRadius = 12;
-            this.stepOne.OnDisable.BorderThickness = 2;
-            this.stepOne.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.stepOne.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
-            this.stepOne.OnDisable.CheckmarkThickness = 2;
-            this.stepOne.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.stepOne.OnHoverChecked.BorderRadius = 12;
-            this.stepOne.OnHoverChecked.BorderThickness = 2;
-            this.stepOne.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.stepOne.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
-            this.stepOne.OnHoverChecked.CheckmarkThickness = 2;
-            this.stepOne.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.stepOne.OnHoverUnchecked.BorderRadius = 12;
-            this.stepOne.OnHoverUnchecked.BorderThickness = 1;
-            this.stepOne.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.stepOne.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
-            this.stepOne.OnUncheck.BorderRadius = 12;
-            this.stepOne.OnUncheck.BorderThickness = 1;
-            this.stepOne.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.stepOne.Size = new System.Drawing.Size(28, 28);
-            this.stepOne.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Round;
-            this.stepOne.TabIndex = 0;
-            this.stepOne.ThreeState = false;
-            this.stepOne.ToolTipText = null;
-            // 
-            // stepTwo
-            // 
-            this.stepTwo.AllowBindingControlAnimation = true;
-            this.stepTwo.AllowBindingControlColorChanges = false;
-            this.stepTwo.AllowBindingControlLocation = true;
-            this.stepTwo.AllowCheckBoxAnimation = true;
-            this.stepTwo.AllowCheckmarkAnimation = true;
-            this.stepTwo.AllowOnHoverStates = true;
-            this.stepTwo.AutoCheck = false;
-            this.stepTwo.BackColor = System.Drawing.Color.Transparent;
-            this.stepTwo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stepTwo.BackgroundImage")));
-            this.stepTwo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.stepTwo.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
-            this.stepTwo.BorderRadius = 12;
-            this.stepTwo.Checked = true;
-            this.stepTwo.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Checked;
-            this.stepTwo.Cursor = System.Windows.Forms.Cursors.Default;
-            this.stepTwo.CustomCheckmarkImage = null;
-            this.stepTwo.Enabled = false;
-            this.stepTwo.Location = new System.Drawing.Point(298, 26);
-            this.stepTwo.MinimumSize = new System.Drawing.Size(17, 17);
-            this.stepTwo.Name = "stepTwo";
-            this.stepTwo.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.stepTwo.OnCheck.BorderRadius = 12;
-            this.stepTwo.OnCheck.BorderThickness = 2;
-            this.stepTwo.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.stepTwo.OnCheck.CheckmarkColor = System.Drawing.Color.White;
-            this.stepTwo.OnCheck.CheckmarkThickness = 2;
-            this.stepTwo.OnDisable.BorderColor = System.Drawing.Color.LightGray;
-            this.stepTwo.OnDisable.BorderRadius = 12;
-            this.stepTwo.OnDisable.BorderThickness = 2;
-            this.stepTwo.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.stepTwo.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
-            this.stepTwo.OnDisable.CheckmarkThickness = 2;
-            this.stepTwo.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.stepTwo.OnHoverChecked.BorderRadius = 12;
-            this.stepTwo.OnHoverChecked.BorderThickness = 2;
-            this.stepTwo.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.stepTwo.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
-            this.stepTwo.OnHoverChecked.CheckmarkThickness = 2;
-            this.stepTwo.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.stepTwo.OnHoverUnchecked.BorderRadius = 12;
-            this.stepTwo.OnHoverUnchecked.BorderThickness = 1;
-            this.stepTwo.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.stepTwo.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
-            this.stepTwo.OnUncheck.BorderRadius = 12;
-            this.stepTwo.OnUncheck.BorderThickness = 1;
-            this.stepTwo.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.stepTwo.Size = new System.Drawing.Size(28, 28);
-            this.stepTwo.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Round;
-            this.stepTwo.TabIndex = 3;
-            this.stepTwo.ThreeState = false;
-            this.stepTwo.ToolTipText = null;
-            // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
-            this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Round;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.Gainsboro;
-            this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-            this.bunifuSeparator1.LineThickness = 3;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(136, 26);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-            this.bunifuSeparator1.Size = new System.Drawing.Size(150, 32);
-            this.bunifuSeparator1.TabIndex = 8;
-            // 
-            // bunifuSeparator2
-            // 
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator2.BackgroundImage")));
-            this.bunifuSeparator2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuSeparator2.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Round;
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.Gainsboro;
-            this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-            this.bunifuSeparator2.LineThickness = 3;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(397, 26);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-            this.bunifuSeparator2.Size = new System.Drawing.Size(150, 32);
-            this.bunifuSeparator2.TabIndex = 5;
-            // 
-            // stepThree
-            // 
-            this.stepThree.AllowBindingControlAnimation = true;
-            this.stepThree.AllowBindingControlColorChanges = false;
-            this.stepThree.AllowBindingControlLocation = true;
-            this.stepThree.AllowCheckBoxAnimation = true;
-            this.stepThree.AllowCheckmarkAnimation = true;
-            this.stepThree.AllowOnHoverStates = true;
-            this.stepThree.AutoCheck = false;
-            this.stepThree.BackColor = System.Drawing.Color.Transparent;
-            this.stepThree.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stepThree.BackgroundImage")));
-            this.stepThree.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.stepThree.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
-            this.stepThree.BorderRadius = 12;
-            this.stepThree.Checked = true;
-            this.stepThree.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Checked;
-            this.stepThree.Cursor = System.Windows.Forms.Cursors.Default;
-            this.stepThree.CustomCheckmarkImage = null;
-            this.stepThree.Enabled = false;
-            this.stepThree.Location = new System.Drawing.Point(559, 26);
-            this.stepThree.MinimumSize = new System.Drawing.Size(17, 17);
-            this.stepThree.Name = "stepThree";
-            this.stepThree.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.stepThree.OnCheck.BorderRadius = 12;
-            this.stepThree.OnCheck.BorderThickness = 2;
-            this.stepThree.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.stepThree.OnCheck.CheckmarkColor = System.Drawing.Color.White;
-            this.stepThree.OnCheck.CheckmarkThickness = 2;
-            this.stepThree.OnDisable.BorderColor = System.Drawing.Color.LightGray;
-            this.stepThree.OnDisable.BorderRadius = 12;
-            this.stepThree.OnDisable.BorderThickness = 2;
-            this.stepThree.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.stepThree.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
-            this.stepThree.OnDisable.CheckmarkThickness = 2;
-            this.stepThree.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.stepThree.OnHoverChecked.BorderRadius = 12;
-            this.stepThree.OnHoverChecked.BorderThickness = 2;
-            this.stepThree.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
-            this.stepThree.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
-            this.stepThree.OnHoverChecked.CheckmarkThickness = 2;
-            this.stepThree.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.stepThree.OnHoverUnchecked.BorderRadius = 12;
-            this.stepThree.OnHoverUnchecked.BorderThickness = 1;
-            this.stepThree.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.stepThree.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
-            this.stepThree.OnUncheck.BorderRadius = 12;
-            this.stepThree.OnUncheck.BorderThickness = 1;
-            this.stepThree.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.stepThree.Size = new System.Drawing.Size(28, 28);
-            this.stepThree.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Round;
-            this.stepThree.TabIndex = 6;
-            this.stepThree.ThreeState = false;
-            this.stepThree.ToolTipText = null;
-            // 
             // PagesContainer
             // 
             this.PagesContainer.Alignment = System.Windows.Forms.TabAlignment.Bottom;
@@ -356,13 +172,14 @@ namespace JCFracturationSystem
             this.PagesContainer.Controls.Add(this.tabPage1);
             this.PagesContainer.Controls.Add(this.tabPage2);
             this.PagesContainer.Controls.Add(this.tabPage3);
+            this.PagesContainer.Controls.Add(this.tabPage4);
             this.PagesContainer.Location = new System.Drawing.Point(83, 129);
             this.PagesContainer.Multiline = true;
             this.PagesContainer.Name = "PagesContainer";
-            this.PagesContainer.Page = this.tabPage2;
-            this.PagesContainer.PageIndex = 1;
-            this.PagesContainer.PageName = "tabPage2";
-            this.PagesContainer.PageTitle = "tabPage2";
+            this.PagesContainer.Page = this.tabPage4;
+            this.PagesContainer.PageIndex = 3;
+            this.PagesContainer.PageName = "tabPage4";
+            this.PagesContainer.PageTitle = "tabPage4";
             this.PagesContainer.SelectedIndex = 0;
             this.PagesContainer.Size = new System.Drawing.Size(800, 368);
             this.PagesContainer.TabIndex = 91;
@@ -397,6 +214,112 @@ namespace JCFracturationSystem
             this.tabPage1.Size = new System.Drawing.Size(792, 342);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.label4.Location = new System.Drawing.Point(174, 36);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(142, 24);
+            this.label4.TabIndex = 95;
+            this.label4.Text = "Email address";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.PrevButton);
+            this.tabPage2.Controls.Add(this.NextButton);
+            this.tabPage2.Controls.Add(this.CodeTextBox);
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Location = new System.Drawing.Point(4, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(792, 342);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.label5.Location = new System.Drawing.Point(192, 39);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 24);
+            this.label5.TabIndex = 97;
+            this.label5.Text = "Code";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.Controls.Add(this.bunifuButton4);
+            this.tabPage3.Controls.Add(this.bunifuButton1);
+            this.tabPage3.Controls.Add(this.label7);
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.RepeatNewPasswordTextBox);
+            this.tabPage3.Controls.Add(this.newPasswordTextBox);
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(792, 342);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.label7.Location = new System.Drawing.Point(415, 32);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(220, 24);
+            this.label7.TabIndex = 102;
+            this.label7.Text = "Repeat New Password";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.label6.Location = new System.Drawing.Point(26, 32);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(148, 24);
+            this.label6.TabIndex = 99;
+            this.label6.Text = "New Password";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.bunifuButton2);
+            this.tabPage4.Controls.Add(this.pictureBox1);
+            this.tabPage4.Controls.Add(this.label1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(792, 342);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(125, 188);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(540, 40);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Contraseña actualizada correctamente.";
             // 
             // bunifuButton3
             // 
@@ -562,33 +485,6 @@ namespace JCFracturationSystem
             this.EmailTextBox.TextPlaceholder = "Email";
             this.EmailTextBox.UseSystemPasswordChar = false;
             this.EmailTextBox.WordWrap = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
-            this.label4.Location = new System.Drawing.Point(174, 36);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 24);
-            this.label4.TabIndex = 95;
-            this.label4.Text = "Email address";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.PrevButton);
-            this.tabPage2.Controls.Add(this.NextButton);
-            this.tabPage2.Controls.Add(this.CodeTextBox);
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 342);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
             // 
             // PrevButton
             // 
@@ -846,35 +742,6 @@ namespace JCFracturationSystem
             this.CodeTextBox.UseSystemPasswordChar = false;
             this.CodeTextBox.WordWrap = true;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
-            this.label5.Location = new System.Drawing.Point(192, 39);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 24);
-            this.label5.TabIndex = 97;
-            this.label5.Text = "Code";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.White;
-            this.tabPage3.Controls.Add(this.bunifuButton4);
-            this.tabPage3.Controls.Add(this.bunifuButton1);
-            this.tabPage3.Controls.Add(this.label7);
-            this.tabPage3.Controls.Add(this.bunifuTextBox2);
-            this.tabPage3.Controls.Add(this.bunifuTextBox1);
-            this.tabPage3.Controls.Add(this.label6);
-            this.tabPage3.Location = new System.Drawing.Point(4, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(792, 342);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            // 
             // bunifuButton4
             // 
             this.bunifuButton4.AllowAnimations = true;
@@ -1056,180 +923,357 @@ namespace JCFracturationSystem
             this.bunifuButton1.TextMarginLeft = 0;
             this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
-            // label7
+            // RepeatNewPasswordTextBox
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
-            this.label7.Location = new System.Drawing.Point(415, 32);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(220, 24);
-            this.label7.TabIndex = 102;
-            this.label7.Text = "Repeat New Password";
-            // 
-            // bunifuTextBox2
-            // 
-            this.bunifuTextBox2.AcceptsReturn = false;
-            this.bunifuTextBox2.AcceptsTab = false;
-            this.bunifuTextBox2.AnimationSpeed = 200;
-            this.bunifuTextBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuTextBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuTextBox2.BackColor = System.Drawing.Color.White;
-            this.bunifuTextBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextBox2.BackgroundImage")));
-            this.bunifuTextBox2.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
-            this.bunifuTextBox2.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuTextBox2.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
-            this.bunifuTextBox2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
-            this.bunifuTextBox2.BorderRadius = 15;
-            this.bunifuTextBox2.BorderThickness = 2;
-            this.bunifuTextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox2.DefaultFont = new System.Drawing.Font("Segoe UI", 12F);
-            this.bunifuTextBox2.DefaultText = "";
-            this.bunifuTextBox2.FillColor = System.Drawing.Color.White;
-            this.bunifuTextBox2.HideSelection = true;
-            this.bunifuTextBox2.IconLeft = global::JCFracturationSystem.Properties.Resources.candado;
-            this.bunifuTextBox2.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox2.IconPadding = 10;
-            this.bunifuTextBox2.IconRight = null;
-            this.bunifuTextBox2.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox2.Lines = new string[0];
-            this.bunifuTextBox2.Location = new System.Drawing.Point(419, 71);
-            this.bunifuTextBox2.MaxLength = 32767;
-            this.bunifuTextBox2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.bunifuTextBox2.Modified = false;
-            this.bunifuTextBox2.Multiline = false;
-            this.bunifuTextBox2.Name = "bunifuTextBox2";
+            this.RepeatNewPasswordTextBox.AcceptsReturn = false;
+            this.RepeatNewPasswordTextBox.AcceptsTab = false;
+            this.RepeatNewPasswordTextBox.AnimationSpeed = 200;
+            this.RepeatNewPasswordTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.RepeatNewPasswordTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.RepeatNewPasswordTextBox.BackColor = System.Drawing.Color.White;
+            this.RepeatNewPasswordTextBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RepeatNewPasswordTextBox.BackgroundImage")));
+            this.RepeatNewPasswordTextBox.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.RepeatNewPasswordTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.RepeatNewPasswordTextBox.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.RepeatNewPasswordTextBox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.RepeatNewPasswordTextBox.BorderRadius = 15;
+            this.RepeatNewPasswordTextBox.BorderThickness = 2;
+            this.RepeatNewPasswordTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.RepeatNewPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.RepeatNewPasswordTextBox.DefaultFont = new System.Drawing.Font("Segoe UI", 12F);
+            this.RepeatNewPasswordTextBox.DefaultText = "";
+            this.RepeatNewPasswordTextBox.FillColor = System.Drawing.Color.White;
+            this.RepeatNewPasswordTextBox.HideSelection = true;
+            this.RepeatNewPasswordTextBox.IconLeft = global::JCFracturationSystem.Properties.Resources.candado;
+            this.RepeatNewPasswordTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.RepeatNewPasswordTextBox.IconPadding = 10;
+            this.RepeatNewPasswordTextBox.IconRight = null;
+            this.RepeatNewPasswordTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.RepeatNewPasswordTextBox.Lines = new string[0];
+            this.RepeatNewPasswordTextBox.Location = new System.Drawing.Point(419, 71);
+            this.RepeatNewPasswordTextBox.MaxLength = 32767;
+            this.RepeatNewPasswordTextBox.MinimumSize = new System.Drawing.Size(1, 1);
+            this.RepeatNewPasswordTextBox.Modified = false;
+            this.RepeatNewPasswordTextBox.Multiline = false;
+            this.RepeatNewPasswordTextBox.Name = "RepeatNewPasswordTextBox";
             stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
             stateProperties9.FillColor = System.Drawing.Color.Empty;
             stateProperties9.ForeColor = System.Drawing.Color.Empty;
             stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox2.OnActiveState = stateProperties9;
+            this.RepeatNewPasswordTextBox.OnActiveState = stateProperties9;
             stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBox2.OnDisabledState = stateProperties10;
+            this.RepeatNewPasswordTextBox.OnDisabledState = stateProperties10;
             stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
             stateProperties11.FillColor = System.Drawing.Color.Empty;
             stateProperties11.ForeColor = System.Drawing.Color.Empty;
             stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox2.OnHoverState = stateProperties11;
+            this.RepeatNewPasswordTextBox.OnHoverState = stateProperties11;
             stateProperties12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
             stateProperties12.FillColor = System.Drawing.Color.White;
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox2.OnIdleState = stateProperties12;
-            this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBox2.PasswordChar = '\0';
-            this.bunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.bunifuTextBox2.PlaceholderText = "Repeat New Password";
-            this.bunifuTextBox2.ReadOnly = false;
-            this.bunifuTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.bunifuTextBox2.SelectedText = "";
-            this.bunifuTextBox2.SelectionLength = 0;
-            this.bunifuTextBox2.SelectionStart = 0;
-            this.bunifuTextBox2.ShortcutsEnabled = true;
-            this.bunifuTextBox2.Size = new System.Drawing.Size(344, 50);
-            this.bunifuTextBox2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox2.TabIndex = 101;
-            this.bunifuTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuTextBox2.TextMarginBottom = 0;
-            this.bunifuTextBox2.TextMarginLeft = 3;
-            this.bunifuTextBox2.TextMarginTop = 0;
-            this.bunifuTextBox2.TextPlaceholder = "Repeat New Password";
-            this.bunifuTextBox2.UseSystemPasswordChar = false;
-            this.bunifuTextBox2.WordWrap = true;
+            this.RepeatNewPasswordTextBox.OnIdleState = stateProperties12;
+            this.RepeatNewPasswordTextBox.Padding = new System.Windows.Forms.Padding(3);
+            this.RepeatNewPasswordTextBox.PasswordChar = '●';
+            this.RepeatNewPasswordTextBox.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.RepeatNewPasswordTextBox.PlaceholderText = "Repeat New Password";
+            this.RepeatNewPasswordTextBox.ReadOnly = false;
+            this.RepeatNewPasswordTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.RepeatNewPasswordTextBox.SelectedText = "";
+            this.RepeatNewPasswordTextBox.SelectionLength = 0;
+            this.RepeatNewPasswordTextBox.SelectionStart = 0;
+            this.RepeatNewPasswordTextBox.ShortcutsEnabled = true;
+            this.RepeatNewPasswordTextBox.Size = new System.Drawing.Size(344, 50);
+            this.RepeatNewPasswordTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.RepeatNewPasswordTextBox.TabIndex = 101;
+            this.RepeatNewPasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RepeatNewPasswordTextBox.TextMarginBottom = 0;
+            this.RepeatNewPasswordTextBox.TextMarginLeft = 3;
+            this.RepeatNewPasswordTextBox.TextMarginTop = 0;
+            this.RepeatNewPasswordTextBox.TextPlaceholder = "Repeat New Password";
+            this.RepeatNewPasswordTextBox.UseSystemPasswordChar = true;
+            this.RepeatNewPasswordTextBox.WordWrap = true;
             // 
-            // bunifuTextBox1
+            // newPasswordTextBox
             // 
-            this.bunifuTextBox1.AcceptsReturn = false;
-            this.bunifuTextBox1.AcceptsTab = false;
-            this.bunifuTextBox1.AnimationSpeed = 200;
-            this.bunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuTextBox1.BackColor = System.Drawing.Color.White;
-            this.bunifuTextBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextBox1.BackgroundImage")));
-            this.bunifuTextBox1.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
-            this.bunifuTextBox1.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuTextBox1.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
-            this.bunifuTextBox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
-            this.bunifuTextBox1.BorderRadius = 15;
-            this.bunifuTextBox1.BorderThickness = 2;
-            this.bunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.DefaultFont = new System.Drawing.Font("Segoe UI", 12F);
-            this.bunifuTextBox1.DefaultText = "";
-            this.bunifuTextBox1.FillColor = System.Drawing.Color.White;
-            this.bunifuTextBox1.HideSelection = true;
-            this.bunifuTextBox1.IconLeft = global::JCFracturationSystem.Properties.Resources.candado;
-            this.bunifuTextBox1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.IconPadding = 10;
-            this.bunifuTextBox1.IconRight = null;
-            this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(30, 71);
-            this.bunifuTextBox1.MaxLength = 32767;
-            this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.bunifuTextBox1.Modified = false;
-            this.bunifuTextBox1.Multiline = false;
-            this.bunifuTextBox1.Name = "bunifuTextBox1";
+            this.newPasswordTextBox.AcceptsReturn = false;
+            this.newPasswordTextBox.AcceptsTab = false;
+            this.newPasswordTextBox.AnimationSpeed = 200;
+            this.newPasswordTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.newPasswordTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.newPasswordTextBox.BackColor = System.Drawing.Color.White;
+            this.newPasswordTextBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newPasswordTextBox.BackgroundImage")));
+            this.newPasswordTextBox.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.newPasswordTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.newPasswordTextBox.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.newPasswordTextBox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.newPasswordTextBox.BorderRadius = 15;
+            this.newPasswordTextBox.BorderThickness = 2;
+            this.newPasswordTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.newPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.newPasswordTextBox.DefaultFont = new System.Drawing.Font("Segoe UI", 12F);
+            this.newPasswordTextBox.DefaultText = "";
+            this.newPasswordTextBox.FillColor = System.Drawing.Color.White;
+            this.newPasswordTextBox.HideSelection = true;
+            this.newPasswordTextBox.IconLeft = global::JCFracturationSystem.Properties.Resources.candado;
+            this.newPasswordTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.newPasswordTextBox.IconPadding = 10;
+            this.newPasswordTextBox.IconRight = null;
+            this.newPasswordTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.newPasswordTextBox.Lines = new string[0];
+            this.newPasswordTextBox.Location = new System.Drawing.Point(30, 71);
+            this.newPasswordTextBox.MaxLength = 32767;
+            this.newPasswordTextBox.MinimumSize = new System.Drawing.Size(1, 1);
+            this.newPasswordTextBox.Modified = false;
+            this.newPasswordTextBox.Multiline = false;
+            this.newPasswordTextBox.Name = "newPasswordTextBox";
             stateProperties13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
             stateProperties13.FillColor = System.Drawing.Color.Empty;
             stateProperties13.ForeColor = System.Drawing.Color.Empty;
             stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnActiveState = stateProperties13;
+            this.newPasswordTextBox.OnActiveState = stateProperties13;
             stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBox1.OnDisabledState = stateProperties14;
+            this.newPasswordTextBox.OnDisabledState = stateProperties14;
             stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
             stateProperties15.FillColor = System.Drawing.Color.Empty;
             stateProperties15.ForeColor = System.Drawing.Color.Empty;
             stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnHoverState = stateProperties15;
+            this.newPasswordTextBox.OnHoverState = stateProperties15;
             stateProperties16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
             stateProperties16.FillColor = System.Drawing.Color.White;
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnIdleState = stateProperties16;
-            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBox1.PasswordChar = '\0';
-            this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.bunifuTextBox1.PlaceholderText = "New Password";
-            this.bunifuTextBox1.ReadOnly = false;
-            this.bunifuTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.bunifuTextBox1.SelectedText = "";
-            this.bunifuTextBox1.SelectionLength = 0;
-            this.bunifuTextBox1.SelectionStart = 0;
-            this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(344, 50);
-            this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox1.TabIndex = 100;
-            this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuTextBox1.TextMarginBottom = 0;
-            this.bunifuTextBox1.TextMarginLeft = 3;
-            this.bunifuTextBox1.TextMarginTop = 0;
-            this.bunifuTextBox1.TextPlaceholder = "New Password";
-            this.bunifuTextBox1.UseSystemPasswordChar = false;
-            this.bunifuTextBox1.WordWrap = true;
+            this.newPasswordTextBox.OnIdleState = stateProperties16;
+            this.newPasswordTextBox.Padding = new System.Windows.Forms.Padding(3);
+            this.newPasswordTextBox.PasswordChar = '●';
+            this.newPasswordTextBox.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.newPasswordTextBox.PlaceholderText = "New Password";
+            this.newPasswordTextBox.ReadOnly = false;
+            this.newPasswordTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.newPasswordTextBox.SelectedText = "";
+            this.newPasswordTextBox.SelectionLength = 0;
+            this.newPasswordTextBox.SelectionStart = 0;
+            this.newPasswordTextBox.ShortcutsEnabled = true;
+            this.newPasswordTextBox.Size = new System.Drawing.Size(344, 50);
+            this.newPasswordTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.newPasswordTextBox.TabIndex = 100;
+            this.newPasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.newPasswordTextBox.TextMarginBottom = 0;
+            this.newPasswordTextBox.TextMarginLeft = 3;
+            this.newPasswordTextBox.TextMarginTop = 0;
+            this.newPasswordTextBox.TextPlaceholder = "New Password";
+            this.newPasswordTextBox.UseSystemPasswordChar = true;
+            this.newPasswordTextBox.WordWrap = true;
             // 
-            // label6
+            // pictureBox1
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
-            this.label6.Location = new System.Drawing.Point(26, 32);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(148, 24);
-            this.label6.TabIndex = 99;
-            this.label6.Text = "New Password";
+            this.pictureBox1.Image = global::JCFracturationSystem.Properties.Resources._checked;
+            this.pictureBox1.Location = new System.Drawing.Point(310, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(176, 170);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // stepOne
+            // 
+            this.stepOne.AllowBindingControlAnimation = true;
+            this.stepOne.AllowBindingControlColorChanges = false;
+            this.stepOne.AllowBindingControlLocation = true;
+            this.stepOne.AllowCheckBoxAnimation = true;
+            this.stepOne.AllowCheckmarkAnimation = true;
+            this.stepOne.AllowOnHoverStates = true;
+            this.stepOne.AutoCheck = false;
+            this.stepOne.BackColor = System.Drawing.Color.Transparent;
+            this.stepOne.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stepOne.BackgroundImage")));
+            this.stepOne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.stepOne.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.stepOne.BorderRadius = 12;
+            this.stepOne.Checked = true;
+            this.stepOne.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Checked;
+            this.stepOne.Cursor = System.Windows.Forms.Cursors.Default;
+            this.stepOne.CustomCheckmarkImage = null;
+            this.stepOne.Location = new System.Drawing.Point(34, 26);
+            this.stepOne.MinimumSize = new System.Drawing.Size(17, 17);
+            this.stepOne.Name = "stepOne";
+            this.stepOne.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.stepOne.OnCheck.BorderRadius = 12;
+            this.stepOne.OnCheck.BorderThickness = 2;
+            this.stepOne.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.stepOne.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.stepOne.OnCheck.CheckmarkThickness = 2;
+            this.stepOne.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.stepOne.OnDisable.BorderRadius = 12;
+            this.stepOne.OnDisable.BorderThickness = 2;
+            this.stepOne.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.stepOne.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.stepOne.OnDisable.CheckmarkThickness = 2;
+            this.stepOne.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.stepOne.OnHoverChecked.BorderRadius = 12;
+            this.stepOne.OnHoverChecked.BorderThickness = 2;
+            this.stepOne.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.stepOne.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.stepOne.OnHoverChecked.CheckmarkThickness = 2;
+            this.stepOne.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.stepOne.OnHoverUnchecked.BorderRadius = 12;
+            this.stepOne.OnHoverUnchecked.BorderThickness = 1;
+            this.stepOne.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.stepOne.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
+            this.stepOne.OnUncheck.BorderRadius = 12;
+            this.stepOne.OnUncheck.BorderThickness = 1;
+            this.stepOne.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.stepOne.Size = new System.Drawing.Size(28, 28);
+            this.stepOne.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Round;
+            this.stepOne.TabIndex = 0;
+            this.stepOne.ThreeState = false;
+            this.stepOne.ToolTipText = null;
+            // 
+            // stepTwo
+            // 
+            this.stepTwo.AllowBindingControlAnimation = true;
+            this.stepTwo.AllowBindingControlColorChanges = false;
+            this.stepTwo.AllowBindingControlLocation = true;
+            this.stepTwo.AllowCheckBoxAnimation = true;
+            this.stepTwo.AllowCheckmarkAnimation = true;
+            this.stepTwo.AllowOnHoverStates = true;
+            this.stepTwo.AutoCheck = false;
+            this.stepTwo.BackColor = System.Drawing.Color.Transparent;
+            this.stepTwo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stepTwo.BackgroundImage")));
+            this.stepTwo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.stepTwo.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.stepTwo.BorderRadius = 12;
+            this.stepTwo.Checked = true;
+            this.stepTwo.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Checked;
+            this.stepTwo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.stepTwo.CustomCheckmarkImage = null;
+            this.stepTwo.Enabled = false;
+            this.stepTwo.Location = new System.Drawing.Point(298, 26);
+            this.stepTwo.MinimumSize = new System.Drawing.Size(17, 17);
+            this.stepTwo.Name = "stepTwo";
+            this.stepTwo.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.stepTwo.OnCheck.BorderRadius = 12;
+            this.stepTwo.OnCheck.BorderThickness = 2;
+            this.stepTwo.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.stepTwo.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.stepTwo.OnCheck.CheckmarkThickness = 2;
+            this.stepTwo.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.stepTwo.OnDisable.BorderRadius = 12;
+            this.stepTwo.OnDisable.BorderThickness = 2;
+            this.stepTwo.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.stepTwo.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.stepTwo.OnDisable.CheckmarkThickness = 2;
+            this.stepTwo.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.stepTwo.OnHoverChecked.BorderRadius = 12;
+            this.stepTwo.OnHoverChecked.BorderThickness = 2;
+            this.stepTwo.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.stepTwo.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.stepTwo.OnHoverChecked.CheckmarkThickness = 2;
+            this.stepTwo.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.stepTwo.OnHoverUnchecked.BorderRadius = 12;
+            this.stepTwo.OnHoverUnchecked.BorderThickness = 1;
+            this.stepTwo.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.stepTwo.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
+            this.stepTwo.OnUncheck.BorderRadius = 12;
+            this.stepTwo.OnUncheck.BorderThickness = 1;
+            this.stepTwo.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.stepTwo.Size = new System.Drawing.Size(28, 28);
+            this.stepTwo.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Round;
+            this.stepTwo.TabIndex = 3;
+            this.stepTwo.ThreeState = false;
+            this.stepTwo.ToolTipText = null;
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
+            this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Round;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.Gainsboro;
+            this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator1.LineThickness = 3;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(136, 27);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator1.Size = new System.Drawing.Size(150, 32);
+            this.bunifuSeparator1.TabIndex = 8;
+            // 
+            // bunifuSeparator2
+            // 
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator2.BackgroundImage")));
+            this.bunifuSeparator2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator2.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Round;
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.Gainsboro;
+            this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator2.LineThickness = 3;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(397, 27);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator2.Size = new System.Drawing.Size(150, 32);
+            this.bunifuSeparator2.TabIndex = 5;
+            // 
+            // stepThree
+            // 
+            this.stepThree.AllowBindingControlAnimation = true;
+            this.stepThree.AllowBindingControlColorChanges = false;
+            this.stepThree.AllowBindingControlLocation = true;
+            this.stepThree.AllowCheckBoxAnimation = true;
+            this.stepThree.AllowCheckmarkAnimation = true;
+            this.stepThree.AllowOnHoverStates = true;
+            this.stepThree.AutoCheck = false;
+            this.stepThree.BackColor = System.Drawing.Color.Transparent;
+            this.stepThree.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stepThree.BackgroundImage")));
+            this.stepThree.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.stepThree.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.stepThree.BorderRadius = 12;
+            this.stepThree.Checked = true;
+            this.stepThree.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Checked;
+            this.stepThree.Cursor = System.Windows.Forms.Cursors.Default;
+            this.stepThree.CustomCheckmarkImage = null;
+            this.stepThree.Enabled = false;
+            this.stepThree.Location = new System.Drawing.Point(559, 26);
+            this.stepThree.MinimumSize = new System.Drawing.Size(17, 17);
+            this.stepThree.Name = "stepThree";
+            this.stepThree.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.stepThree.OnCheck.BorderRadius = 12;
+            this.stepThree.OnCheck.BorderThickness = 2;
+            this.stepThree.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.stepThree.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.stepThree.OnCheck.CheckmarkThickness = 2;
+            this.stepThree.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.stepThree.OnDisable.BorderRadius = 12;
+            this.stepThree.OnDisable.BorderThickness = 2;
+            this.stepThree.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.stepThree.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.stepThree.OnDisable.CheckmarkThickness = 2;
+            this.stepThree.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.stepThree.OnHoverChecked.BorderRadius = 12;
+            this.stepThree.OnHoverChecked.BorderThickness = 2;
+            this.stepThree.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.stepThree.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.stepThree.OnHoverChecked.CheckmarkThickness = 2;
+            this.stepThree.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.stepThree.OnHoverUnchecked.BorderRadius = 12;
+            this.stepThree.OnHoverUnchecked.BorderThickness = 1;
+            this.stepThree.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.stepThree.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
+            this.stepThree.OnUncheck.BorderRadius = 12;
+            this.stepThree.OnUncheck.BorderThickness = 1;
+            this.stepThree.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.stepThree.Size = new System.Drawing.Size(28, 28);
+            this.stepThree.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Round;
+            this.stepThree.TabIndex = 6;
+            this.stepThree.ThreeState = false;
+            this.stepThree.ToolTipText = null;
             // 
             // bunifuImageButton1
             // 
@@ -1266,6 +1310,97 @@ namespace JCFracturationSystem
             this.bunifuImageButton1.ZoomSpeed = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
+            // bunifuButton2
+            // 
+            this.bunifuButton2.AllowAnimations = true;
+            this.bunifuButton2.AllowMouseEffects = true;
+            this.bunifuButton2.AllowToggling = false;
+            this.bunifuButton2.AnimationSpeed = 200;
+            this.bunifuButton2.AutoGenerateColors = false;
+            this.bunifuButton2.AutoRoundBorders = false;
+            this.bunifuButton2.AutoSizeLeftIcon = true;
+            this.bunifuButton2.AutoSizeRightIcon = true;
+            this.bunifuButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButton2.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.bunifuButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton2.BackgroundImage")));
+            this.bunifuButton2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton2.ButtonText = "Continuar";
+            this.bunifuButton2.ButtonTextMarginLeft = 0;
+            this.bunifuButton2.ColorContrastOnClick = 45;
+            this.bunifuButton2.ColorContrastOnHover = 45;
+            this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.bunifuButton2.CustomizableEdges = borderEdges6;
+            this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton2.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton2.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.bunifuButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.bunifuButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.bunifuButton2.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuButton2.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuButton2.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.bunifuButton2.IconMarginLeft = 11;
+            this.bunifuButton2.IconPadding = 10;
+            this.bunifuButton2.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuButton2.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuButton2.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.bunifuButton2.IconSize = 25;
+            this.bunifuButton2.IdleBorderColor = System.Drawing.Color.Transparent;
+            this.bunifuButton2.IdleBorderRadius = 20;
+            this.bunifuButton2.IdleBorderThickness = 1;
+            this.bunifuButton2.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.bunifuButton2.IdleIconLeftImage = null;
+            this.bunifuButton2.IdleIconRightImage = null;
+            this.bunifuButton2.IndicateFocus = false;
+            this.bunifuButton2.Location = new System.Drawing.Point(285, 267);
+            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuButton2.Name = "bunifuButton2";
+            this.bunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton2.OnDisabledState.BorderRadius = 20;
+            this.bunifuButton2.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton2.OnDisabledState.BorderThickness = 1;
+            this.bunifuButton2.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton2.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton2.OnDisabledState.IconLeftImage = null;
+            this.bunifuButton2.OnDisabledState.IconRightImage = null;
+            this.bunifuButton2.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.bunifuButton2.onHoverState.BorderRadius = 20;
+            this.bunifuButton2.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton2.onHoverState.BorderThickness = 1;
+            this.bunifuButton2.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(31)))), ((int)(((byte)(84)))));
+            this.bunifuButton2.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton2.onHoverState.IconLeftImage = null;
+            this.bunifuButton2.onHoverState.IconRightImage = null;
+            this.bunifuButton2.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuButton2.OnIdleState.BorderRadius = 20;
+            this.bunifuButton2.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton2.OnIdleState.BorderThickness = 1;
+            this.bunifuButton2.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(120)))));
+            this.bunifuButton2.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.bunifuButton2.OnIdleState.IconLeftImage = null;
+            this.bunifuButton2.OnIdleState.IconRightImage = null;
+            this.bunifuButton2.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButton2.OnPressedState.BorderRadius = 20;
+            this.bunifuButton2.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton2.OnPressedState.BorderThickness = 1;
+            this.bunifuButton2.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButton2.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton2.OnPressedState.IconLeftImage = null;
+            this.bunifuButton2.OnPressedState.IconRightImage = null;
+            this.bunifuButton2.Size = new System.Drawing.Size(213, 49);
+            this.bunifuButton2.TabIndex = 104;
+            this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButton2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuButton2.TextMarginLeft = 0;
+            this.bunifuButton2.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuButton2.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton2.Click += new System.EventHandler(this.bunifuButton2_Click);
+            // 
             // ChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1288,6 +1423,9 @@ namespace JCFracturationSystem
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1315,13 +1453,17 @@ namespace JCFracturationSystem
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label7;
-        private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox2;
-        private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
+        private Bunifu.UI.WinForms.BunifuTextBox RepeatNewPasswordTextBox;
+        private Bunifu.UI.WinForms.BunifuTextBox newPasswordTextBox;
         private System.Windows.Forms.Label label6;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton3;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton PrevButton;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton NextButton;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton4;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
     }
 }

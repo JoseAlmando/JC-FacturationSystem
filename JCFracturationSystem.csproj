@@ -239,6 +239,10 @@
       <Project>{817cd552-f142-4ff3-a187-4505e9587a79}</Project>
       <Name>BusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="DataLayer\DataLayer.csproj">
+      <Project>{311E96DA-E5EB-4F47-8F2B-B34A6AE70697}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Mobile login-amico.png" />
@@ -257,6 +261,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="HTMLtemplate\emailTemplate.html" />
+    <None Include="Resources\checked.png" />
     <None Include="Resources\candado.png" />
     <None Include="Resources\mail mor2.png" />
     <None Include="Resources\mail mor1.png" />

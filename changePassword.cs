@@ -1,15 +1,11 @@
 ﻿using BusinessLayer;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace JCFracturationSystem
@@ -76,13 +72,13 @@ namespace JCFracturationSystem
                     stepTwo.Checked = stepTwo.Enabled = true;
                     StepTwoLabel.ForeColor = Color.FromArgb(0, 31, 84);
                     break;
-                default:
+                case 3:
                     stepThree.Checked = stepThree.Enabled = true;
                     StepThreeLabel.ForeColor = Color.FromArgb(0, 31, 84);
                     break;
+
             }
         }
-
 
         private void PrevButton_Click(object sender, EventArgs e)
         {
@@ -110,7 +106,6 @@ namespace JCFracturationSystem
                 MessageBox.Show("Email invalido");
             }
         }
-
 
         private bool isEmail(string email)
         {
@@ -198,6 +193,46 @@ namespace JCFracturationSystem
             {
                 MessageBox.Show("Codigo incorrecto.");
             }
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+
+            string newP = newPasswordTextBox.Text;
+            string newPR = RepeatNewPasswordTextBox.Text;
+            if (newP == newPR)
+            {
+                if (!isPassword(newP))
+                {
+                    MessageBox.Show("La contraseña no tiene el formato correcto.");
+                    return;
+                }
+
+                BLUser user = new BLUser();
+                user.Email = EmailTextBox.Text.Trim();
+                user.Password = newP;
+                user.UpdatePassword();
+                PagesContainer.PageIndex = 3;
+
+            }
+        }
+
+        private bool isPassword(string password)
+        {
+            var passwordRegex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}$");
+            return passwordRegex.IsMatch(password);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            LogIn login = new LogIn();
+            login.Show();
+            Close();
         }
     }
 }
