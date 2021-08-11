@@ -39,7 +39,7 @@ namespace BusinessLayer
 
         public void deleteClient(string id)
         {
-            objectClient.deleteClient(Convert.ToInt32(id));
+            objectClient.deleteClient(id);
         }
     }
 }

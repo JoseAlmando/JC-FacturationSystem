@@ -73,11 +73,11 @@ namespace DataLayer
 
         }
 
-        public void deleteClient(int id)
+        public void deleteClient(string id)
         {
             SqlCommand sql = new SqlCommand("SP_DELETE_CLIENT", connection.openConnection());
             sql.CommandType = CommandType.StoredProcedure;
-            sql.Parameters.AddWithValue("@ID_CLIENT", id);
+            sql.Parameters.AddWithValue("@IDENTIFICATION_CARD", id);
 
             sql.ExecuteNonQuery();
 

@@ -52,9 +52,10 @@ namespace JCFracturationSystem
         {
             if (e.KeyChar == (char)Keys.Enter) sigIn();
         }
-
+        int attempts = 0;
         private void sigIn()
         {
+
             string userEmail = EmailTextBox.Text.Trim().ToLower();
             string userPassword = PasswordTextBox.Text;
 
@@ -104,10 +105,19 @@ namespace JCFracturationSystem
             }
             else
             {
-                MessageBox.Show("Credenciales Incorrectas, Intente de nuevo.");
+                attempts++;
+                MessageBox.Show($"Credenciales Incorrectas, Intente de nuevo. \n Intetos {attempts}/3");
                 EmailTextBox.Clear();
                 PasswordTextBox.Clear();
             }
+
+            if (attempts == 3)
+            {
+                MessageBox.Show("Intentos agotados.");
+                Application.Exit();
+
+            }
+
         }
 
         private void LogIn_Load(object sender, EventArgs e)

@@ -26,6 +26,7 @@ namespace DataLayer
             data = sql.ExecuteReader();
 
             dataTable.Load(data);
+            connection.closeConnection();
             return dataTable;
         }
     }

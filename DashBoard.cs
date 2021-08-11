@@ -124,35 +124,44 @@ namespace JCFracturationSystem
             saveCLient();
         }
 
+        private bool areEmpty()
+        {
+            if (txtName.Text.Trim() == string.Empty || txtLastName.Text.Trim() == string.Empty || txtAdress.Text.Trim() == string.Empty || txtIdentificationCard.Text.Trim() == string.Empty || txtLastName.Text.Trim() == string.Empty || txtAge.Text.Trim() == string.Empty || txtPhone.Text.Trim() == string.Empty) return true;
+            return false;
+        }
         private void saveCLient()
         {
-            if (canEdit == false)
+            if (areEmpty()) MessageBox.Show("Debe llenar todoso los campos.");
+            else
             {
-                try
+                if (canEdit == false)
                 {
-                    objectClient.addClient(txtName.Text, txtLastName.Text, dwGender.Text, txtAge.Text, txtPhone.Text, txtAdress.Text, txtIdentificationCard.Text);
-                    MessageBox.Show($"El Cliente {txtName.Text} {txtLastName.Text} ha sido guardado exitosamente.");
-                    showClients();
-                    cleanForm();
+                    try
+                    {
+                        objectClient.addClient(txtName.Text, txtLastName.Text, dwGender.Text, txtAge.Text, txtPhone.Text, txtAdress.Text, txtIdentificationCard.Text);
+                        MessageBox.Show($"El Cliente {txtName.Text} {txtLastName.Text} ha sido guardado exitosamente.");
+                        showClients();
+                        cleanForm();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error: Cliente existente.");
+                    }
                 }
-                catch (Exception ex)
+                if (canEdit == true)
                 {
-                    MessageBox.Show($"Error {ex}");
-                }
-            }
-            if (canEdit == true)
-            {
-                try
-                {
-                    objectClient.editClient(idClient, txtName.Text, txtLastName.Text, dwGender.Text, txtAge.Text, txtPhone.Text, txtAdress.Text, txtIdentificationCard.Text);
-                    MessageBox.Show($"El Cliente {txtName.Text} {txtLastName.Text} ha sido editado exitosamente.");
-                    showClients();
-                    cleanForm();
-                    canEdit = false;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error {ex}");
+                    try
+                    {
+                        objectClient.editClient(idClient, txtName.Text, txtLastName.Text, dwGender.Text, txtAge.Text, txtPhone.Text, txtAdress.Text, txtIdentificationCard.Text);
+                        MessageBox.Show($"El Cliente {txtName.Text} {txtLastName.Text} ha sido editado exitosamente.");
+                        showClients();
+                        cleanForm();
+                        canEdit = false;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error: Cliente no existente.");
+                    }
                 }
             }
         }
@@ -181,7 +190,7 @@ namespace JCFracturationSystem
         {
             if (dtgTable.SelectedRows.Count > 0)
             {
-                idClient = dtgTable.CurrentRow.Cells["ID"].Value.ToString();
+                idClient = dtgTable.CurrentRow.Cells["Cedula"].Value.ToString();
                 objectClient.deleteClient(idClient);
                 MessageBox.Show($"El Cliente ha sido eliminado exitosamente.");
                 showClients();
@@ -212,20 +221,17 @@ namespace JCFracturationSystem
         private void txtName_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter) txtLastName.Focus();
-            if (Char.IsLetter(e.KeyChar))
-            {
+            if (Char.IsLetter(e.KeyChar) || Char.IsWhiteSpace(e.KeyChar))
                 e.Handled = false;
-            }
             else
-            {
                 e.Handled = true;
-            }
+
         }
 
         private void txtLastName_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter) dwGender.Focus();
-            if (Char.IsLetter(e.KeyChar))
+            if (Char.IsLetter(e.KeyChar) || Char.IsWhiteSpace(e.KeyChar))
                 e.Handled = false;
             else
                 e.Handled = true;
@@ -278,6 +284,35 @@ namespace JCFracturationSystem
         {
             e.Cancel = true;
         }
+        int wait = 0;
+        private void WaitingTimer_Tick(object sender, EventArgs e)
+        {
+            timer2.Interval = 100;
 
+            int tp;
+
+            tp = wait;
+            tp += 1;
+            wait = tp;
+
+            if (tp == 500)
+            {
+                MessageBox.Show("Tiempo de Espera Agotado");
+                Application.ExitThread();
+                Application.Exit();
+
+            }
+        }
+
+        private void DashBoard_MouseMove(object sender, MouseEventArgs e)
+        {
+            wait = 0;
+        }
+
+        private void tabPage6_MouseMove(object sender, MouseEventArgs e)
+        {
+            wait = 0;
+
+        }
     }
 }

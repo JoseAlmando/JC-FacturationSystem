@@ -153,6 +153,7 @@ namespace JCFracturationSystem
             this.bunifuLabel20 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.WaitingTimer = new System.Windows.Forms.Timer(this.components);
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPages1.SuspendLayout();
@@ -1041,7 +1042,7 @@ namespace JCFracturationSystem
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1020, 629);
+            this.tabPage1.Size = new System.Drawing.Size(1020, 641);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
@@ -1589,7 +1590,7 @@ namespace JCFracturationSystem
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1020, 629);
+            this.tabPage2.Size = new System.Drawing.Size(1020, 641);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             // 
@@ -1619,7 +1620,7 @@ namespace JCFracturationSystem
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1020, 629);
+            this.tabPage3.Size = new System.Drawing.Size(1020, 641);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             // 
@@ -1648,7 +1649,7 @@ namespace JCFracturationSystem
             this.tabPage4.Location = new System.Drawing.Point(4, 4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1020, 629);
+            this.tabPage4.Size = new System.Drawing.Size(1020, 641);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             // 
@@ -1677,7 +1678,7 @@ namespace JCFracturationSystem
             this.tabPage5.Location = new System.Drawing.Point(4, 4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1020, 629);
+            this.tabPage5.Size = new System.Drawing.Size(1020, 641);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             // 
@@ -1730,6 +1731,7 @@ namespace JCFracturationSystem
             this.tabPage6.Size = new System.Drawing.Size(1020, 641);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "tabPage6";
+            this.tabPage6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.tabPage6_MouseMove);
             // 
             // bunifuLabel28
             // 
@@ -2884,7 +2886,7 @@ namespace JCFracturationSystem
             this.tabPage7.Location = new System.Drawing.Point(4, 4);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1020, 629);
+            this.tabPage7.Size = new System.Drawing.Size(1020, 641);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "tabPage7";
             // 
@@ -2913,7 +2915,7 @@ namespace JCFracturationSystem
             this.tabPage8.Location = new System.Drawing.Point(4, 4);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1020, 629);
+            this.tabPage8.Size = new System.Drawing.Size(1020, 641);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "tabPage8";
             // 
@@ -2949,6 +2951,11 @@ namespace JCFracturationSystem
             this.bunifuDragControl2.TargetControl = this.bunifuPanel1;
             this.bunifuDragControl2.Vertical = true;
             // 
+            // WaitingTimer
+            // 
+            this.WaitingTimer.Enabled = true;
+            this.WaitingTimer.Tick += new System.EventHandler(this.WaitingTimer_Tick);
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2965,6 +2972,7 @@ namespace JCFracturationSystem
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DashBoard_FormClosing);
             this.Load += new System.EventHandler(this.DashBoard_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DashBoard_KeyPress);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.DashBoard_MouseMove);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
@@ -3071,5 +3079,6 @@ namespace JCFracturationSystem
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel28;
         private Bunifu.UI.WinForms.BunifuTextBox BuscarTextBox;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BuscarButton;
+        private System.Windows.Forms.Timer WaitingTimer;
     }
 }
