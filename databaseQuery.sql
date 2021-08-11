@@ -108,7 +108,7 @@ GO
 
 CREATE PROC SHOW_CLIENTS
 AS
-SELECT ID, IDENTIFICATION_CARD 'Cedula', NAME 'Nombre', LAST_NAME 'Apellido', GENDER 'Sexo', AGE 'Edad', PHONE 'Telefono', ADDRESS 'Direccion' FROM Client
+SELECT ID, IDENTIFICATION_CARD 'Cedula', NAME 'Nombre', LAST_NAME 'Apellido', GENDER 'Sexo', AGE 'Edad', PHONE 'Telefono', ADDRESS 'Direccion', CREATION_DATE 'Fecha craecion' FROM Client
 GO
 
 CREATE PROC SP_UPDATE_CLIENT(
@@ -181,7 +181,7 @@ SELECT * FROM Tuser WHERE email = @EMAIL
 GO
 
 exec SP_FIND_EMAIL 'josea.dominique01@gmail.com'
-
+go
 
 CREATE PROC SP_UPDATE_PASSWORD
 @email varchar(max),
