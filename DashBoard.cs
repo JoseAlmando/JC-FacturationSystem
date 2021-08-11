@@ -54,17 +54,6 @@ namespace JCFracturationSystem
 
         }
 
-
-        private void bunifuLabel13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCircleProgress1_ProgressChanged(object sender, Bunifu.UI.WinForms.BunifuCircleProgress.ProgressChangedEventArgs e)
-        {
-
-        }
-
         private void timer2_Tick(object sender, EventArgs e)
         {
             bunifuCircleProgress1.Value += 1;
@@ -83,11 +72,6 @@ namespace JCFracturationSystem
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             bunifuPages1.PageIndex = 0;
-        }
-
-        private void bunifuLabel15_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnVentas_Click(object sender, EventArgs e)
@@ -120,32 +104,12 @@ namespace JCFracturationSystem
             bunifuPages1.PageIndex = 7;
         }
 
-        private void tabPage8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuLabel16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void timerLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            ExitApp();
+        }
+
+        private void ExitApp()
         {
             var button = MessageBox.Show("¿Estas seguro que deseas salir?", "Salir", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
 
@@ -155,13 +119,12 @@ namespace JCFracturationSystem
                 Application.Exit();
             }
         }
-
-        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-
+            saveCLient();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void saveCLient()
         {
             if (canEdit == false)
             {
@@ -245,5 +208,76 @@ namespace JCFracturationSystem
         {
             if (e.KeyChar == (char)Keys.Enter) showClientOrClients();
         }
+
+        private void txtName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) txtLastName.Focus();
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLastName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) dwGender.Focus();
+            if (Char.IsLetter(e.KeyChar))
+                e.Handled = false;
+            else
+                e.Handled = true;
+
+        }
+
+        private void dwGender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtAge.Focus();
+        }
+
+        private void txtAge_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) txtPhone.Focus();
+
+        }
+
+        private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) txtIdentificationCard.Focus();
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+
+        }
+
+        private void txtIdentificationCard_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) txtAdress.Focus();
+
+        }
+
+        private void txtAdress_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) saveCLient();
+        }
+
+        private void DashBoard_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.F10) ExitApp();
+
+        }
+
+        private void DashBoard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
     }
 }

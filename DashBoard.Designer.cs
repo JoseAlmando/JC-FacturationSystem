@@ -40,6 +40,11 @@ namespace JCFracturationSystem
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -70,11 +75,6 @@ namespace JCFracturationSystem
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
@@ -125,6 +125,9 @@ namespace JCFracturationSystem
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.bunifuLabel17 = new Bunifu.UI.WinForms.BunifuLabel();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.bunifuLabel28 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.BuscarTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.BuscarButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtIdentificationCard = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel27 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel22 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -150,9 +153,6 @@ namespace JCFracturationSystem
             this.bunifuLabel20 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuLabel28 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.BuscarTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.BuscarButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPages1.SuspendLayout();
@@ -209,7 +209,6 @@ namespace JCFracturationSystem
             this.bunifuLabel1.Text = "Jhon Doe";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
             // bunifuSeparator1
             // 
@@ -221,7 +220,7 @@ namespace JCFracturationSystem
             this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator1.LineThickness = 2;
             this.bunifuSeparator1.Location = new System.Drawing.Point(34, 217);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.bunifuSeparator1.Size = new System.Drawing.Size(258, 20);
@@ -991,7 +990,7 @@ namespace JCFracturationSystem
             this.bunifuPages1.PageName = "tabPage6";
             this.bunifuPages1.PageTitle = "tabPage6";
             this.bunifuPages1.SelectedIndex = 0;
-            this.bunifuPages1.Size = new System.Drawing.Size(1028, 683);
+            this.bunifuPages1.Size = new System.Drawing.Size(1028, 667);
             this.bunifuPages1.TabIndex = 31;
             animation1.AnimateOnlyDifferences = true;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -1041,11 +1040,10 @@ namespace JCFracturationSystem
             this.tabPage1.Controls.Add(this.bunifuUserControl1);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(1020, 657);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1020, 629);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // bunifuImageButton1
             // 
@@ -1258,7 +1256,6 @@ namespace JCFracturationSystem
             this.timerLabel.Text = "00:00:00 00:00:00";
             this.timerLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.timerLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.timerLabel.Click += new System.EventHandler(this.timerLabel_Click);
             // 
             // bunifuCircleProgress2
             // 
@@ -1591,8 +1588,8 @@ namespace JCFracturationSystem
             this.tabPage2.Controls.Add(this.bunifuLabel15);
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(1020, 657);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1020, 629);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             // 
@@ -1613,7 +1610,6 @@ namespace JCFracturationSystem
             this.bunifuLabel15.Text = "Productos";
             this.bunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel15.Click += new System.EventHandler(this.bunifuLabel15_Click);
             // 
             // tabPage3
             // 
@@ -1622,8 +1618,8 @@ namespace JCFracturationSystem
             this.tabPage3.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage3.Size = new System.Drawing.Size(1020, 657);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1020, 629);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             // 
@@ -1651,8 +1647,8 @@ namespace JCFracturationSystem
             this.tabPage4.Controls.Add(this.bunifuLabel16);
             this.tabPage4.Location = new System.Drawing.Point(4, 4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage4.Size = new System.Drawing.Size(1020, 657);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1020, 629);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             // 
@@ -1673,7 +1669,6 @@ namespace JCFracturationSystem
             this.bunifuLabel16.Text = "Compras";
             this.bunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel16.Click += new System.EventHandler(this.bunifuLabel16_Click);
             // 
             // tabPage5
             // 
@@ -1681,8 +1676,8 @@ namespace JCFracturationSystem
             this.tabPage5.Controls.Add(this.bunifuLabel17);
             this.tabPage5.Location = new System.Drawing.Point(4, 4);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage5.Size = new System.Drawing.Size(1020, 657);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1020, 629);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             // 
@@ -1731,10 +1726,192 @@ namespace JCFracturationSystem
             this.tabPage6.Controls.Add(this.bunifuLabel18);
             this.tabPage6.Location = new System.Drawing.Point(4, 4);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage6.Size = new System.Drawing.Size(1020, 657);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1020, 641);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "tabPage6";
+            // 
+            // bunifuLabel28
+            // 
+            this.bunifuLabel28.AllowParentOverrides = false;
+            this.bunifuLabel28.AutoEllipsis = false;
+            this.bunifuLabel28.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel28.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel28.ForeColor = System.Drawing.Color.Transparent;
+            this.bunifuLabel28.Location = new System.Drawing.Point(873, 133);
+            this.bunifuLabel28.Name = "bunifuLabel28";
+            this.bunifuLabel28.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel28.Size = new System.Drawing.Size(64, 24);
+            this.bunifuLabel28.TabIndex = 84;
+            this.bunifuLabel28.Text = "Buscar";
+            this.bunifuLabel28.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel28.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // BuscarTextBox
+            // 
+            this.BuscarTextBox.AcceptsReturn = false;
+            this.BuscarTextBox.AcceptsTab = false;
+            this.BuscarTextBox.AnimationSpeed = 200;
+            this.BuscarTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.BuscarTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.BuscarTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.BuscarTextBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BuscarTextBox.BackgroundImage")));
+            this.BuscarTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.BuscarTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.BuscarTextBox.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.BuscarTextBox.BorderColorIdle = System.Drawing.Color.Silver;
+            this.BuscarTextBox.BorderRadius = 5;
+            this.BuscarTextBox.BorderThickness = 1;
+            this.BuscarTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.BuscarTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.BuscarTextBox.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.BuscarTextBox.DefaultText = "";
+            this.BuscarTextBox.FillColor = System.Drawing.Color.White;
+            this.BuscarTextBox.HideSelection = true;
+            this.BuscarTextBox.IconLeft = null;
+            this.BuscarTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.BuscarTextBox.IconPadding = 10;
+            this.BuscarTextBox.IconRight = null;
+            this.BuscarTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.BuscarTextBox.Lines = new string[0];
+            this.BuscarTextBox.Location = new System.Drawing.Point(797, 167);
+            this.BuscarTextBox.MaxLength = 32767;
+            this.BuscarTextBox.MinimumSize = new System.Drawing.Size(1, 1);
+            this.BuscarTextBox.Modified = false;
+            this.BuscarTextBox.Multiline = false;
+            this.BuscarTextBox.Name = "BuscarTextBox";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.BuscarTextBox.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.BuscarTextBox.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.BuscarTextBox.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.BuscarTextBox.OnIdleState = stateProperties4;
+            this.BuscarTextBox.Padding = new System.Windows.Forms.Padding(3);
+            this.BuscarTextBox.PasswordChar = '\0';
+            this.BuscarTextBox.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.BuscarTextBox.PlaceholderText = "Nombre, Cedula o Apellido";
+            this.BuscarTextBox.ReadOnly = false;
+            this.BuscarTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.BuscarTextBox.SelectedText = "";
+            this.BuscarTextBox.SelectionLength = 0;
+            this.BuscarTextBox.SelectionStart = 0;
+            this.BuscarTextBox.ShortcutsEnabled = true;
+            this.BuscarTextBox.Size = new System.Drawing.Size(203, 37);
+            this.BuscarTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.BuscarTextBox.TabIndex = 83;
+            this.BuscarTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BuscarTextBox.TextMarginBottom = 0;
+            this.BuscarTextBox.TextMarginLeft = 3;
+            this.BuscarTextBox.TextMarginTop = 0;
+            this.BuscarTextBox.TextPlaceholder = "Nombre, Cedula o Apellido";
+            this.BuscarTextBox.UseSystemPasswordChar = false;
+            this.BuscarTextBox.WordWrap = true;
+            this.BuscarTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BuscarTextBox_KeyPress);
+            // 
+            // BuscarButton
+            // 
+            this.BuscarButton.AllowAnimations = true;
+            this.BuscarButton.AllowMouseEffects = true;
+            this.BuscarButton.AllowToggling = false;
+            this.BuscarButton.AnimationSpeed = 200;
+            this.BuscarButton.AutoGenerateColors = false;
+            this.BuscarButton.AutoRoundBorders = false;
+            this.BuscarButton.AutoSizeLeftIcon = true;
+            this.BuscarButton.AutoSizeRightIcon = true;
+            this.BuscarButton.BackColor = System.Drawing.Color.Transparent;
+            this.BuscarButton.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.BuscarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BuscarButton.BackgroundImage")));
+            this.BuscarButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BuscarButton.ButtonText = "Buscar";
+            this.BuscarButton.ButtonTextMarginLeft = 0;
+            this.BuscarButton.ColorContrastOnClick = 45;
+            this.BuscarButton.ColorContrastOnHover = 45;
+            this.BuscarButton.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.BuscarButton.CustomizableEdges = borderEdges9;
+            this.BuscarButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BuscarButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.BuscarButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.BuscarButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.BuscarButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.BuscarButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BuscarButton.ForeColor = System.Drawing.Color.White;
+            this.BuscarButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuscarButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.BuscarButton.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.BuscarButton.IconMarginLeft = 11;
+            this.BuscarButton.IconPadding = 10;
+            this.BuscarButton.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BuscarButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.BuscarButton.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.BuscarButton.IconSize = 25;
+            this.BuscarButton.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.BuscarButton.IdleBorderRadius = 5;
+            this.BuscarButton.IdleBorderThickness = 1;
+            this.BuscarButton.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.BuscarButton.IdleIconLeftImage = null;
+            this.BuscarButton.IdleIconRightImage = null;
+            this.BuscarButton.IndicateFocus = false;
+            this.BuscarButton.Location = new System.Drawing.Point(797, 321);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.BuscarButton.OnDisabledState.BorderRadius = 5;
+            this.BuscarButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BuscarButton.OnDisabledState.BorderThickness = 1;
+            this.BuscarButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.BuscarButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.BuscarButton.OnDisabledState.IconLeftImage = null;
+            this.BuscarButton.OnDisabledState.IconRightImage = null;
+            this.BuscarButton.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.BuscarButton.onHoverState.BorderRadius = 5;
+            this.BuscarButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BuscarButton.onHoverState.BorderThickness = 1;
+            this.BuscarButton.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.BuscarButton.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.BuscarButton.onHoverState.IconLeftImage = null;
+            this.BuscarButton.onHoverState.IconRightImage = null;
+            this.BuscarButton.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.BuscarButton.OnIdleState.BorderRadius = 5;
+            this.BuscarButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BuscarButton.OnIdleState.BorderThickness = 1;
+            this.BuscarButton.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.BuscarButton.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.BuscarButton.OnIdleState.IconLeftImage = null;
+            this.BuscarButton.OnIdleState.IconRightImage = null;
+            this.BuscarButton.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.BuscarButton.OnPressedState.BorderRadius = 5;
+            this.BuscarButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BuscarButton.OnPressedState.BorderThickness = 1;
+            this.BuscarButton.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.BuscarButton.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.BuscarButton.OnPressedState.IconLeftImage = null;
+            this.BuscarButton.OnPressedState.IconRightImage = null;
+            this.BuscarButton.Size = new System.Drawing.Size(203, 37);
+            this.BuscarButton.TabIndex = 82;
+            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BuscarButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BuscarButton.TextMarginLeft = 0;
+            this.BuscarButton.TextPadding = new System.Windows.Forms.Padding(0);
+            this.BuscarButton.UseDefaultRadiusAndThickness = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // txtIdentificationCard
             // 
@@ -1789,7 +1966,7 @@ namespace JCFracturationSystem
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtIdentificationCard.OnIdleState = stateProperties8;
-            this.txtIdentificationCard.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtIdentificationCard.Padding = new System.Windows.Forms.Padding(3);
             this.txtIdentificationCard.PasswordChar = '\0';
             this.txtIdentificationCard.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtIdentificationCard.PlaceholderText = "Direccion";
@@ -1809,6 +1986,7 @@ namespace JCFracturationSystem
             this.txtIdentificationCard.TextPlaceholder = "Direccion";
             this.txtIdentificationCard.UseSystemPasswordChar = false;
             this.txtIdentificationCard.WordWrap = true;
+            this.txtIdentificationCard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdentificationCard_KeyPress);
             // 
             // bunifuLabel27
             // 
@@ -2034,6 +2212,7 @@ namespace JCFracturationSystem
             this.dwGender.Text = null;
             this.dwGender.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.dwGender.TextLeftMargin = 3;
+            this.dwGender.SelectedIndexChanged += new System.EventHandler(this.dwGender_SelectedIndexChanged);
             // 
             // txtPhone
             // 
@@ -2088,7 +2267,7 @@ namespace JCFracturationSystem
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPhone.OnIdleState = stateProperties12;
-            this.txtPhone.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtPhone.Padding = new System.Windows.Forms.Padding(3);
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPhone.PlaceholderText = "8090000000";
@@ -2108,6 +2287,7 @@ namespace JCFracturationSystem
             this.txtPhone.TextPlaceholder = "8090000000";
             this.txtPhone.UseSystemPasswordChar = false;
             this.txtPhone.WordWrap = true;
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
             // 
             // txtAge
             // 
@@ -2162,7 +2342,7 @@ namespace JCFracturationSystem
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtAge.OnIdleState = stateProperties16;
-            this.txtAge.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtAge.Padding = new System.Windows.Forms.Padding(3);
             this.txtAge.PasswordChar = '\0';
             this.txtAge.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtAge.PlaceholderText = "Edad";
@@ -2182,6 +2362,7 @@ namespace JCFracturationSystem
             this.txtAge.TextPlaceholder = "Edad";
             this.txtAge.UseSystemPasswordChar = false;
             this.txtAge.WordWrap = true;
+            this.txtAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAge_KeyPress);
             // 
             // txtAdress
             // 
@@ -2236,7 +2417,7 @@ namespace JCFracturationSystem
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtAdress.OnIdleState = stateProperties20;
-            this.txtAdress.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtAdress.Padding = new System.Windows.Forms.Padding(3);
             this.txtAdress.PasswordChar = '\0';
             this.txtAdress.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtAdress.PlaceholderText = "Direccion";
@@ -2256,6 +2437,7 @@ namespace JCFracturationSystem
             this.txtAdress.TextPlaceholder = "Direccion";
             this.txtAdress.UseSystemPasswordChar = false;
             this.txtAdress.WordWrap = true;
+            this.txtAdress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAdress_KeyPress);
             // 
             // txtLastName
             // 
@@ -2310,7 +2492,7 @@ namespace JCFracturationSystem
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtLastName.OnIdleState = stateProperties24;
-            this.txtLastName.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtLastName.Padding = new System.Windows.Forms.Padding(3);
             this.txtLastName.PasswordChar = '\0';
             this.txtLastName.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtLastName.PlaceholderText = "Apellido";
@@ -2330,6 +2512,7 @@ namespace JCFracturationSystem
             this.txtLastName.TextPlaceholder = "Apellido";
             this.txtLastName.UseSystemPasswordChar = false;
             this.txtLastName.WordWrap = true;
+            this.txtLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLastName_KeyPress);
             // 
             // txtName
             // 
@@ -2384,7 +2567,7 @@ namespace JCFracturationSystem
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtName.OnIdleState = stateProperties28;
-            this.txtName.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtName.Padding = new System.Windows.Forms.Padding(3);
             this.txtName.PasswordChar = '\0';
             this.txtName.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtName.PlaceholderText = "Nombre";
@@ -2404,6 +2587,7 @@ namespace JCFracturationSystem
             this.txtName.TextPlaceholder = "Nombre";
             this.txtName.UseSystemPasswordChar = false;
             this.txtName.WordWrap = true;
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // btnDelete
             // 
@@ -2699,8 +2883,8 @@ namespace JCFracturationSystem
             this.tabPage7.Controls.Add(this.bunifuLabel19);
             this.tabPage7.Location = new System.Drawing.Point(4, 4);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage7.Size = new System.Drawing.Size(1020, 657);
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1020, 629);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "tabPage7";
             // 
@@ -2728,11 +2912,10 @@ namespace JCFracturationSystem
             this.tabPage8.Controls.Add(this.bunifuLabel20);
             this.tabPage8.Location = new System.Drawing.Point(4, 4);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage8.Size = new System.Drawing.Size(1020, 657);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1020, 629);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "tabPage8";
-            this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
             // 
             // bunifuLabel20
             // 
@@ -2766,188 +2949,6 @@ namespace JCFracturationSystem
             this.bunifuDragControl2.TargetControl = this.bunifuPanel1;
             this.bunifuDragControl2.Vertical = true;
             // 
-            // bunifuLabel28
-            // 
-            this.bunifuLabel28.AllowParentOverrides = false;
-            this.bunifuLabel28.AutoEllipsis = false;
-            this.bunifuLabel28.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel28.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel28.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuLabel28.Location = new System.Drawing.Point(873, 133);
-            this.bunifuLabel28.Name = "bunifuLabel28";
-            this.bunifuLabel28.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel28.Size = new System.Drawing.Size(64, 24);
-            this.bunifuLabel28.TabIndex = 84;
-            this.bunifuLabel28.Text = "Buscar";
-            this.bunifuLabel28.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel28.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // BuscarTextBox
-            // 
-            this.BuscarTextBox.AcceptsReturn = false;
-            this.BuscarTextBox.AcceptsTab = false;
-            this.BuscarTextBox.AnimationSpeed = 200;
-            this.BuscarTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.BuscarTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.BuscarTextBox.BackColor = System.Drawing.Color.Transparent;
-            this.BuscarTextBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BuscarTextBox.BackgroundImage")));
-            this.BuscarTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.BuscarTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.BuscarTextBox.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.BuscarTextBox.BorderColorIdle = System.Drawing.Color.Silver;
-            this.BuscarTextBox.BorderRadius = 5;
-            this.BuscarTextBox.BorderThickness = 1;
-            this.BuscarTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.BuscarTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.BuscarTextBox.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.BuscarTextBox.DefaultText = "";
-            this.BuscarTextBox.FillColor = System.Drawing.Color.White;
-            this.BuscarTextBox.HideSelection = true;
-            this.BuscarTextBox.IconLeft = null;
-            this.BuscarTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.BuscarTextBox.IconPadding = 10;
-            this.BuscarTextBox.IconRight = null;
-            this.BuscarTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.BuscarTextBox.Lines = new string[0];
-            this.BuscarTextBox.Location = new System.Drawing.Point(797, 167);
-            this.BuscarTextBox.MaxLength = 32767;
-            this.BuscarTextBox.MinimumSize = new System.Drawing.Size(1, 1);
-            this.BuscarTextBox.Modified = false;
-            this.BuscarTextBox.Multiline = false;
-            this.BuscarTextBox.Name = "BuscarTextBox";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.BuscarTextBox.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.BuscarTextBox.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.BuscarTextBox.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.BuscarTextBox.OnIdleState = stateProperties4;
-            this.BuscarTextBox.Padding = new System.Windows.Forms.Padding(3);
-            this.BuscarTextBox.PasswordChar = '\0';
-            this.BuscarTextBox.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.BuscarTextBox.PlaceholderText = "Nombre, Cedula o Apellido";
-            this.BuscarTextBox.ReadOnly = false;
-            this.BuscarTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.BuscarTextBox.SelectedText = "";
-            this.BuscarTextBox.SelectionLength = 0;
-            this.BuscarTextBox.SelectionStart = 0;
-            this.BuscarTextBox.ShortcutsEnabled = true;
-            this.BuscarTextBox.Size = new System.Drawing.Size(203, 37);
-            this.BuscarTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.BuscarTextBox.TabIndex = 83;
-            this.BuscarTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BuscarTextBox.TextMarginBottom = 0;
-            this.BuscarTextBox.TextMarginLeft = 3;
-            this.BuscarTextBox.TextMarginTop = 0;
-            this.BuscarTextBox.TextPlaceholder = "Nombre, Cedula o Apellido";
-            this.BuscarTextBox.UseSystemPasswordChar = false;
-            this.BuscarTextBox.WordWrap = true;
-            this.BuscarTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BuscarTextBox_KeyPress);
-            // 
-            // BuscarButton
-            // 
-            this.BuscarButton.AllowAnimations = true;
-            this.BuscarButton.AllowMouseEffects = true;
-            this.BuscarButton.AllowToggling = false;
-            this.BuscarButton.AnimationSpeed = 200;
-            this.BuscarButton.AutoGenerateColors = false;
-            this.BuscarButton.AutoRoundBorders = false;
-            this.BuscarButton.AutoSizeLeftIcon = true;
-            this.BuscarButton.AutoSizeRightIcon = true;
-            this.BuscarButton.BackColor = System.Drawing.Color.Transparent;
-            this.BuscarButton.BackColor1 = System.Drawing.Color.DodgerBlue;
-            this.BuscarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BuscarButton.BackgroundImage")));
-            this.BuscarButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BuscarButton.ButtonText = "Buscar";
-            this.BuscarButton.ButtonTextMarginLeft = 0;
-            this.BuscarButton.ColorContrastOnClick = 45;
-            this.BuscarButton.ColorContrastOnHover = 45;
-            this.BuscarButton.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.BuscarButton.CustomizableEdges = borderEdges9;
-            this.BuscarButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BuscarButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.BuscarButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.BuscarButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.BuscarButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.BuscarButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BuscarButton.ForeColor = System.Drawing.Color.White;
-            this.BuscarButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuscarButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.BuscarButton.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.BuscarButton.IconMarginLeft = 11;
-            this.BuscarButton.IconPadding = 10;
-            this.BuscarButton.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BuscarButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.BuscarButton.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.BuscarButton.IconSize = 25;
-            this.BuscarButton.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.BuscarButton.IdleBorderRadius = 5;
-            this.BuscarButton.IdleBorderThickness = 1;
-            this.BuscarButton.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.BuscarButton.IdleIconLeftImage = null;
-            this.BuscarButton.IdleIconRightImage = null;
-            this.BuscarButton.IndicateFocus = false;
-            this.BuscarButton.Location = new System.Drawing.Point(797, 321);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.BuscarButton.OnDisabledState.BorderRadius = 5;
-            this.BuscarButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BuscarButton.OnDisabledState.BorderThickness = 1;
-            this.BuscarButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.BuscarButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.BuscarButton.OnDisabledState.IconLeftImage = null;
-            this.BuscarButton.OnDisabledState.IconRightImage = null;
-            this.BuscarButton.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.BuscarButton.onHoverState.BorderRadius = 5;
-            this.BuscarButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BuscarButton.onHoverState.BorderThickness = 1;
-            this.BuscarButton.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.BuscarButton.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.BuscarButton.onHoverState.IconLeftImage = null;
-            this.BuscarButton.onHoverState.IconRightImage = null;
-            this.BuscarButton.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.BuscarButton.OnIdleState.BorderRadius = 5;
-            this.BuscarButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BuscarButton.OnIdleState.BorderThickness = 1;
-            this.BuscarButton.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
-            this.BuscarButton.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.BuscarButton.OnIdleState.IconLeftImage = null;
-            this.BuscarButton.OnIdleState.IconRightImage = null;
-            this.BuscarButton.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.BuscarButton.OnPressedState.BorderRadius = 5;
-            this.BuscarButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BuscarButton.OnPressedState.BorderThickness = 1;
-            this.BuscarButton.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.BuscarButton.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.BuscarButton.OnPressedState.IconLeftImage = null;
-            this.BuscarButton.OnPressedState.IconRightImage = null;
-            this.BuscarButton.Size = new System.Drawing.Size(203, 37);
-            this.BuscarButton.TabIndex = 82;
-            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BuscarButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BuscarButton.TextMarginLeft = 0;
-            this.BuscarButton.TextPadding = new System.Windows.Forms.Padding(0);
-            this.BuscarButton.UseDefaultRadiusAndThickness = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
-            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2961,7 +2962,9 @@ namespace JCFracturationSystem
             this.Name = "DashBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DashBoard_FormClosing);
             this.Load += new System.EventHandler(this.DashBoard_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DashBoard_KeyPress);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
