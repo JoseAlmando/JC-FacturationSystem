@@ -11,7 +11,7 @@ namespace DataLayer
 
     class DLConexion
     {
-        static string stringConnection = $"Server=.\\SQLEXPRESS;Database=testJC;Trusted_Connection=True;";
+        static string stringConnection = $"Server=LAPTOP-D0VP0BIF;Database=testJC;Trusted_Connection=True;";
         private SqlConnection connection = new SqlConnection(stringConnection);
 
         public SqlConnection openConnection()

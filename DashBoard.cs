@@ -29,6 +29,10 @@ namespace JCFracturationSystem
             timer2.Start();
             showClients();
 
+            btnBuscarToolTip.SetToolTip(this.BuscarButton, "Boton para buscar.");
+            btnEditarToolTip.SetToolTip(this.btnSave, "Boton para guardar.");
+            btnEditarToolTip.SetToolTip(this.btnEdit, "Boton para editar.");
+            btnEliminarToolTip.SetToolTip(this.btnDelete, "Boton para eliminar");
         }
 
         private void showClients()
@@ -246,6 +250,10 @@ namespace JCFracturationSystem
         private void txtAge_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter) txtPhone.Focus();
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
 
         }
 
@@ -266,6 +274,10 @@ namespace JCFracturationSystem
         private void txtIdentificationCard_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter) txtAdress.Focus();
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
 
         }
 
@@ -312,6 +324,16 @@ namespace JCFracturationSystem
         private void tabPage6_MouseMove(object sender, MouseEventArgs e)
         {
             wait = 0;
+
+        }
+
+        private void BuscarTextBox_TextChange(object sender, EventArgs e)
+        {
+            showClientOrClients();
+        }
+
+        private void txtAge_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
