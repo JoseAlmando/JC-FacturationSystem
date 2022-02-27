@@ -1,6 +1,5 @@
 # JC-FacturationSystem
 
 
-Cristopher Zaiz 
-
-José Almando Dominique Yan
+- Cristopher Zaiz 
+- José Almando Dominique Yan
