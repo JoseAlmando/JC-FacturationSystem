@@ -1,7 +1,5 @@
 # Nombre proyecto: JC – Facturation System
 
----
-
 ## Participantes
 
 - **Cristopher Zaiz**
